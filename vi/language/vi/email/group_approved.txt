@@ -1,0 +1,9 @@
+Subject: Yêu cầu tham gia vào nhóm của bạn đã được chấp nhận
+
+Xin chúc mừng!
+
+Yêu cầu tham gia vào nhóm "{GROUP_NAME}" của bạn trong website "{SITENAME}" đã được chấp nhận.
+Hãy bấm vào liên kết bên dưới để xem tư cách thành viên của bạn trong nhóm:
+{U_GROUP}
+
+{EMAIL_SIG}
