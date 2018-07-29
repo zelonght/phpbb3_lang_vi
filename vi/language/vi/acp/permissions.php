@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_permissions [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: permissions.php,v 1.37 2010/08/26 04:05:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -183,7 +184,6 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_STANDARD'		=> 'Chức năng bình thường',
 	'ROLE_USER_NEW_MEMBER'		=> 'Thành viên mới đăng ký',
 
-
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Có thể truy cập quản lý chuyên mục và thiết lập cấp phép chuyên mục.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'Có thể sử dụng tất cả chức năng của quản trị viên trong hệ thống.<br />Không khuyến cáo sử dụng.',
 	'ROLE_DESCRIPTION_ADMIN_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của quản trị viên nhưng không được phép sử dụng các công cụ thiết lập máy chủ hay hệ thống.',
@@ -285,5 +285,3 @@ $lang = array_merge($lang, array(
 	'WRONG_PERMISSION_TYPE'	=> 'Loại thiết lập cấp phép sai đã được chọn',
 	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Thiết lập cấp phép sai định dạng, phpBB không thể sử dụng thông tin thiết lập này một cách chính xác.',
 ));
-
-?>

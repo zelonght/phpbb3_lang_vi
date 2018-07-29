@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* memberlist [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: memberlist.php,v 1.26 2010/08/24 20:02:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -47,12 +48,14 @@ $lang = array_merge($lang, array(
 
 	'BEFORE'				=> 'Trước',
 
-	'CC_EMAIL'				=> 'Gửi bản sao của Email này cho tôi.',
-	'CONTACT_USER'			=> 'Liên hệ',
+	'CC_SENDER'				=> 'Gửi một bản sao của email này cho chính bạn.',
+	'CONTACT_ADMIN'			=> 'Liên hệ với Quản trị viên Diễn đàn',
 
 	'DEST_LANG'				=> 'Ngôn ngữ',
 	'DEST_LANG_EXPLAIN'		=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
 
+	'EDIT_PROFILE'			=> 'Chỉnh sửa hồ sơ',
+	
 	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần tuý, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung Email này. Địa chỉ hồi âm của Email này sẽ được thiết lập là địa chỉ Email của bạn.',
 	'EMAIL_DISABLED'		=> 'Xin lỗi, tất cả chức năng liên quan đến Email trong hệ thống đã bị vô hiệu.',
 	'EMAIL_SENT'			=> 'Email đã được gửi thành công.',
@@ -61,6 +64,8 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_EMAIL'	=> 'Bạn phải nhập nội dung cho Email.',
 	'EMPTY_MESSAGE_IM'		=> 'Bạn phải nhập nội dung cho tin nhắn.',
 	'EMPTY_NAME_EMAIL'		=> 'Bạn phải nhập tên của người nhận.',
+	'EMPTY_SENDER_EMAIL'	=> 'Bạn phải cung cấp địa chỉ email hợp lệ.',
+	'EMPTY_SENDER_NAME'		=> 'Bạn phải cung cấp tên.',
 	'EMPTY_SUBJECT_EMAIL'	=> 'Bạn phải nhập tiêu đề cho Email.',
 	'EQUAL_TO'				=> 'Ngang bằng',
 
@@ -72,16 +77,10 @@ $lang = array_merge($lang, array(
 	'HIDE_MEMBER_SEARCH'	=> 'Ẩn công cụ tìm kiếm thành viên',
 
 	'IM_ADD_CONTACT'		=> 'Thêm thành viên',
-	'IM_AIM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>AOL Instant Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
-	'IM_AIM_EXPRESS'		=> 'Chương trình <strong>AIM Express</strong>',
 	'IM_DOWNLOAD_APP'		=> 'Tải về ứng dụng',
-	'IM_ICQ'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
 	'IM_JABBER'				=> 'Lưu ý rằng các thành viên có thể chọn không nhận những tin nhắn nhanh mà họ không mong muốn.',
 	'IM_JABBER_SUBJECT'		=> 'Đây là tin nhắn thông báo tự động, xin đừng trả lời! Tin nhắn từ thành viên <strong>%1$s</strong> trong %2$s.',
 	'IM_MESSAGE'			=> 'Nội dung tin nhắn của bạn',
-	'IM_MSNM'				=> 'Lưu ý bạn cần phải cài đặt chương trình <strong>Windows Messenger</strong> trên máy tính của mình để có thể sử dụng được chức năng này.',
-	'IM_MSNM_BROWSER'		=> 'Trình duyệt của bạn không hỗ trợ chương trình này.',
-	'IM_MSNM_CONNECT'		=> 'Tài khoản MSN của bạn chưa được kết nối.\nBạn phải kết nối đến dịch vụ của MSN để tiếp tục gửi tin nhắn.',		
 	'IM_NAME'				=> 'Tên của bạn',
 	'IM_NO_DATA'			=> 'Không có thông tin liên hệ phù hợp nào về thành viên này.',
 	'IM_NO_JABBER'			=> 'Xin lỗi, chức năng gửi tin nhắn trực tiếp đến các thành viên sử dụng Jabber không được hỗ trợ trên máy chủ này. Bạn sẽ cần phải cài đặt ứng dụng <strong>Jabber</strong> trên máy tính của mình để liên hệ với người nhận trên.',
@@ -93,15 +92,20 @@ $lang = array_merge($lang, array(
 
 	'LAST_ACTIVE'				=> 'Lần hoạt động trước',
 	'LESS_THAN'					=> 'Ít hơn',
-	'LIST_USER'					=> '1 thành viên',
-	'LIST_USERS'				=> '%d thành viên',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách ban điều hành.',
+	'LIST_USERS'				=> array(
+		1	=> '1 thành viên',
+		2	=> '%d thành viên',
+	),
+	'LOGIN_EXPLAIN_TEAM'		=> 'Diễn đàn yêu cầu bạn phải đăng ký và đăng nhập để xem danh sách nhóm.',
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách thành viên.',
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
 
-	'MORE_THAN'				=> 'Nhiều hơn',
+	'MANAGE_GROUP'			=> 'Quản lý nhóm',
+	'MORE_THAN'				=> 'More than',
 
+	'NO_CONTACT_FORM'		=> 'Biểu mẫu liên hệ của quản trị viên diễn đàn đã bị tắt.',
+	'NO_CONTACT_PAGE'		=> 'Trang liên hệ của quản trị viên diễn đàn đã bị tắt.',
 	'NO_EMAIL'				=> 'Bạn không được phép gửi Email đến thành viên này.',
 	'NO_VIEW_USERS'			=> 'Bạn không được phép xem danh sách thành viên hay thông tin cá nhân của thành viên.',
 
@@ -117,12 +121,12 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MARKED'			=> 'Chọn đánh dấu',
 	'SELECT_SORT_METHOD'	=> 'Chọn cách sắp xếp',
-	'SEND_AIM_MESSAGE'		=> 'Gửi tin nhắn AIM',
+	'SENDER_EMAIL_ADDRESS'	=> 'địa chỉ email của bạn',
+	'SENDER_NAME'			=> 'Tên của bạn',
 	'SEND_ICQ_MESSAGE'		=> 'Gửi tin nhắn ICQ',
 	'SEND_IM'				=> 'Nhắn tin nhanh',
 	'SEND_JABBER_MESSAGE'	=> 'Gửi tin nhắn Jabber',
 	'SEND_MESSAGE'			=> 'Tin nhắn',
-	'SEND_MSNM_MESSAGE'		=> 'Gửi tin nhắn MSNM/WLM',
 	'SEND_YIM_MESSAGE'		=> 'Gửi tin nhắn YIM',
 	'SORT_EMAIL'			=> 'Địa chỉ Email',
 	'SORT_LAST_ACTIVE'		=> 'Lần hoạt động trước',
@@ -135,14 +139,16 @@ $lang = array_merge($lang, array(
 	'USER_LAST_REMINDED'	=> array(
 		0		=> 'Chưa gửi thư nhắc nhở',
 		1		=> 'Đã gửi thư nhắc nhở %1$d lần<br />» %2$s',
+		2		=> '%1$d lời nhắc đã được gửi<br />» %2$s',
 	),
 	'USER_ONLINE'			=> 'Đang trực tuyến',
 	'USER_PRESENCE'			=> 'Hiện diện',
+	'USERS_PER_PAGE'		=> 'Số người dùng trên mỗi trang',
 
 	'VIEWING_PROFILE'		=> 'Đang xem thông tin cá nhân của %s',
-	'VISITED'				=> 'Lần ghé thăm trước',
-
-	'WWW'					=> 'Website',
+	'VIEW_FACEBOOK_PROFILE'	=> 'Xem hồ sơ trên Facebook',
+	'VIEW_SKYPE_PROFILE'	=> 'Xem hồ sơ Skype',
+	'VIEW_TWITTER_PROFILE'	=> 'Xem hồ sơ trên Twitter',
+	'VIEW_YOUTUBE_CHANNEL'	=> 'Xem kênh YouTube',
+	'VIEW_GOOGLEPLUS_PROFILE' => 'Xem hồ sơ trên Google+',
 ));
-
-?>

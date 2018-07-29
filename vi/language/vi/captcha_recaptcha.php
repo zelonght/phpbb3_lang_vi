@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* recaptcha [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: captcha_recaptcha.php 9933 2009-08-06 09:12:21Z marshalrusty $
-* @copyright (c) 2009 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -40,6 +41,7 @@ $lang = array_merge($lang, array(
 	'RECAPTCHA_NOT_AVAILABLE'		=> 'Ðể sử dụng reCaptcha, bạn cần tạo một tài khoản tại <a href="http://recaptcha.net">reCaptcha.net</a>.',
 	'CAPTCHA_RECAPTCHA'				=> 'reCaptcha',
 	'RECAPTCHA_INCORRECT'			=> 'Thông tin hình ảnh bạn nhập chưa chính xác',
+	'RECAPTCHA_NOSCRIPT'			=> 'Please enable JavaScript in your browser to load the challenge.',
 
 	'RECAPTCHA_PUBLIC'				=> 'Mã reCaptcha công cộng',
 	'RECAPTCHA_PUBLIC_EXPLAIN'		=> 'Mã reCaptcha công cộng của bạn. Mã này có thể đăng ký tại trang web <a href="http://recaptcha.net">reCaptcha.net</a>.',
@@ -48,5 +50,3 @@ $lang = array_merge($lang, array(
 
 	'RECAPTCHA_EXPLAIN'				=> 'Để chắc rằng bạn không phải là các máy đăng ký tự động, cảm phiền bạn nhập vào hai chữ nhìn thấy vào trong ô bên duới.',
 ));
-
-?>

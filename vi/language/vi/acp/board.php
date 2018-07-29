@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_board [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: board.php,v 1.65 2010/08/25 11:14:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -38,18 +39,29 @@ if (empty($lang) || !is_array($lang))
 // Board Settings
 $lang = array_merge($lang, array(
 	'ACP_BOARD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể xác định một vài cơ chế hoạt động đơn giản của hệ thống, từ tên và giới thiệu thích hợp về website cho đến thay đổi những thiết lập khác trong hệ thống như điều chỉnh giá trị mặc định về múi giờ và ngôn ngữ.',
+	'BOARD_INDEX_TEXT' => 'Văn bản chỉ mục của bảng',
+	'BOARD_INDEX_TEXT_EXPLAIN' => 'Văn bản này được hiển thị dưới dạng chỉ mục bảng trong đường dẫn của bảng. Nếu không được chỉ định, nó sẽ mặc định thành “Chỉ mục bảng”. ',
+	'BOARD_STYLE' => 'Kiểu bảng',
 	'CUSTOM_DATEFORMAT'				=> 'Tuỳ chọn…',
 	'DEFAULT_DATE_FORMAT'			=> 'Định dạng ngày tháng',
 	'DEFAULT_DATE_FORMAT_EXPLAIN'	=> 'Sử dụng cú pháp giống như hàm <code>date()</code> trong PHP.',
 	'DEFAULT_LANGUAGE'				=> 'Ngôn ngữ mặc định',
 	'DEFAULT_STYLE'					=> 'Giao diện mặc định',
+	'DEFAULT_STYLE_EXPLAIN'			=> 'Kiểu mặc định cho người dùng mới.',
 	'DISABLE_BOARD'					=> 'Ngưng hoạt động hệ thống',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Tuỳ chọn này sẽ ngưng hoạt động của hệ thống đối với các thành viên. Bạn cũng có nhập vào một tin nhắn giới hạn trong <strong>255</strong> ký tự hiển thị như thông báo ngưng hoạt động của hệ thống nếu muốn.',
+	'DISPLAY_LAST_SUBJECT' => 'Hiển thị chủ đề của bài đăng được thêm gần đây nhất trên danh sách diễn đàn',
+	'DISPLAY_LAST_SUBJECT_EXPLAIN' => 'Chủ đề của bài viết được thêm gần đây nhất sẽ được hiển thị trong danh sách diễn đàn với một siêu liên kết đến bài đăng. Các chủ đề từ diễn đàn và diễn đàn được bảo vệ bằng mật khẩu mà người dùng không có quyền truy cập đọc sẽ không được hiển thị. ',
+	'GUEST_STYLE' => 'Kiểu khách',
+	'GUEST_STYLE_EXPLAIN' => 'Kiểu bảng cho khách.',
 	'OVERRIDE_STYLE'				=> 'Thay thế cho giao diện lựa chọn của thành viên',
 	'OVERRIDE_STYLE_EXPLAIN'		=> 'Tuỳ chọn thay thế toàn bộ những giao diện đã được các thành viên lựa chọn bằng giao diện mặc định duy nhất của hệ thống.',
 	'SITE_DESC'						=> 'Giới thiệu về website',
+	'SITE_HOME_TEXT' => 'Văn bản trang web chính',
+	'SITE_HOME_TEXT_EXPLAIN' => 'Văn bản này sẽ được hiển thị dưới dạng liên kết đến trang chủ trang web của bạn trong đường dẫn của bảng. Nếu không được chỉ định, nó sẽ mặc định là "Nhà". ',
+	'SITE_HOME_URL' => 'URL trang web chính',
+	'SITE_HOME_URL_EXPLAIN' => 'Nếu được chỉ định, liên kết tới URL này sẽ được thêm vào đường dẫn của bảng và biểu trưng của bảng sẽ liên kết với URL này thay vì chỉ mục diễn đàn. Yêu cầu URL tuyệt đối, ví dụ: <samp> http://www.phpbb.com </ samp>. ',
 	'SITE_NAME'						=> 'Tên website',
-	'SYSTEM_DST'					=> 'Bật chế độ giờ mùa hè/DST (Daylight Saving Time)',
 	'SYSTEM_TIMEZONE'				=> 'Múi giờ hệ thống',
 	'SYSTEM_TIMEZONE_EXPLAIN'		=> 'Múi giờ hệ thống dùng để hiển thị thời gian của thành viên chưa đăng nhập (khách, các máy tìm kiếm). Thành viên đăng nhập thiết đặt múi giờ lúc đăng ký và có thể thay đổi nó trong bạn điều khiển cá nhân mình.',
 	'WARNINGS_EXPIRE'				=> 'Cảnh cáo trong vòng',
@@ -87,6 +99,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_TOPIC_NOTIFY'		=> 'Cho phép theo dõi chủ đề',
 	'BOARD_PM'					=> 'Cho phép gửi tin nhắn',
 	'BOARD_PM_EXPLAIN'			=> 'Tuỳ chọn kích hoạt hay vô hiệu chức năng gửi tin nhắn trong hệ thống đối với tất cả thành viên.',
+	'ALLOW_BOARD_NOTIFICATIONS' => 'Cho phép thông báo trên bảng',
 ));
 
 // Avatar Settings
@@ -95,6 +108,7 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_AVATARS'					=> 'Cho phép sử dụng ảnh đại diện',
 	'ALLOW_AVATARS_EXPLAIN'			=> 'Cho phép sử dụng ;<br />Nếu không cho phép dùng ảnh đại diện trên toàn hệ thống hay ảnh đại diện đối với một số chế độ nào đó, các ảnh đại diện sẽ không được hiển thị, tuy nhiên thành viên vẫn có thể tải về ảnh các đại diện trong Trang quản trị của thành viên đó.',
+	'ALLOW_GRAVATAR'				=> 'Bật hình đại diện gravatar',
 	'ALLOW_LOCAL'					=> 'Cho phép sử dụng thư viện hình đại diện',
 	'ALLOW_REMOTE'					=> 'Cho phép liên kết hình đại diện',
 	'ALLOW_REMOTE_EXPLAIN'			=> 'Tuỳ chọn cho phép thành viên sử dụng hình đại diện được liên kết từ những website khác.',
@@ -147,6 +161,8 @@ $lang = array_merge($lang, array(
 	'ACP_POST_SETTINGS_EXPLAIN'			=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với chức năng gửi bài viết trong hệ thống.',
 	'ALLOW_POST_LINKS'					=> 'Cho phép sử dụng liên kết trong bài viết/tin nhắn',
 	'ALLOW_POST_LINKS_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[URL]</code> và các địa chỉ URL khác trong bài viết/tin nhắn sẽ không được hiển thị như liên kết.',
+	'ALLOWED_SCHEMES_LINKS' => 'Đề án được phép trong liên kết',
+	'ALLOWED_SCHEMES_LINKS_EXPLAIN' => 'Người dùng chỉ có thể đăng các URL không có sơ đồ hoặc một trong danh sách các lược đồ được phép được phân cách bằng dấu phẩy.',
 	'ALLOW_POST_FLASH'					=> 'Cho phép sử dụng thẻ BBCode <code>[FLASH]</code> trong bài viết',
 	'ALLOW_POST_FLASH_EXPLAIN'			=> 'Nếu bạn vô hiệu tùy chọn này, thẻ BBCode <code>[FLASH]</code> sẽ bị vô hiệu trong các bài viết. Mặc khác, những thiết lập cấp phép cũng quyết định việc thành viên có thể sử dụng được thẻ BBCode <code>[FLASH]</code> hay không.',
 
@@ -209,6 +225,7 @@ $lang = array_merge($lang, array(
 
 	'ACC_ACTIVATION'				=> 'Kích hoạt tài khoản',
 	'ACC_ACTIVATION_EXPLAIN'		=> 'Tuỳ chọn này cho phép bạn quyết định cách thức kích hoạt tài khoản thành viên khi đăng ký mới. Bạn cũng có thể cho ngưng đăng ký thành viên mới với tuỳ chọn này.',
+	'ACC_ACTIVATION_WARNING' => 'Xin lưu ý rằng phương pháp kích hoạt hiện được chọn yêu cầu bật email, nếu không đăng ký sẽ bị vô hiệu hóa. Chúng tôi khuyên bạn nên chọn một phương thức kích hoạt khác hoặc có thể kích hoạt lại email. ',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Giới hạn gửi bài thành viên mới',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Thành viên mới trong nhóm <em>Thành viên mới đăng ký</em> cho tới khi họ đạt một số giới hạn về bài viết. Bạn có thể dùng nhóm này để hạn chế họ trong việc sử dụng Tin nhắn riêng để dễ dàng kiểm tra Tin nhắn riêng. <strong>Đặt giá trị này thành 0 để vô hiệu chức năng này.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Thiết đặt nhóm Thành viên mới đăng ký thành mặc định',
@@ -289,6 +306,7 @@ $lang = array_merge($lang, array(
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
 	'ACP_VC_SETTINGS_EXPLAIN'		=> 'Với công cụ này, bạn có thể thay đổi những thiết lập mặc định đối với mã xác nhận và cơ chế đồ họa của mã xác nhận CAPTCHA này trong hệ thống.',
+	'ACP_VC_EXT_GET_MORE' => 'Để có thêm các plugin chống spam bổ sung (và có thể tốt hơn), hãy truy cập <a href="https://www.phpbb.com/go/anti-spam-ext"> <strong> phpBB.com Cơ sở dữ liệu tiện ích mở rộng </strong> </a>. Để biết thêm thông tin về cách ngăn spam trên diễn đàn của bạn, hãy truy cập <a href="https://www.phpbb.com/go/anti-spam"> <strong> Cơ sở Kiến thức phpBB.com </strong> </a> . ',
 	'AVAILABLE_CAPTCHAS'					=> 'Các plugin có thể dùng',
 	'CAPTCHA_UNAVAILABLE'					=> 'CAPTCHA này không chọn được vì hệ thống chưa đáp ứng được các yêu cầu của nó.',
 	'CAPTCHA_GD'							=> 'Mã xác nhận GD CAPTCHA',
@@ -313,19 +331,20 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_PREVIEW_MSG'			=> 'Những thay đổi của bạn về thiết lập mã xác nhận không được lưu lại. Bởi vì đây chỉ là công cụ xem trước kết quả của mã xác nhận.',
 	'CAPTCHA_PREVIEW_EXPLAIN'		=> 'Mã xác nhận CAPTCHA sẽ được hiển thị giống với những thiết lập hiện tại. Bạn hãy bấm vào nút xem trước để nạp lại hình. Lưu ý bạn rằng những mã xác nhận CAPTCHA này được tạo ra ngẫu nhiên và sẽ khác biệt sau mỗi lần nạp lại.',
 
-	'CAPTCHA_SELECT'						=> 'Installed CAPTCHA plugins',
-	'CAPTCHA_SELECT_EXPLAIN'				=> 'The dropdown holds the CAPTCHA plugins recognized by the board. Gray entries are not available right now and might need configuration prior to use.',
-	'CAPTCHA_CONFIGURE'						=> 'Configure CAPTCHAs',
-	'CAPTCHA_CONFIGURE_EXPLAIN'				=> 'Change the settings for the selected CAPTCHA.',
-	'CONFIGURE'								=> 'Configure',
-	'CAPTCHA_NO_OPTIONS'					=> 'This CAPTCHA has no configuration options.',
+	'CAPTCHA_SELECT' => 'Plugin đã cài đặt',
+	'CAPTCHA_SELECT_EXPLAIN' => 'Trình đơn thả xuống chứa các plugin được bảng ghi nhận. Các mục nhập màu xám không khả dụng ngay bây giờ và có thể cần cấu hình trước khi sử dụng. ',
+	'CAPTCHA_CONFIGURE' => 'Cấu hình plugin',
+	'CAPTCHA_CONFIGURE_EXPLAIN' => 'Thay đổi cài đặt cho plugin đã chọn.',
+	'CONFIGURE' => 'Cấu hình',
+	'CAPTCHA_NO_OPTIONS' => 'Plugin này không có tùy chọn cấu hình.',
 
 	'VISUAL_CONFIRM_POST'			=> 'Bật mã xác nhận khi khách gửi bài',
 	'VISUAL_CONFIRM_POST_EXPLAIN'	=> 'Tuỳ chọn yêu cầu khách khi gửi bài phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc gửi bài viết tự động hàng loạt vào hệ thống.',
-	'VISUAL_CONFIRM_REG'			=> 'Bật mã xác nhận khi đăng ký thành viên',
-	'VISUAL_CONFIRM_REG_EXPLAIN'	=> 'Tuỳ chọn yêu cầu các thành viên mới khi đăng ký phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc đăng ký thành viên tự động hàng loạt vào hệ thống.',
-	'VISUAL_CONFIRM_REFRESH'				=> 'Enable users to refresh the confirmation image',
-	'VISUAL_CONFIRM_REFRESH_EXPLAIN'		=> 'Allows users to request new confirmation codes, if they are unable to solve the VC during registration. Some plugins might not support this option.',
+	
+	'VISUAL_CONFIRM_REG'					=> 'Bật mã xác nhận khi đăng ký thành viên',
+	'VISUAL_CONFIRM_REG_EXPLAIN'			=> 'Tuỳ chọn yêu cầu các thành viên mới khi đăng ký phải nhập vào một đoạn mã xác nhận trong hình ảnh được tạo ra ngẫu nhiên để ngăn chặn việc đăng ký thành viên tự động hàng loạt vào hệ thống.',
+	'VISUAL_CONFIRM_REFRESH'				=> 'Cho phép người dùng làm mới tác vụ chống spambot',
+	'VISUAL_CONFIRM_REFRESH_EXPLAIN'		=> 'Cho phép người dùng yêu cầu tác vụ chống spam mới nếu họ không thể giải quyết tác vụ hiện tại trong quá trình đăng ký. Một số plugin có thể không hỗ trợ tùy chọn này.',
 ));
 
 // Cookie Settings
@@ -333,8 +352,13 @@ $lang = array_merge($lang, array(
 	'ACP_COOKIE_SETTINGS_EXPLAIN'		=> 'Những thiết lập bên dưới được sử dụng để gửi cookie đến trình duyệt của khách ghé thăm website. Trong hều hết các trường hợp, bạn nên sử dụng giá trị mặc định của cookie và đừng thay đổi chúng nếu không đủ khả năng quản lý hay không thực sự cần thiết. Nếu bạn thực sự cần thay đổi giá trị mặc định, hãy cẩn thận vì những thiết lập không chính xác sẽ ngăn cản thành viên đăng nhập vào hệ thống.',
 
 	'COOKIE_DOMAIN'				=> 'Tên miền cookie',
-	'COOKIE_NAME'				=> 'Tên cookie',
-	'COOKIE_PATH'				=> 'Đường dẫn cookie',
+	'COOKIE_DOMAIN_EXPLAIN' => 'Trong hầu hết các trường hợp, miền cookie là tùy chọn. Để trống nếu bạn không chắc chắn. <br> <br> Trong trường hợp bạn có một bảng tích hợp với phần mềm khác hoặc có nhiều tên miền, thì để xác định miền cookie bạn cần làm như sau. Nếu bạn có một cái gì đó như <i> example.com </ i> và <i> forums.example.com </ i> hoặc có lẽ <i> forums.example.com </ i> và <i> blog.example .com </ i> Xóa các tên miền phụ cho đến khi bạn tìm thấy miền chung, <i> example.com </ i>. Bây giờ thêm một dấu chấm ở phía trước của tên miền phổ biến và bạn sẽ nhập .example.com (lưu ý dấu chấm ở đầu). ',
+	'COOKIE_NAME' => 'Tên cookie',
+	'COOKIE_NAME_EXPLAIN' => 'Đây có thể là bất cứ điều gì bạn muốn, biến nó thành bản gốc. Bất cứ khi nào cài đặt cookie được thay đổi, tên của cookie sẽ được thay đổi. ',
+	'COOKIE_NOTICE' => 'Thông báo cookie',
+	'COOKIE_NOTICE_EXPLAIN' => 'Nếu bật thông báo cookie sẽ được hiển thị cho người dùng khi truy cập vào bảng của bạn. Điều này có thể được yêu cầu theo luật tùy thuộc vào nội dung của bảng của bạn và các tiện ích mở rộng đã bật. ',
+	'COOKIE_PATH' => 'Đường dẫn cookie',
+	'COOKIE_PATH_EXPLAIN' => 'Điều này thường sẽ giống như đường dẫn tập lệnh của bạn hoặc chỉ đơn giản là dấu gạch chéo để làm cho cookie có thể truy cập trên tên miền trang web.',
 	'COOKIE_SECURE'				=> 'Cookie bảo mật',
 	'COOKIE_SECURE_EXPLAIN'		=> 'Nếu máy chủ của bạn đang chạy SSL thì hãy bật tuỳ chọn này, còn nếu không thì hãy vô hiệu đi. Nếu như bạn bật tuỳ chọn này và máy chủ của bạn không chạy trên SSL thì kết quả là sẽ xảy ra lỗi trong suốt quá trình truy xuất đến máy chủ.',
 	'ONLINE_LENGTH'				=> 'Thời gian tính thành viên đang trực tuyến',
@@ -343,20 +367,42 @@ $lang = array_merge($lang, array(
 	'SESSION_LENGTH_EXPLAIN'	=> 'Số giây mà phiên đăng nhập có hiệu lực kể từ khi được tạo mới.',
 ));
 
+// Contact Settings
+$lang = array_merge($lang, array(
+	'ACP_CONTACT_SETTINGS_EXPLAIN' => 'Tại đây bạn có thể bật và tắt trang liên hệ và cũng thêm văn bản được hiển thị trên trang.',
+
+	'CONTACT_US_ENABLE' => 'Bật trang liên hệ',
+	'CONTACT_US_ENABLE_EXPLAIN' => 'Trang này cho phép người dùng gửi email cho ban quản trị. Xin lưu ý rằng tùy chọn email trên toàn cầu cũng phải được bật. Bạn có thể tìm thấy tùy chọn này trong Chung> Giao tiếp Khách hàng> Cài đặt email. ',
+
+	'CONTACT_US_INFO' => 'Thông tin liên hệ',
+	'CONTACT_US_INFO_EXPLAIN' => 'Thông báo được hiển thị trên trang liên hệ',
+	'CONTACT_US_INFO_PREVIEW' => 'Thông tin trang liên hệ - Xem trước',
+	'CONTACT_US_INFO_UPDATED' => 'Thông tin trang liên hệ đã được cập nhật.',
+));
+
 // Load Settings
 $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Với công cụ này, bạn có thể bật hay tắt những chức năng nhất định của hệ thống để giảm bớt số lượng xử lý được yêu cầu gửi đến máy chủ. Trên hều hết các máy chủ, bạn không cần thiết phải tắt bất kỳ chức năng nào của hệ thống tại đây. Tuy nhiên, trên một vài máy chủ nhất định hoặc các hệ thống sử dụng dịch vụ lưu trữ Web dùng chung với nhiều người khác trên cùng một máy chủ, việc tắt một vài chức năng không cần đến là rất hết sức cần thiết để giảm bớt khối lượng công việc xử lý cho máy chủ. Bạn cũng nên xác định giới hạn thời gian nạp hệ thống và số lượng phiên đăng nhập vượt quá để hệ thống tự động chuyển sang chế độ ngưng hoạt động kịp thời.',
-
+	
+	'ALLOW_CDN' => 'Cho phép sử dụng mạng phân phối nội dung của bên thứ ba',
+	'ALLOW_CDN_EXPLAIN' => 'Nếu cài đặt này được bật, một số tệp sẽ được phân phát từ máy chủ bên thứ ba bên ngoài thay vì máy chủ của bạn. Điều này làm giảm băng thông mạng được yêu cầu bởi máy chủ của bạn, nhưng có thể trình bày một vấn đề riêng tư đối với một số quản trị viên hội đồng quản trị. Trong cài đặt phpBB mặc định, điều này bao gồm tải "jQuery" và phông chữ "Open Sans" từ mạng phân phối nội dung của Google. ',
+	'ALLOW_LIVE_SEARCHES' => 'Cho phép tìm kiếm trực tiếp',
+	'ALLOW_LIVE_SEARCHES_EXPLAIN' => 'Nếu cài đặt này được bật, người dùng được cung cấp các đề xuất từ khóa khi họ nhập vào các trường nhất định trong toàn bộ bảng.',
 	'CUSTOM_PROFILE_FIELDS'			=> 'Mục thông tin cá nhân tuỳ biến',
 	'LIMIT_LOAD'					=> 'Giới hạn thời gian nạp hệ thống',
 	'LIMIT_LOAD_EXPLAIN'			=> 'Nếu trong vòng một phút hệ thống nạp trung bình vượt quá giá trị được thiết lập này thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Giá trị 1.0 gần bằng ~100% tài nguyên được sử dụng của một bộ xử lý máy chủ. Chức năng này chỉ có tác dụng trên các máy chủ UNIX và chỉ trên những máy chủ này, thời gian giới hạn được thiết lập mới có thể sử dụng được. Giá trị này sẽ xác lập lại chính nó thành <strong>0</strong> nếu hệ thống phpBB không thể nhận được giới hạn nạp.',
 	'LIMIT_SESSIONS'				=> 'Giới hạn số phiên đăng nhập',
 	'LIMIT_SESSIONS_EXPLAIN'		=> 'Nếu số lượng phiên đăng nhập vượt quá giá trị được thiết lập này trong quãng thời gian một phút thì hệ thống sẽ tự động chuyển sang chế độ ngưng hoạt động. Nhập vào số <strong>0</strong> để không hạn chế số phiên đăng nhập.',
 	'LOAD_CPF_MEMBERLIST'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong danh sách thành viên',
+	'LOAD_CPF_PM' => 'Hiển thị trường tiểu sử tùy chỉnh trong thư cá nhân',
 	'LOAD_CPF_VIEWPROFILE'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang thông tin cá nhân',
 	'LOAD_CPF_VIEWTOPIC'			=> 'Hiển thị các mục thông tin cá nhân tuỳ biến trong trang xem chủ đề',
 	'LOAD_USER_ACTIVITY'			=> 'Hiển thị những hoạt động của thành viên',
 	'LOAD_USER_ACTIVITY_EXPLAIN'	=> 'Hiển thị những chuyên mục/chủ đề không bị khoá trong phần thông tin cá nhân của thành viên và trong bảng điều khiển của thành viên. Chúng tôi khuyên bạn nên tắt tuỳ chọn này trên các diễn đàn có từ một triệu bài viết trở lên.',
+	'LOAD_USER_ACTIVITY_LIMIT' => 'Giới hạn bài đăng hoạt động của người dùng',
+	'LOAD_USER_ACTIVITY_LIMIT_EXPLAIN' => 'Chủ đề / diễn đàn hiện hoạt sẽ không được hiển thị cho người dùng có nhiều hơn số lượng bài đăng này. Đặt thành 0 để tắt giới hạn. ',
+	'READ_NOTIFICATION_EXPIRE_DAYS' => 'Đọc hết hạn thông báo',
+	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Số ngày sẽ trôi qua trước khi thông báo đã đọc sẽ tự động bị xóa. Đặt giá trị này thành 0 để thực hiện thông báo vĩnh viễn. ',
 	'RECOMPILE_STYLES'				=> 'Biên dịch lại các thành phần giao diện đã cũ',
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'Kiểm tra những thành phần giao diện đã được cập nhật trong hệ thống tập tin giao diện và biên dịch lại.',
 	'YES_ANON_READ_MARKING'			=> 'Bật đánh dấu chủ đề cho khách',
@@ -384,27 +430,34 @@ $lang = array_merge($lang, array(
 
 	'AUTH_METHOD'				=> 'Chọn phương pháp xác thực',
 
+	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING' => 'Cả khóa và bí mật của từng nhà cung cấp dịch vụ OAuth được bật phải được cung cấp. Chỉ một người được cung cấp cho nhà cung cấp dịch vụ OAuth. ',
+	'AUTH_PROVIDER_OAUTH_EXPLAIN' => 'Mỗi nhà cung cấp OAuth yêu cầu một bí mật và khóa duy nhất để xác thực với máy chủ bên ngoài. Những dịch vụ này phải được cung cấp bởi dịch vụ OAuth khi bạn đăng ký trang web của bạn với họ và phải được nhập chính xác như được cung cấp cho bạn. <br> Bất kỳ dịch vụ nào không có cả khóa và bí mật được nhập tại đây sẽ không có sẵn để sử dụng bởi người dùng diễn đàn. Cũng lưu ý rằng người dùng đó vẫn có thể đăng ký và đăng nhập bằng trình cắm thêm xác thực DB. ',
+	'AUTH_PROVIDER_OAUTH_KEY' => 'Khóa',
+	'AUTH_PROVIDER_OAUTH_TITLE' => 'OAuth',
+	'AUTH_PROVIDER_OAUTH_SECRET' => 'Bí mật',
+	
 	'APACHE_SETUP_BEFORE_USE'	=> 'Bạn phải cài đặt bộ xác thực cho Apache trước khi bạn chuyển đổi hệ thống đến phương pháp xác thực này. Cần lưu ý rằng tên tài khoản bạn sử dụng cho phương pháp xác thực này của Apache phải giống với tài khoản thành viên của bạn trong hệ thống. Việc xác thực bằng Apache chỉ có thể sử dụng được nếu <samp>mod_php</samp> (không phải phiên bản CGI) và <samp>safe_mode</samp> đã được vô hiệu trên máy chủ.',
 
-	'LDAP_DN'						=> 'Tên LDAP <var>dn</var>',
-	'LDAP_DN_EXPLAIN'				=> 'Đây là tên định danh LDAP, xác định thông tin về thành viên, ví dụ như <samp>o=My Company,c=US</samp>.',
-	'LDAP_EMAIL'					=> 'Thuộc tính địa chỉ Email LDAP',
-	'LDAP_EMAIL_EXPLAIN'			=> 'Thiết lập tên thuộc tính cho địa chỉ Email của các thành viên nếu bạn đã có sẵn để thiết lập tự động địa chỉ Email cho các thành viên mới. Để trống phần này cũng sẽ bỏ trống kết quả trong địa chỉ Email cho các thành viên đã đăng nhập lần đầu vào hệ thống.',
-	'LDAP_INCORRECT_USER_PASSWORD'	=> 'Việc liên kết đến máy chủ LDAP đã thất bại với tên thành viên/mật khẩu mà bạn đã xác định.',
-	'LDAP_NO_EMAIL'					=> 'Thuộc tính của địa chỉ Email bạn vừa xác định không tồn tại.',	
-	'LDAP_NO_IDENTITY'				=> 'Không thể tìm khoá định danh đăng nhập cho <strong>%s</strong>.',
-	'LDAP_PASSWORD'					=> 'Mật khẩu LDAP',
-	'LDAP_PASSWORD_EXPLAIN'			=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu máy chủ dịch vụ không cho phép truy cập ẩn danh, bạn hãy điền vào mật khẩu cho tài khoản LDAP tương ứng ở trên. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động. <strong>CẢNH BÁO:</strong> Mật khẩu này sẽ được lưu trữ dưới dạng văn bản thuần trong cơ sở dữ liệu, vì thế nó có thể bị xem bởi bất kỳ ai có quyền truy cập vào cơ sở dữ liệu của bạn hoặc được phép xem trang cấu hình này.',
-	'LDAP_PORT'						=> 'Cổng máy chủ LDAP',
-	'LDAP_PORT_EXPLAIN'				=> 'Tùy chọn này cho phép bạn có thể xác định một cổng khác được sử dụng để kết nối đến máy chủ LDAP thay vì dùng cổng mặc định là <strong>389</strong>.',
-	'LDAP_SERVER'					=> 'Địa chỉ máy chủ LDAP',
-	'LDAP_SERVER_EXPLAIN'			=> 'Nếu bạn chọn sử dụng LDAP thì nhập vào đây tên miền hoặc địa chỉ của máy chủ LDAP. Cách khác, bạn có thể xác định một địa chỉ URL dạng <samp>ldap://tên_miền:cổng_máy_chủ/</samp>',
-	'LDAP_UID'						=> 'Khoá LDAP <var>uid</var>',
-	'LDAP_UID_EXPLAIN'				=> 'Đây là khoá tìm kiếm một định danh đăng nhập được cung cấp, ví dụ như <var>uid</var>, <var>sn</var>…',
-	'LDAP_USER'						=> 'Tên tài khoản LDAP <var>dn</var>',
-	'LDAP_USER_EXPLAIN'				=> 'Để trống phần này để sử dụng liên kết ẩn danh. Nếu bạn đã điền vào mục này, hệ thống sẽ sử dụng tên khác biệt đã xác định cho các thao tác đăng nhập để tìm ra tên tài khoản chính xác, ví dụ <samp>uid=Username, ou=MyUnit, o=MyCompany, c=US</samp>. Mục này được yêu cầu cho các thư mục máy chủ đang hoạt động.',
-	'LDAP_USER_FILTER'				=> 'Bộ lọc tên tài khoản LDAP',
-	'LDAP_USER_FILTER_EXPLAIN'		=> 'Tùy chọn này cho phép bạn có thể giới hạn thêm những đối tượng được tìm kiếm với các bộ lọc bổ sung. Ví dụ như <samp>objectClass=posixGroup</samp> sẽ cho ra kết quả sử dụng là <samp>(&(uid=$username)(objectClass=posixGroup))</samp>',
+	'LDAP'							=> 'LDAP',
+	'LDAP_DN'						=> 'LDAP base <var>dn</var>',
+	'LDAP_DN_EXPLAIN'				=> 'This is the Distinguished Name, locating the user information, e.g. <samp>o=My Company,c=US</samp>.',
+	'LDAP_EMAIL'					=> 'LDAP email attribute',
+	'LDAP_EMAIL_EXPLAIN'			=> 'Set this to the name of your user entry email attribute (if one exists) in order to automatically set the email address for new users. Leaving this empty results in empty email address for users who log in for the first time.',
+	'LDAP_INCORRECT_USER_PASSWORD'	=> 'Binding to LDAP server failed with specified user/password.',
+	'LDAP_NO_EMAIL'					=> 'The specified email attribute does not exist.',
+	'LDAP_NO_IDENTITY'				=> 'Could not find a login identity for %s.',
+	'LDAP_PASSWORD'					=> 'LDAP password',
+	'LDAP_PASSWORD_EXPLAIN'			=> 'Leave blank to use anonymous binding, otherwise fill in the password for the above user. Required for Active Directory Servers.<br><em><strong>Warning:</strong> This password will be stored as plain text in the database, visible to everybody who can access your database or who can view this configuration page.</em>',
+	'LDAP_PORT'						=> 'LDAP server port',
+	'LDAP_PORT_EXPLAIN'				=> 'Optionally you can specify a port which should be used to connect to the LDAP server instead of the default port 389.',
+	'LDAP_SERVER'					=> 'LDAP server name',
+	'LDAP_SERVER_EXPLAIN'			=> 'If using LDAP this is the hostname or IP address of the LDAP server. Alternatively you can specify an URL like ldap://hostname:port/',
+	'LDAP_UID'						=> 'LDAP <var>uid</var>',
+	'LDAP_UID_EXPLAIN'				=> 'This is the key under which to search for a given login identity, e.g. <var>uid</var>, <var>sn</var>, etc.',
+	'LDAP_USER'						=> 'LDAP user <var>dn</var>',
+	'LDAP_USER_EXPLAIN'				=> 'Leave blank to use anonymous binding. If filled in phpBB uses the specified distinguished name on login attempts to find the correct user, e.g. <samp>uid=Username,ou=MyUnit,o=MyCompany,c=US</samp>. Required for Active Directory Servers.',
+	'LDAP_USER_FILTER'				=> 'LDAP user filter',
+	'LDAP_USER_FILTER_EXPLAIN'		=> 'Optionally you can further limit the searched objects with additional filters. For example <samp>objectClass=posixGroup</samp> would result in the use of <samp>(&amp;(uid=$username)(objectClass=posixGroup))</samp>',
 ));
 
 // Server Settings
@@ -417,6 +470,10 @@ $lang = array_merge($lang, array(
 	'FORCE_SERVER_VARS_EXPLAIN'	=> 'Nếu bật tuỳ chọn này, những thiết lập máy chủ đã được xác định trong phần này sẽ được sử dụng như những giá trị đã được thiết lập tự động.',
 	'ICONS_PATH'				=> 'Thư mục biểu tượng bài viết',
 	'ICONS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa biểu tượng bài viết trong hệ thống, ví dụ như <samp>images/icons</samp>.',
+	'MOD_REWRITE_ENABLE' => 'Bật ghi đè URL',
+	'MOD_REWRITE_ENABLE_EXPLAIN' => 'Khi được bật, các URL chứa\' app.php \'sẽ được viết lại để xóa tên tệp (ví dụ: app.php / foo sẽ trở thành / foo). <strong> Mô-đun mod_rewrite của máy chủ Apache là bắt buộc để chức năng này hoạt động; nếu tùy chọn này được bật mà không có hỗ trợ mod_rewrite, các URL trên bảng của bạn có thể bị hỏng. </strong> ',
+	'MOD_REWRITE_DISABLED' => 'Mô-đun <strong> mod_rewrite </strong> trên máy chủ web Apache của bạn bị tắt. Bật mô-đun hoặc liên hệ với nhà cung cấp dịch vụ lưu trữ web của bạn nếu bạn muốn bật tính năng này. ',
+	'MOD_REWRITE_INFORMATION_UNAVAILABLE' => 'Chúng tôi không thể xác định máy chủ này có hỗ trợ viết lại URL hay không. Cài đặt này có thể được bật nhưng nếu không có viết lại URL, đường dẫn được tạo bởi bảng này (chẳng hạn như để sử dụng trong liên kết) có thể bị hỏng. Liên hệ với nhà cung cấp dịch vụ lưu trữ web của bạn nếu bạn không chắc chắn liệu bạn có thể bật tính năng này một cách an toàn hay không. ',
 	'PATH_SETTINGS'				=> 'Thiết lập đường dẫn đến thư mục',
 	'RANKS_PATH'				=> 'Thư mục hình xếp hạng',
 	'RANKS_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa hình xếp hạng trong hệ thống, ví dụ như <samp>images/ranks</samp>.',
@@ -433,6 +490,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_PATH_EXPLAIN'		=> 'Đường dẫn đến thư mục chứa biểu tượng vui trong hệ thống, ví dụ như <samp>images/smilies</samp>.',
 	'UPLOAD_ICONS_PATH'			=> 'Thư mục biểu tượng tập tin',
 	'UPLOAD_ICONS_PATH_EXPLAIN'	=> 'Đường dẫn đến thư mục chứa biểu tượng tập tin trong hệ thống, ví dụ như <samp>images/upload_icons</samp>.',
+	'USE_SYSTEM_CRON' => 'Chạy các tác vụ định kỳ từ hệ thống cron',
+	'USE_SYSTEM_CRON_EXPLAIN' => 'Khi tắt, phpBB sẽ sắp xếp các tác vụ định kỳ được chạy tự động. Khi bật, phpBB sẽ không tự lên lịch bất kỳ nhiệm vụ định kỳ nào; người quản trị hệ thống phải sắp xếp cho <code> bin / phpbbcli.php cron: run </ code> để chạy bởi cron hệ thống theo chu kỳ đều đặn (ví dụ: cứ sau 5 phút). ',
 ));
 
 // Security Settings
@@ -442,6 +501,8 @@ $lang = array_merge($lang, array(
 	'ALL'							=> 'Tất cả',
 	'ALLOW_AUTOLOGIN'				=> 'Cho phép đăng nhập tự động',
 	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Tuỳ chọn cho phép thành viên có thể đăng nhập tự động vào hệ thống khi họ ghé thăm website.',
+	'ALLOW_PASSWORD_RESET' => 'Cho phép đặt lại mật khẩu ("Quên mật khẩu")',
+	'ALLOW_PASSWORD_RESET_EXPLAIN' => 'Xác định xem người dùng có thể sử dụng liên kết "Tôi quên mật khẩu của tôi" trên trang đăng nhập để khôi phục tài khoản của họ hay không. Nếu bạn sử dụng cơ chế xác thực bên ngoài, bạn có thể muốn tắt tính năng này. ',
 	'AUTOLOGIN_LENGTH'				=> 'Số ngày hết hạn khoá đăng nhập tự động',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Số ngày kể từ lần ghé thăm trước của thành viên, khoá đăng nhập tự động sẽ hết hạn. Nhập vào số <strong>0</strong> để vô hiệu chức năng này.',
 	'BROWSER_VALID'					=> 'Kiểm tra trình duyệt',
@@ -480,10 +541,12 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_SYMBOL'				=> 'Phải sử dụng ký hiệu',
 	'REF_HOST'						=> 'Chỉ xác minh host',
 	'REF_PATH'						=> 'Xác minh cả đường dẫn',
-	'REFERER_VALID'					=> 'Xác minh Referer',
-	'REFERER_VALID_EXPLAIN'			=> 'Nếu hiệu lực, referer của những lần POST thông tin sẽ bị kiểm tra xác minh host/script path. Điều này có thể gây ra trở ngại đối với các hệ thống dùng nhiều tên miền hay dùng hệ thống đăng nhập ngoài.',
+	'REFERRER_VALID'					=> 'Xác minh Referer',
+	'REFERRER_VALID_EXPLAIN'			=> 'Nếu hiệu lực, referer của những lần POST thông tin sẽ bị kiểm tra xác minh host/script path. Điều này có thể gây ra trở ngại đối với các hệ thống dùng nhiều tên miền hay dùng hệ thống đăng nhập ngoài.',
 	'TPL_ALLOW_PHP'					=> 'Cho phép sử dụng mã PHP trong các tập tin khuôn mẫu',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Nếu tuỳ chọn này được bật, các lệnh <code>PHP</code> và <code>INCLUDEPHP</code> sẽ có thể được sử dụng và biên dịch trong các tập tin khuôn mẫu.',
+	'UPLOAD_CERT_VALID' => 'Xác thực chứng chỉ tải lên',
+	'UPLOAD_CERT_VALID_EXPLAIN' => 'Nếu được bật, chứng chỉ tải lên từ xa sẽ được xác thực. Điều này đòi hỏi bó CA phải được xác định bởi cài đặt <samp> openssl.cafile </ samp> hoặc <samp> curl.cainfo </ samp> trong tệp php.ini của bạn. ',
 ));
 
 // Email Settings
@@ -498,6 +561,10 @@ $lang = array_merge($lang, array(
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Tuỳ chọn ẩn toàn bộ địa chỉ Email cá nhân trong website.',
 	'CONTACT_EMAIL'					=> 'Địa chỉ Email liên hệ',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Địa chỉ Email này được sử dụng khi có việc cần liên hệ, ví dụ như vấn đề thư rác, có lỗi xảy ra… Nó sẽ luôn luôn được sử dụng trong phần thông tin <samp>Gửi từ</samp> và <samp>Trả lời đến địa chỉ</samp> của các Email.',
+	'CONTACT_EMAIL_NAME' => 'Tên liên hệ',
+	'CONTACT_EMAIL_NAME_EXPLAIN' => 'Đây là tên liên lạc mà người nhận e-mail sẽ thấy. Nếu bạn không muốn có tên liên hệ, hãy để trống trường này. ',
+	'EMAIL_FORCE_SENDER' => 'Bắt buộc từ địa chỉ email',
+	'EMAIL_FORCE_SENDER_EXPLAIN' => 'Điều này sẽ đặt <samp> Return-Path </ samp> thành địa chỉ email thay vì sử dụng tên người dùng cục bộ và tên máy chủ của máy chủ. Cài đặt này không áp dụng khi sử dụng SMTP. <br> <em> <strong> Cảnh báo: </strong> Yêu cầu người dùng máy chủ web chạy để được thêm làm người dùng đáng tin cậy vào cấu hình sendmail. </ Em> ',
 	'EMAIL_FUNCTION_NAME'			=> 'Tên hàm dùng để gửi Email',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Hàm chức năng PHP bạn muốn sử dụng để gửi Email.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Số lượng Email trong mỗi gói Email',
@@ -506,7 +573,11 @@ $lang = array_merge($lang, array(
 	'EMAIL_SIG_EXPLAIN'				=> 'Chữ ký được đính kèm trong tất cả các Email được gửi đi từ website.',
 	'ENABLE_EMAIL'					=> 'Bật chức năng gửi Email trong hệ thống',
 	'ENABLE_EMAIL_EXPLAIN'			=> 'Nếu tắt tuỳ chọn này, sẽ không có Email nào được gửi đi từ diễn đàn.',
-	'SMTP_AUTH_METHOD'				=> 'Chọn phương pháp xác thực cho SMTP',
+	'SEND_TEST_EMAIL' => 'Gửi email kiểm tra',
+	'SEND_TEST_EMAIL_EXPLAIN' => 'Thao tác này sẽ gửi một email thử nghiệm đến địa chỉ được xác định trong tài khoản của bạn.',
+	'SMTP_ALLOW_SELF_SIGNED' => 'Cho phép các chứng chỉ SSL tự ký',
+	'SMTP_ALLOW_SELF_SIGNED_EXPLAIN' => 'Cho phép kết nối với máy chủ SMTP với chứng chỉ SSL tự ký. <br> <em> <strong> Cảnh báo: </strong> Cho phép chứng chỉ SSL tự ký có thể gây ra các tác động bảo mật. </ em> ',
+	'SMTP_AUTH_METHOD' => 'Phương pháp xác thực cho SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Chỉ sử dụng nếu tên đăng nhập/mật khẩu xác thực đã được thiết lập. Hãy yêu cầu nhà cung cấp dịch vụ lưu trữ Web của bạn nếu bạn không chắc chắn phải chọn phương pháp nào.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
 	'SMTP_DIGEST_MD5'				=> 'DIGEST-MD5',
@@ -518,9 +589,16 @@ $lang = array_merge($lang, array(
 	'SMTP_PORT'						=> 'Cổng máy chủ SMTP',
 	'SMTP_PORT_EXPLAIN'				=> 'Chỉ thay đổi cổng máy chủ SMTP nếu bạn chắc chắn máy chủ SMTP của mình đang chạy trên cổng khác.',
 	'SMTP_SERVER'					=> 'Địa chỉ máy chủ SMTP',
+	'SMTP_SERVER_EXPLAIN' => 'Lưu ý rằng bạn phải cung cấp giao thức mà máy chủ của bạn sử dụng. Nếu bạn đang sử dụng SSL, điều này phải là "ssl: //your.mailserver.com" ',
 	'SMTP_SETTINGS'					=> 'Thiết lập SMTP',
 	'SMTP_USERNAME'					=> 'Tên đăng nhập SMTP',
 	'SMTP_USERNAME_EXPLAIN'			=> 'Chỉ nhập vào tên đăng nhập nếu máy chủ SMTP của bạn yêu cầu.',
+	'SMTP_VERIFY_PEER' => 'Xác minh chứng chỉ SSL',
+	'SMTP_VERIFY_PEER_EXPLAIN' => 'Yêu cầu xác minh chứng chỉ SSL được máy chủ SMTP sử dụng. <br> <em> <strong> Cảnh báo: </strong> Kết nối các đồng nghiệp với chứng chỉ SSL chưa được xác minh có thể gây ra các tác động bảo mật. </ em> ',
+	'SMTP_VERIFY_PEER_NAME' => 'Xác minh tên ngang hàng SMTP',
+	'SMTP_VERIFY_PEER_NAME_EXPLAIN' => 'Yêu cầu xác minh tên ngang hàng cho máy chủ SMTP sử dụng kết nối SSL / TLS. <br> <em> <strong> Cảnh báo: </strong> Kết nối với các đồng nghiệp chưa được xác minh có thể gây ra các tác động bảo mật. </ em> ',
+	'TEST_EMAIL_SENT' => 'Email thử nghiệm đã được gửi. <br> Nếu bạn không nhận được email, vui lòng kiểm tra cấu hình email của bạn. <br> <br> Nếu bạn cần hỗ trợ, vui lòng truy cập <a href = "https : //www.phpbb.com/community/ "> diễn đàn hỗ trợ phpBB </a>. ',
+	
 	'USE_SMTP'						=> 'Sử dụng máy chủ SMTP để gửi Email',
 	'USE_SMTP_EXPLAIN'				=> 'Bật tuỳ chọn này nếu bạn muốn gửi Email thông qua một tên miền thay cho hàm gửi Email của PHP.',
 ));
@@ -546,5 +624,3 @@ $lang = array_merge($lang, array(
 	'JAB_USERNAME'				=> 'Tên đăng nhập tài khoản Jabber',
 	'JAB_USERNAME_EXPLAIN'		=> 'Xác định một tài khoản đã đăng ký. Tên đăng nhập sẽ không được kiểm tra hợp lệ.',
 ));
-
-?>

@@ -1,23 +1,15 @@
 <?php
 /**
 *
-* groups [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: groups.php,v 1.17 2010/08/23 23:50:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
-
-
-
-
-
-
-
-
-
 
 /**
 * DO NOT CHANGE
@@ -101,5 +93,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Bạn có chắc chắn muốn giáng chức người lãnh đạo nhóm từ nhóm vừa chọn?',
 	'USER_GROUP_DEMOTED'		=> 'Đã giáng chức điều hành nhóm của bạn thành công.',
 ));
-
-?>

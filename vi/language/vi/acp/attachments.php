@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_attachments [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: attachments.php,v 1.19 2010/08/24 20:19:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -23,7 +24,7 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
+// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -62,15 +63,13 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'Dung lượng đính kèm tập tin tối đa cho phép sử dụng cấp cho mỗi thành viên trong tin nhắn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_ORPHAN_URL'					=> 'Tập tin đính kèm không được sử dụng',
 	'ATTACH_POST_ID'					=> 'Số ID bài viết',
+	'ATTACH_POST_TYPE'					=> 'Loại thư',	
 	'ATTACH_QUOTA'						=> 'Tổng dung lượng đính kèm tập tin',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Tổng dung lượng tối đa cho phép của tất cả các tập tin đính kèm trong diễn đàn. Nhập vào số <strong>0</strong> để không hạn chế dung lượng tập tin.',
 	'ATTACH_TO_POST'					=> 'Đính kèm tập tin vào bài viết',
 
 	'CAT_FLASH_FILES'			=> 'Nhóm tập tin Flash',
 	'CAT_IMAGES'				=> 'Nhóm tập tin hình ảnh',
-	'CAT_QUICKTIME_FILES'		=> 'Nhóm tập tin Quick Time Media',
-	'CAT_RM_FILES'				=> 'Nhóm tập tin Real Media',
-	'CAT_WM_FILES'				=> 'Nhóm tập tin Windows Media',
 	'CHECK_CONTENT'				=> 'Kiểm tra tập các tin đính kèm',
 	'CHECK_CONTENT_EXPLAIN'		=> 'Một vài trình duyệt nghiêm ngặt không cho tải lên các tập tin không đúng kiểu mimetype. Tùy chọn này nhằm từ chối những tập tin như vậy.',
 	'CREATE_GROUP'				=> 'Tạo nhóm tập tin mới',
@@ -85,30 +84,30 @@ $lang = array_merge($lang, array(
 	'DISPLAY_INLINED_EXPLAIN'		=> 'Nếu bạn tắt tuỳ chọn này, những hình ảnh được đính kèm sẽ hiển thị như liên kết.',
 	'DISPLAY_ORDER'					=> 'Hiển thị tập tin đính kèm theo thứ tự',
 	'DISPLAY_ORDER_EXPLAIN'			=> 'Hiển thị những tập tin đính kèm theo thứ tự thời gian.',
+
+	'EDIT_EXTENSION_GROUP'			=> 'Chỉnh sửa nhóm tiện ích mở rộng',
+	'EXCLUDE_ENTERED_IP' 			=> 'Kích hoạt tính năng này để loại trừ IP / tên máy chủ đã nhập.',
+	'EXCLUDE_FROM_ALLOWED_IP'		=> 'Loại trừ IP khỏi các IP / tên máy chủ được cho phép',
+	'EXCLUDE_FROM_DISALLOWED_IP'	=> 'Loại trừ IP khỏi IP / tên máy chủ không được phép',
+	'EXTENSIONS_UPDATED'			=> 'Tiện ích mở rộng được cập nhật thành công.',
+	'EXTENSION_EXIST'				=> 'Tiện ích %s đã tồn tại.',
+	'EXTENSION_GROUP'				=> 'Nhóm tiện ích mở rộng',
+	'EXTENSION_GROUPS'				=> 'Nhóm tiện ích mở rộng',
+	'EXTENSION_GROUP_DELETED'		=> 'Nhóm tiện ích mở rộng đã được xóa thành công.',
+	'EXTENSION_GROUP_EXIST'			=> 'Nhóm tiện ích %s đã tồn tại.',
+
+	'EXT_GROUP_ARCHIVES' 			=> 'Lưu trữ',
+	'EXT_GROUP_DOCUMENTS' 			=> 'Tài liệu',
+	'EXT_GROUP_DOWNLOADABLE_FILES' 	=> 'Tệp có thể tải xuống',
+	'EXT_GROUP_FLASH_FILES'			=> 'Tệp Flash',
+	'EXT_GROUP_IMAGES' 				=> 'Hình ảnh',
+	'EXT_GROUP_PLAIN_TEXT'			=> 'Văn bản thuần túy',
 	
-	'EDIT_EXTENSION_GROUP'			=> 'Sửa nhóm tập tin',
-	'EXCLUDE_ENTERED_IP'			=> 'Bật tuỳ chọn này để loại trừ những địa chỉ IP/tên miền được nhập vào.',
-	'EXCLUDE_FROM_ALLOWED_IP'		=> 'Loại trừ từ những địa chỉ IP/tên miền cho phép',
-	'EXCLUDE_FROM_DISALLOWED_IP'	=> 'Loại trừ từ những địa chỉ IP/tên miền đã cấm',
-	'EXTENSIONS_UPDATED'			=> 'Loại tập tin đã được cập nhật thành công.',
-	'EXTENSION_EXIST'				=> 'Loại tập tin “%s” đã được sử dụng.',
-	'EXTENSION_GROUP'				=> 'Nhóm tập tin',
-	'EXTENSION_GROUPS'				=> 'Nhóm tập tin',
-	'EXTENSION_GROUP_DELETED'		=> 'Nhóm tập tin đã được xoá thành công.',
-	'EXTENSION_GROUP_EXIST'			=> 'Nhóm tập tin “%s” đã được sử dụng.',
+	'FILES_GONE'					=> 'Một số tệp đính kèm bạn đã chọn để xóa không tồn tại. Chúng có thể đã bị xóa. Các tệp đính kèm đã tồn tại đã bị xóa. ',
+	'FILES_STATS_WRONG'				=> 'Thống kê tệp của bạn có thể không chính xác và cần được đồng bộ hóa lại. Giá trị thực tế: số lượng tệp đính kèm = %1$d, tổng kích thước tệp đính kèm = %2$s. <br /> Nhấp vào %3$s here %4$s để đồng bộ hóa chúng. ',
 
-	'EXT_GROUP_ARCHIVES'			=> 'Tập tin lưu trữ',
-	'EXT_GROUP_DOCUMENTS'			=> 'Tập tin văn bản',
-	'EXT_GROUP_DOWNLOADABLE_FILES'	=> 'Tập tin cho tải về',
-	'EXT_GROUP_FLASH_FILES'			=> 'Tập tin Flash',
-	'EXT_GROUP_IMAGES'				=> 'Tập tin hình ảnh',
-	'EXT_GROUP_PLAIN_TEXT'			=> 'Tập tin văn bản thuần túy',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Tập tin QuickTime Media',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Tập tin Real Media',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Tập tin Windows Media',
-
-	'GO_TO_EXTENSIONS'		=> 'Chuyển đến phần quản lý loại tập tin',
-	'GROUP_NAME'			=> 'Tên nhóm tập tin',
+	'GO_TO_EXTENSIONS'				=> 'Chuyển đến phần quản lý loại tập tin',
+	'GROUP_NAME'					=> 'Tên nhóm tập tin',
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như là một liên kết văn bản trong dòng nếu kích thước hình ảnh lớn hơn kích thước đã chọn. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
@@ -130,6 +129,7 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Chỉ cho phép trong bài viết',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Không cho phép',
 	'NOT_ASSIGNED'				=> 'Không chỉ định',
+	'NO_ATTACHMENTS'			=> 'Không tìm thấy tệp đính kèm nào trong giai đoạn này.',
 	'NO_EXT_GROUP'				=> 'Không có nhóm tập tin nào',
 	'NO_EXT_GROUP_NAME'			=> 'Bạn chưa nhập tên nhóm tập tin',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Không có nhóm tập tin nào được xác định.',
@@ -145,6 +145,7 @@ $lang = array_merge($lang, array(
 
 	'REMOVE_ALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã cho phép</em>',
 	'REMOVE_DISALLOWED_IPS'		=> 'Gỡ bỏ hoặc ngưng loại trừ những địa chỉ IP/tên miền <em>đã bị cấm</em>',
+	'RESYNC_FILES_STATS_CONFIRM'	=> 'Bạn có chắc chắn muốn đồng bộ hóa thống kê tệp không?',
 
 	'SEARCH_IMAGICK'				=> 'Tìm kiếm ứng dụng Imagemagick',
 	'SECURE_ALLOW_DENY'				=> 'Danh sách đồng ý/từ chối',
@@ -170,5 +171,3 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
 	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
 ));
-
-?>

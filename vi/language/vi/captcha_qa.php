@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* captcha_qa [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: captcha_qa.php 9966 2009-08-12 15:12:03Z Kellanved $
-* @copyright (c) 2009 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -39,6 +40,7 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_QA'				=> 'Q&amp;A CAPTCHA',
 	'CONFIRM_QUESTION_EXPLAIN'	=> 'Câu hỏi xác nhận này nhằm ngăn ngừa các máy đăng ký tự động.',
 	'CONFIRM_QUESTION_WRONG'	=> 'Bạn trả lời sai câu hỏi xác nhận.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Questions for the captcha could not be retrieved. Please contact a board administrator.',
 
 	'QUESTION_ANSWERS'			=> 'Các câu trả lời',
 	'ANSWERS_EXPLAIN'			=> 'Hãy nhập vào các trả lời hợp lệ cho câu hỏi, mỗi cái là một dòng.',
@@ -61,5 +63,3 @@ $lang = array_merge($lang, array(
 	'QA_LAST_QUESTION'			=> 'Bạn không thề xóa tất cả các câu hỏi khi chức năng này đang được hiệu lực.',
 
 ));
-
-?>
