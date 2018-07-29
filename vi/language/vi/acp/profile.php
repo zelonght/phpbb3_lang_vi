@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_profile [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: profile.php,v 1.22 2010/08/29 02:19:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -38,8 +39,11 @@ if (empty($lang) || !is_array($lang))
 // Custom profile fields
 $lang = array_merge($lang, array(
 	'ADDED_PROFILE_FIELD'	=> 'Mục thông tin cá nhân mới đã được thêm vào thành công.',
+	'ALPHA_DOTS'			=> 'Alphanumeric and dots (periods)',
 	'ALPHA_ONLY'			=> 'Chỉ sử dụng chữ số và chữ cái',
 	'ALPHA_SPACERS'			=> 'Chỉ sử dụng chữ số, chữ cái và khoảng trắng',
+	'ALPHA_UNDERSCORE'		=> 'Alphanumeric and underscores',
+	'ALPHA_PUNCTUATION'		=> 'Alphanumeric with comma, dots, underscore and dashes beginning with a letter',
 	'ALWAYS_TODAY'			=> 'Sử dụng ngày tháng hiện tại',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Nhập vào tuỳ chọn của bạn',
@@ -66,6 +70,10 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'Cho phép thành viên có thể thay đổi mục thông tin cá nhân này trong bảng điều khiển của mình.',	
 	'DISPLAY_AT_REGISTER'			=> 'Hiển thị trong phần đăng ký thành viên mới',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Nếu tuỳ chọn này được bật, mục thông tin cá nhân sẽ được thêm vào trong phần đăng ký thành viên và có thể thay đổi sau này trong bảng điều khiển của thành viên.',
+	'DISPLAY_ON_MEMBERLIST'			=> 'Display on memberlist screen',
+	'DISPLAY_ON_MEMBERLIST_EXPLAIN'	=> 'If this option is enabled, the field will be displayed in the user rows on the memberlist screen.',
+	'DISPLAY_ON_PM'					=> 'Display on view private message screen',
+	'DISPLAY_ON_PM_EXPLAIN'			=> 'If this option is enabled, the field will be displayed in the mini-profile on the private message screen.',
 	'DISPLAY_ON_VT'					=> 'Hiển thị lên giao diện xem chủ đề',
 	'DISPLAY_ON_VT_EXPLAIN'			=> 'Nếu chọn thiết đặt này, trường dữ liệu sẽ được đưa hiển thị lên mini-profile trong giao diện xem chủ đề.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Hiển thị mục thông tin cá nhân',
@@ -79,20 +87,26 @@ $lang = array_merge($lang, array(
 	'EVERYTHING_OK'				=> 'Mọi thứ đều bình thường',
 
 	'FIELD_BOOL'				=> 'Toán tử chỉ hai lựa chọn (có/không)',
-	'FIELD_DATE'				=> 'Ngày tháng',
+	'FIELD_CONTACT_DESC'		=> 'Contact description',
+	'FIELD_CONTACT_URL'			=> 'Contact link',
+	'FIELD_DATE'				=> 'Date',
 	'FIELD_DESCRIPTION'			=> 'Giới thiệu mục thông tin cá nhân',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'Giới thiệu về mục thông tin cá nhân này hiển thị cho thành viên.',
 	'FIELD_DROPDOWN'			=> 'Danh sách chọn thả xuống',
+	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Tên mục thông tin cá nhân',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Tên mục thông tin cá nhân bạn vừa chọn đã có sẵn. Hãy vui lòng chọn một tên khác.',
 	'FIELD_IDENT_EXPLAIN'		=> 'Tên mục thông tin cá nhân là tên xác định mục thông tin cá nhân trong cơ sở dữ liệu và trong các tập tin khuôn mẫu.',
 	'FIELD_INT'					=> 'Chữ số',
+	'FIELD_IS_CONTACT'			=> 'Display field as a contact field',
+	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Contact fields are displayed within the contact section of the user profile and are displayed differently in the mini profile next to posts and private messages. You can use <samp>%s</samp> as a placeholder variable which will be replaced by a value provided by the user.',
 	'FIELD_LENGTH'				=> 'Độ dài khung nhập',
 	'FIELD_NOT_FOUND'			=> 'Không tìm thấy mục thông tin cá nhân.',
 	'FIELD_STRING'				=> 'Trường văn bản đơn',
 	'FIELD_TEXT'				=> 'Khung nhập văn bản',
 	'FIELD_TYPE'				=> 'Loại mục thông tin cá nhân',
 	'FIELD_TYPE_EXPLAIN'		=> 'Bạn không thể thay đổi loại mục thông tin cá nhân sau này.',
+	'FIELD_URL'					=> 'URL (Link)',
 	'FIELD_VALIDATION'			=> 'Kiểm tra mục thông tin cá nhân',
 	'FIRST_OPTION'				=> 'Tuỳ chọn đầu tiên',
 
@@ -104,6 +118,12 @@ $lang = array_merge($lang, array(
 	'ISO_LANGUAGE'				=> 'Ngôn ngữ [%s]',
 
 	'LANG_SPECIFIC_OPTIONS'		=> 'Tuỳ chọn xác định ngôn ngữ [<b>%s</b>]',
+
+	'LETTER_NUM_DOTS'			=> 'Any letters, numbers and dots (periods)',
+	'LETTER_NUM_ONLY'			=> 'Any letters and numbers',
+	'LETTER_NUM_PUNCTUATION'	=> 'Any letters, numbers, comma, dots, underscores and dashes beginning with any letter',
+	'LETTER_NUM_SPACERS'		=> 'Any letters, numbers and spacers',
+	'LETTER_NUM_UNDERSCORE'		=> 'Any letters, numbers and underscores',
 
 	'MAX_FIELD_CHARS'		=> 'Số lượng ký tự tối đa cho phép sử dụng',
 	'MAX_FIELD_NUMBER'		=> 'Số tối đa cho phép sử dụng',
@@ -154,5 +174,3 @@ $lang = array_merge($lang, array(
 
 	'VISIBILITY_OPTION'	=> 'Tuỳ chọn hiển thị',
 ));
-
-?>

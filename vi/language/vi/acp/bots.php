@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_bots [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: bots.php,v 1.10 2010/08/24 20:38:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -69,5 +70,3 @@ $lang = array_merge($lang, array(
 	'NO_BOT'		=> 'Không thể tìm thấy bất kỳ máy tìm kiếm nào với số ID đã xác định',
 	'NO_BOT_GROUP'	=> 'Không thể tìm thấy nhóm máy tìm kiếm đặc biệt.',
 ));
-
-?>

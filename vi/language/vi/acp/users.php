@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_users [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: users.php,v 1.18 2010/08/21 15:37:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -52,6 +53,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của người sáng lập.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'You are not allowed to remove founder accounts.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản thành viên của chính mình.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Bạn không thể tăng cấp những thành viên bị cấm trở thành người sáng lập.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Bạn cần phải kích hoạt tài khoản của thành viên trước khi bạn tăng cấp cho thành viên này trở thành người sáng lập và chỉ có những thành viên đã kích hoạt mới có thể tăng cấp được.',
@@ -139,5 +141,3 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_LOG_DELETED'		=> 'No information available. Possibly the log entry has been deleted.',
 	'USER_TOOLS'					=> 'Công cụ đơn giản',
 ));
-
-?>

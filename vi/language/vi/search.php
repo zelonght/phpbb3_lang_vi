@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* search [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: search.php,v 1.19 2010/08/25 11:18:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -41,9 +42,14 @@ $lang = array_merge($lang, array(
 
 	'DISPLAY_RESULTS'		=> 'Xem kết quả tìm kiếm dưới dạng',
 
-	'FOUND_SEARCH_MATCH'		=> 'Chỉ tìm thấy <strong>%d</strong> kết quả',
-	'FOUND_SEARCH_MATCHES'		=> 'Đã tìm thấy <strong>%d</strong> kết quả',
-	'FOUND_MORE_SEARCH_MATCHES'	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
+	'FOUND_SEARCH_MATCHES'		=> array(
+		1	=> 'Chỉ tìm thấy <strong>%d</strong> kết quả',
+		2	=> 'Đã tìm thấy <strong>%d</strong> kết quả',
+	),
+	'FOUND_MORE_SEARCH_MATCHES'		=> array(
+		1	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
+		2	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
+	),
 
 	'GLOBAL'				=> 'Thông báo chung',
 
@@ -56,27 +62,36 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem các bài viết chưa xem.',
 	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem các bài viết chưa xem kể từ lần ghé thăm trước.',
 
-	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
+		1	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
+		2	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
+	),
 
 	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khoá để thực hiện tìm kiếm. Mỗi từ khoá phải có ít nhất là <strong>%d</strong> ký tự và không được nhiều quá <strong>%d</strong> ký tự loại trừ dấu đại diện.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',
 	'NO_SEARCH'				=> 'Xin lỗi, bạn không được phép sử dụng công cụ tìm kiếm trong hệ thống.',
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
-	'NO_SEARCH_TIME'		=> 'Xin lỗi, bạn không thể tiếp tục sử dụng công cụ tìm kiếm ngay lúc này. Hãy thử lại sau vài phút nữa.',
+	'NO_SEARCH_LOAD'		=> 'Xin lỗi nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Máy chủ có tải cao. Vui lòng thử lại sau.',
+	'NO_SEARCH_TIME'		=> array(
+		1 => 'Rất tiếc nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Vui lòng thử lại sau %d giây. ',
+		2 => 'Rất tiếc nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Vui lòng thử lại sau %d giây. ',
+	),
 	'NO_SEARCH_UNREADS'		=> 'Xin lỗi, chức năng tìm kiếm bài viết chưa xem đã bị vô hiệu.',
 	'WORD_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
 	'WORDS_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì những từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
 
 	'POST_CHARACTERS'		=> 'ký tự của bài viết',
+	'PHRASE_SEARCH_DISABLED'	=> 'Tìm kiếm bằng cụm từ chính xác không được hỗ trợ trên diễn đàn này.',
 
 	'RECENT_SEARCHES'		=> 'Những tìm kiếm gần đây',
 	'RESULT_DAYS'			=> 'Giới hạn kết quả tìm kiếm cách đây',
 	'RESULT_SORT'			=> 'Sắp xếp kết quả tìm kiếm theo',
 	'RETURN_FIRST'			=> 'Xem trước nội dung trong khoảng',
-	'RETURN_TO_SEARCH_ADV'	=> 'Quay về tìm kiếm nâng cao',
+	'GO_TO_SEARCH_ADV'	=> 'Quay về tìm kiếm nâng cao',
 
 	'SEARCHED_FOR'				=> 'Điều kiện tìm kiếm đã sử dụng',
 	'SEARCHED_TOPIC'			=> 'Chủ đề đã tìm kiếm',
+	'SEARCHED_QUERY'			=> 'Truy vấn được tìm kiếm',
 	'SEARCH_ALL_TERMS'			=> 'Tìm kiếm theo tất cả điều kiện hoặc sử dụng truy vấn tìm kiếm đã nhập',
 	'SEARCH_ANY_TERMS'			=> 'Tìm kiếm theo bất kỳ điều kiện nào',
 	'SEARCH_AUTHOR'				=> 'Tìm kiếm theo tên tác giả',
@@ -99,8 +114,11 @@ $lang = array_merge($lang, array(
 	'SORT_FORUM'				=> 'Chuyên mục',
 	'SORT_POST_SUBJECT'			=> 'Tiêu đề bài viết',
 	'SORT_TIME'					=> 'Ngày gửi bài',
+	'SPHINX_SEARCH_FAILED' => 'Tìm kiếm không thành công: %s',
+	'SPHINX_SEARCH_FAILED_LOG' => 'Rất tiếc, không thể thực hiện tìm kiếm. Thông tin thêm về lỗi này đã được ghi vào nhật ký lỗi. ',
 
-	'TOO_FEW_AUTHOR_CHARS'	=> 'Bạn phải xác định ít nhất là <strong>%d</strong> ký tự trong phần tên tác giả.',
+	'TOO_FEW_AUTHOR_CHARS'	=> array(
+		1 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',
+		2 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',
+	),
 ));
-
-?>

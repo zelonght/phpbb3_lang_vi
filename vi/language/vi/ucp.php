@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* ucp [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: ucp.php,v 1.84 2010/08/25 11:19:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -88,13 +89,25 @@ $lang = array_merge($lang, array(
 	'ATTACHMENTS_EXPLAIN'			=> 'Đây là danh sách tất cả các tập tin đính kèm mà bạn đã gửi trong diễn đàn.',
 	'ATTACHMENTS_DELETED'			=> 'Những tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
 	'ATTACHMENT_DELETED'			=> 'Tập tin đính kèm bạn vừa chọn đã được xoá thành công.',
-	'AVATAR_CATEGORY'				=> 'Chủ đề hình đại diện',
+	'AUTOLOGIN_SESSION_KEYS_DELETED' => 'Các khóa đăng nhập "Remember Me" đã chọn đã được xóa thành công.','A0VATAR_CATEGORY'				=> 'Chủ đề hình đại diện',
+	'AVATAR_CATEGORY' => 'Danh mục',
+	'AVATAR_DRIVER_GRAVATAR_TITLE' => 'Gravatar',
+	'AVATAR_DRIVER_GRAVATAR_EXPLAIN' => 'Gravatar là một dịch vụ cho phép bạn duy trì cùng một avatar trên nhiều trang web. Truy cập <a href="http://www.gravatar.com/"> Gravatar </a> để biết thêm thông tin. ',
+	'AVATAR_DRIVER_LOCAL_TITLE' => 'Hình đại diện thư viện',
+	'AVATAR_DRIVER_LOCAL_EXPLAIN' => 'Bạn có thể chọn hình đại diện của mình từ một tập hợp các avatar có sẵn tại địa phương.',
+	'AVATAR_DRIVER_REMOTE_TITLE' => 'Hình đại diện từ xa',
+	'AVATAR_DRIVER_REMOTE_EXPLAIN' => 'Liên kết đến hình ảnh đại diện từ một trang web khác',
+	'AVATAR_DRIVER_UPLOAD_TITLE' => 'Tải lên hình đại diện',
+	'AVATAR_DRIVER_UPLOAD_EXPLAIN' => 'Tải lên hình đại diện tùy chỉnh của riêng bạn.',
 	'AVATAR_EXPLAIN'				=> 'Kích thước tối đa cho phép: <strong>%1$d</strong> Pixel chiều rộng và <strong>%2$d</strong> Pixel chiều cao với dung lượng tập tin tối đa là <strong>%3$d</strong> KB.',
+	'AVATAR_EXPLAIN_NO_FILESIZE' => 'Kích thước tối đa; chiều rộng:%1$s, chiều cao: %2$s . ',
 	'AVATAR_FEATURES_DISABLED'		=> 'Chức năng sử dụng hình đại diện hiện tại đã bị vô hiệu.',
 	'AVATAR_GALLERY'				=> 'Thư viện hình đại diện',
 	'AVATAR_GENERAL_UPLOAD_ERROR'	=> 'Không thể tải lên hình đại diện đến “%s”.',
 	'AVATAR_NOT_ALLOWED'			=> 'Ảnh đại diện của bạn không được hiển thị vì chức năng này đang bị khóa.',
-	'AVATAR_PAGE'					=> 'Page',
+	'AVATAR_PAGE'					=> 'Trang',
+	'AVATAR_SELECT' => 'Chọn hình đại diện của bạn',
+	'AVATAR_TYPE' => 'Loại hình đại diện',
 	'AVATAR_TYPE_NOT_ALLOWED'		=> 'Ảnh đại diện của bạn không được hiển thị vì loại ảnh bạn dùng đang bị khóa.',
 
 	'BACK_TO_DRAFTS'			=> 'Quay lại bản nháp đã lưu',
@@ -103,7 +116,6 @@ $lang = array_merge($lang, array(
 	'BIRTHDAY_EXPLAIN'			=> 'Thiết lập ngày, tháng, năm cho sinh nhật của bạn.',
 	'BOARD_DATE_FORMAT'			=> 'Định dạng ngày tháng của bạn',
 	'BOARD_DATE_FORMAT_EXPLAIN'	=> 'Sử dụng cú pháp giống như hàm <a href="http://www.php.net/date">date()</a> trong <strong>PHP</strong>.',
-	'BOARD_DST'					=> 'Bật chế độ giờ mùa hè/DST (Daylight Saving Time)',
 	'BOARD_LANGUAGE'			=> 'Ngôn ngữ',
 	'BOARD_STYLE'				=> 'Giao diện',
 	'BOARD_TIMEZONE'			=> 'Múi giờ',
@@ -123,8 +135,6 @@ $lang = array_merge($lang, array(
 	'CLICK_RETURN_FOLDER'			=> '%1$sQuay về thư mục “%3$s” của bạn%2$s',
 	'CONFIRMATION'					=> 'Xác nhận đăng ký',
 	'CONFIRM_CHANGES'				=> 'Xác nhận thay đổi',	
-	'CONFIRM_EMAIL'					=> 'Xác nhận địa chỉ Email',
-	'CONFIRM_EMAIL_EXPLAIN'			=> 'Bạn chỉ cần xác nhận lại địa chỉ Email nếu như bạn muốn thay đổi địa chỉ Email hiện tại của mình ở trên.',
 	'CONFIRM_EXPLAIN'				=> 'Để ngăn chặn việc lợi dụng đăng ký tự động hàng loạt, hệ thống yêu cầu bạn phải nhập vào một đoạn mã xác nhận khi đăng ký. Mã xác nhận được hiển thị trong hình ảnh mà bạn nhìn thấy bên dưới. Nếu thị lực của bạn kém hoặc bạn không thể nhìn thấy đoạn mã này vì một lý do nào đó, hãy vui lòng liên hệ với %sngười quản trị%s.',
 	'VC_REFRESH'					=> 'Tạo lại mã xác nhận',
 	'VC_REFRESH_EXPLAIN'			=> 'Nếu bạn không đọc được đoạn mã này thì hãy nhấn vào nút sau để tạo một mã khác.',
@@ -176,7 +186,6 @@ $lang = array_merge($lang, array(
 
 	'EDIT_DRAFT_EXPLAIN'		=> 'Sử dụng bảng điều khiển này, bạn có thể sửa những bản nháp đã lưu của mình. Những bản nháp sẽ không chứa bất kỳ thông tin nào về các tập tin đính kèm hay bình chọn.',
 	'EMAIL_BANNED_EMAIL'		=> 'Địa chỉ Email bạn vừa nhập không được phép sử dụng.',
-	'EMAIL_INVALID_EMAIL'		=> 'Địa chỉ Email bạn vừa nhập không hợp lệ.',
 	'EMAIL_REMIND'				=> 'Bạn phải khai báo địa chỉ Email đang sử dụng cho tài khoản của mình. Nếu bạn không thay đổi địa chỉ này thông qua bảng điều khiển thành viên của mình, địa chỉ này sẽ được lấy từ địa chỉ Email mà bạn đã đăng ký thành viên.',
 	'EMAIL_TAKEN_EMAIL'			=> 'Địa chỉ Email bạn vừa nhập đã được sử dụng bởi một thành viên khác.',
 	'EMPTY_DRAFT'				=> 'Bạn phải nhập nội dung cho bản nháp của mình.',
@@ -189,27 +198,49 @@ $lang = array_merge($lang, array(
 	'EXPORT_FOLDER'				=> 'Xuất mục đang xem',
 
 	'FIELD_REQUIRED'					=> 'Mục thông tin “%s” không được để trống.',
-	'FIELD_TOO_SHORT'					=> 'Mục thông tin “%1$s” có nội dung quá ngắn, tối thiểu phải có ít nhất là <strong>%2$d</strong> ký tự.',
-	'FIELD_TOO_LONG'					=> 'Mục thông tin “%1$s” có nội dung quá dài, tối đa chỉ có <strong>%2$d</strong> ký tự được phép sử dụng.',
+	'FIELD_TOO_SHORT'					=> array(
+		1	=>	 'Trường "%2$s" quá ngắn, cần có tối thiểu %1$d ký tự.',
+		2 	=>	 'Trường "%$s" quá ngắn, cần tối thiểu %1$d ký tự.',
+	),
+	'FIELD_TOO_LONG'					=> array(
+		1 => 'Trường "%2$s" quá dài, tối đa cho phép %1$d ký tự.',
+		2 => 'Trường "%2$s" quá dài, tối đa cho phép %1$d ký tự.',
+	),
 	'FIELD_TOO_SMALL'					=> 'Giá trị “%1$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%2$d</strong>.',
 	'FIELD_TOO_LARGE'					=> 'Giá trị “%1$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%2$d</strong>.',
+	'FIELD_INVALID_CHARS_INVALID'		=> 'The field “%s” has invalid characters.',
 	'FIELD_INVALID_CHARS_NUMBERS_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ số.',
+	'FIELD_INVALID_CHARS_ALPHA_DOTS'	=> 'The field “%s” has invalid characters, only alphanumeric or . characters are allowed.',
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số.',
-	'FIELD_INVALID_CHARS_SPACERS_ONLY'	=> 'Mục thông tin “%s” có nội dung chứa những ký tự không hợp lệ, bạn chỉ được phép nhập vào chữ cái và chữ số, khoảng trắng hay những ký tự <strong>-+_[]</strong>.',
-	'FIELD_INVALID_DATE'				=> 'Mục thông tin “%s” có nội dung chứa ngày tháng không hợp lệ.',
-	'FIELD_INVALID_VALUE'				=> 'Mục thông tin “%s” có giá trị tối không hợp lệ.',
+	'FIELD_INVALID_CHARS_ALPHA_PUNCTUATION'	=> 'The field “%s” has invalid characters, only alphanumeric or _,-. characters are allowed and the first character must be alphabetic.',
+	'FIELD_INVALID_CHARS_ALPHA_SPACERS'	=> 'The field “%s” has invalid characters, only alphanumeric, space or -+_[] characters are allowed.',
+	'FIELD_INVALID_CHARS_ALPHA_UNDERSCORE'	=> 'The field “%s” has invalid characters, only alphanumeric or _ characters are allowed.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_DOTS'	=> 'The field “%s” has invalid characters, only letter, number or . characters are allowed.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_ONLY'	=> 'The field “%s” has invalid characters, only letter and number characters are allowed.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_PUNCTUATION'	=> 'The field “%s” has invalid characters, only letter, number or _,-. characters are allowed and the first character must be alphabetic.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_SPACERS'		=> 'The field “%s” has invalid characters, only letter, number, space or -+_[] characters are allowed.',
+	'FIELD_INVALID_CHARS_LETTER_NUM_UNDERSCORE'		=> 'The field “%s” has invalid characters, only letter, number or _ characters are allowed.',
+	'FIELD_INVALID_DATE'				=> 'The field “%s” has an invalid date.',
+	'FIELD_INVALID_URL'					=> 'The field “%s” has an invalid url.',
+	'FIELD_INVALID_VALUE'				=> 'The field “%s” has an invalid value.',
 
 	'FOE_MESSAGE'				=> 'Tin nhắn từ kẻ thù',
 	'FOES_EXPLAIN'				=> 'Kẻ thù là những thành viên đã được bạn thiết lập mặc định không quan hệ. Các bài viết được gửi bởi những thành viên này sẽ không được hiển thị khi bạn xem. Các tin nhắn từ kẻ thù vẫn được phép gửi đến bạn. Lưu ý rằng bạn không thể chọn kẻ thù của mình là các điều hành viên hay quản trị viên trong website.',
 	'FOES_UPDATED'				=> 'Danh sách những kẻ thù của bạn đã được cập nhật thành công.',
 	'FOLDER_ADDED'				=> 'Thư mục đã được tạo thành công.',
-	'FOLDER_MESSAGE_STATUS'		=> '%1$d trong tổng số %2$d tin nhắn được lưu trữ',
+	'FOLDER_MESSAGE_STATUS'		=> array(
+		1	=> '%2$d out of %1$s stored',
+		2	=> '%2$d out of %1$s stored',
+	),	
 	'FOLDER_NAME_EMPTY'			=> 'Bạn phải nhập tên cho thư mục.',
 	'FOLDER_NAME_EXIST'			=> 'Thư mục mang tên “%s” đã có rồi.',
 	'FOLDER_OPTIONS'			=> 'Tuỳ chọn thư mục',
 	'FOLDER_RENAMED'			=> 'Thư mục đã được đổi tên thành công.',
 	'FOLDER_REMOVED'			=> 'Thư mục đã được gỡ bỏ thành công.',
-	'FOLDER_STATUS_MSG'			=> 'Dung lượng thư mục: <strong>%1$d%%</strong> (%2$d trong tổng số %3$d tin nhắn được lưu trữ)',
+	'FOLDER_STATUS_MSG'			=> array(
+		1	=> 'Folder is %3$d%% full (%2$d out of %1$s stored)',
+		2	=> 'Folder is %3$d%% full (%2$d out of %1$s stored)',
+	),
 	'FORWARD_PM'				=> 'Chuyển tiếp tin nhắn',
 	'FORCE_PASSWORD_EXPLAIN'	=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
 	'FRIEND_MESSAGE'			=> 'Tin nhắn từ bạn thân',
@@ -226,6 +257,11 @@ $lang = array_merge($lang, array(
 	'FWD_TO'					=> 'Người nhận: %s',
 
 	'GLOBAL_ANNOUNCEMENT'		=> 'Thông báo chung',
+
+	'GRAVATAR_AVATAR_EMAIL'			=> 'Gravatar email',
+	'GRAVATAR_AVATAR_EMAIL_EXPLAIN'	=> 'Enter the email address you used for registering your account on <a href="http://www.gravatar.com/">Gravatar</a>.',
+	'GRAVATAR_AVATAR_SIZE'			=> 'Avatar dimensions',
+	'GRAVATAR_AVATAR_SIZE_EXPLAIN'	=> 'Specify the width and height of the avatar, leave blank to attempt automatic verification.',
 
 	'HIDE_ONLINE'				=> 'Luôn ẩn trạng thái trực tuyến của tôi',
 	'HIDE_ONLINE_EXPLAIN'		=> 'Thay đổi thiết lập này sẽ không có hiệu lực cho đến lần ghé thăm kế tiếp của bạn.',
@@ -247,6 +283,12 @@ $lang = array_merge($lang, array(
 	'LINK_REMOTE_SIZE'			=> 'Kích thước hình đại diện',
 	'LINK_REMOTE_SIZE_EXPLAIN'	=> 'Xác định chiều rộng và chiều cao của hình đại diện mà bạn muốn hiển thị, để trống nếu bạn muốn hiển thị hình đại diện của mình theo đúng kích thước thực hiện tại.',
 	'LOGIN_EXPLAIN_UCP'			=> 'Vui lòng đăng nhập nếu bạn muốn truy cập vào bảng điều khiển của thành viên.',
+	'LOGIN_LINK' => 'Liên kết hoặc đăng ký tài khoản của bạn trên một dịch vụ bên ngoài với tài khoản của bạn',
+	'LOGIN_LINK_EXPLAIN' => 'Bạn đã cố đăng nhập bằng dịch vụ bên ngoài chưa được kết nối với tài khoản trên diễn đàn này. Bây giờ bạn phải liên kết tài khoản này với một tài khoản hiện có hoặc tạo một tài khoản mới. ',
+	'LOGIN_LINK_MISSING_DATA' => 'Dữ liệu cần thiết để liên kết tài khoản của bạn với một dịch vụ bên ngoài không khả dụng. Vui lòng khởi động lại quá trình đăng nhập. ',
+	'LOGIN_LINK_NO_DATA_PROVIDED' => 'Không có dữ liệu nào được cung cấp cho trang này để liên kết tài khoản bên ngoài với tài khoản diễn đàn. Vui lòng liên hệ với quản trị viên ban nếu bạn tiếp tục gặp sự cố. ',
+	'LOGIN_KEY' => 'Khóa Đăng nhập',
+	'LOGIN_TIME' => 'Thời gian đăng nhập',
 	'LOGIN_REDIRECT'			=> 'Bạn đã đăng nhập thành công vào hệ thống.',
 	'LOGOUT_FAILED'				=> 'Bạn chưa thoát khỏi hệ thống được bởi vì yêu cầu vừa rồi của bạn không phù hợp với phiên đăng nhập của mình. Hãy vui lòng liên hệ với quản trị viên nếu bạn vẫn tiếp tục gặp phải rắc rối này.',
 	'LOGOUT_REDIRECT'			=> 'Bạn đã thoát khỏi hệ thống thành công.',
@@ -257,6 +299,7 @@ $lang = array_merge($lang, array(
 	'MESSAGE_BY_AUTHOR'				=> 'bởi',
 	'MESSAGE_COLOURS'				=> 'Màu tin nhắn',
 	'MESSAGE_DELETED'				=> 'Tin nhắn đã được xoá thành công.',
+	'MESSAGE_EDITED'				=> 'Đã chỉnh sửa thành công tin nhắn.',
 	'MESSAGE_HISTORY'				=> 'Quá trình nhắn tin',
 	'MESSAGE_REMOVED_FROM_OUTBOX'	=> 'Tin nhắn này đã được gỡ bỏ bởi chính người gửi của nó trước khi chuyển đến người nhận.',
 	'MESSAGE_SENT_ON'				=> 'vào lúc',
@@ -266,7 +309,10 @@ $lang = array_merge($lang, array(
 	'MOVE_DELETED_MESSAGES_TO'		=> 'Di chuyển những tin nhắn từ thư mục đã gỡ bỏ đến',
 	'MOVE_DOWN'						=> 'Di chuyển xuống',
 	'MOVE_MARKED_TO_FOLDER'			=> 'Di chuyển tin nhắn đã đánh dấu đến “%s”',
-	'MOVE_PM_ERROR'					=> 'Có một lỗi xảy ra trong khi di chuyển những tin nhắn đến thư mục mới, chỉ có <strong>%1d</strong> từ <strong>%2d</strong> tin nhắn đã được di chuyển.',
+		'MOVE_PM_ERROR'					=> array(
+		1	=> 'An error occurred while moving the messages to the new folder, only %2$d out of %1$s was moved.',
+		2	=> 'An error occurred while moving the messages to the new folder, only %2$d out of %1$s were moved.',
+	),
 	'MOVE_TO_FOLDER'				=> 'Di chuyển đến thư mục',
 	'MOVE_UP'						=> 'Di chuyển lên',
 
@@ -276,6 +322,27 @@ $lang = array_merge($lang, array(
 	'NEW_PASSWORD'					=> 'Mật khẩu mới',
 	'NEW_PASSWORD_CONFIRM_EMPTY'	=> 'Bạn chưa nhập mật khẩu xác nhận.',
 	'NEW_PASSWORD_ERROR'			=> 'Mật khẩu bạn vừa nhập không phù hợp.',
+	'NOTIFICATIONS_MARK_ALL_READ' => 'Đánh dấu tất cả thông báo đã đọc',
+	'NOTIFICATIONS_MARK_ALL_READ_CONFIRM' => 'Bạn có chắc chắn muốn đánh dấu tất cả các thông báo đã đọc?',
+	'NOTIFICATIONS_MARK_ALL_READ_SUCCESS' => 'Tất cả thông báo đã được đánh dấu là đã đọc.',
+	'NOTIFICATION_GROUP_MISCELLANEOUS' => 'Thông báo khác',
+	'NOTIFICATION_GROUP_MODERATION' => 'Thông báo kiểm duyệt',
+	'NOTIFICATION_GROUP_ADMINISTRATION' => 'Thông báo Quản trị',
+	'NOTIFICATION_GROUP_POSTING' => 'Đăng thông báo',
+	'NOTIFICATION_METHOD_BOARD' => 'Thông báo',
+	'NOTIFICATION_METHOD_EMAIL' => 'Email',
+	'NOTIFICATION_METHOD_JABBER' => 'Jabber',
+	'NOTIFICATION_TYPE' => 'Loại thông báo',
+	'NOTIFICATION_TYPE_BOOKMARK' => 'Ai đó trả lời chủ đề bạn đã đánh dấu',
+	'NOTIFICATION_TYPE_GROUP_REQUEST' => 'Ai đó yêu cầu tham gia nhóm bạn dẫn đầu',
+	'NOTIFICATION_TYPE_IN_MODERATION_QUEUE' => 'Bài đăng hoặc chủ đề cần phê duyệt',
+	'NOTIFICATION_TYPE_MODERATION_QUEUE' => 'Chủ đề / bài đăng của bạn được phê duyệt hoặc bị từ chối bởi một người kiểm duyệt',
+	'NOTIFICATION_TYPE_PM' => 'Ai đó gửi cho bạn một tin nhắn riêng',
+	'NOTIFICATION_TYPE_POST' => 'Ai đó trả lời một chủ đề mà bạn đã đăng ký',
+	'NOTIFICATION_TYPE_QUOTE' => 'Ai đó trích dẫn bạn trong bài đăng',
+	'NOTIFICATION_TYPE_REPORT' => 'Ai đó báo cáo bài đăng',
+	'NOTIFICATION_TYPE_TOPIC' => 'Ai đó tạo chủ đề trong diễn đàn mà bạn đã đăng ký',
+	'NOTIFICATION_TYPE_ADMIN_ACTIVATE_USER' => 'Người dùng yêu cầu kích hoạt',
 	'NOTIFY_METHOD'					=> 'Phương pháp thông báo',
 	'NOTIFY_METHOD_BOTH'			=> 'Cả hai',
 	'NOTIFY_METHOD_EMAIL'			=> 'Chỉ gửi Email',
@@ -293,10 +360,13 @@ $lang = array_merge($lang, array(
 	'NOT_ADDED_FOES_SELF'			=> 'Bạn không thể thêm chính mình vào danh sách kẻ thù.',
 	'NOT_AGREE'						=> 'Tôi không đồng ý với những điều khoản trên',
 	'NOT_ENOUGH_SPACE_FOLDER'		=> 'Dung lượng thư mục bạn chọn <strong>%s</strong> dường như đã bị đầy. Yêu cầu vừa rồi bị từ chối.',
-	'NOT_MOVED_MESSAGE'				=> 'Bạn chỉ có <strong>1</strong> tin nhắn hiện tại được giữ lại bởi vì dung lượng thư mục đã bị đầy.',
-	'NOT_MOVED_MESSAGES'			=> 'Bạn có <strong>%d</strong> tin nhắn hiện tại được giữ lại bởi vì dung lượng thư mục đã bị đầy.',
+	'NOT_MOVED_MESSAGES'			=> array(
+		1	=> 'Bạn có %d tin nhắn riêng hiện đang bị giữ vì thư mục đầy đủ.',
+		2	=> 'Bạn có %d tin nhắn hiện đang bị giữ vì thư mục đầy đủ.',
+	),
 	'NO_ACTION_MODE'				=> 'Không có yêu cầu tin nhắn nào được xác định',
 	'NO_AUTHOR'						=> 'Không xác định được người gửi tin nhắn này',
+	'NO_AVATAR'						=> 'Không có hình đại diện nào được chọn',
 	'NO_AVATAR_CATEGORY'			=> 'Không có hình đại diện nào',
 
 	'NO_AUTH_DELETE_MESSAGE'		=> 'Bạn không được phép xoá tin nhắn.',
@@ -304,6 +374,7 @@ $lang = array_merge($lang, array(
 	'NO_AUTH_FORWARD_MESSAGE'		=> 'Bạn không được phép chuyển tiếp tin nhắn.',
 	'NO_AUTH_GROUP_MESSAGE'			=> 'Bạn không được phép gửi tin nhắn đến nhóm thành viên.',
 	'NO_AUTH_PASSWORD_REMINDER'		=> 'Bạn không được phép yêu cầu mật khẩu mới.',
+	'NO_AUTH_PROFILEINFO'			=> 'Bạn không được phép thay đổi thông tin hồ sơ của mình.',
 	'NO_AUTH_READ_HOLD_MESSAGE'		=> 'Bạn không được phép đọc tin nhắn riêng đang bị giữ lại.',
 	'NO_AUTH_READ_MESSAGE'			=> 'Bạn không được phép xem tin nhắn.',
 	'NO_AUTH_READ_REMOVED_MESSAGE'	=> 'Bạn không thể xem được tin nhắn này bởi vì nó đã được gỡ bỏ bởi chính thành viên đã gửi.',
@@ -348,11 +419,15 @@ $lang = array_merge($lang, array(
 	'PM_FROM_REMOVED_AUTHOR'	=> 'Tin nhắn này được gửi bởi một thành viên đã bị xóa khỏi hệ thống.',
 	'PM_ICON'					=> 'Biểu tượng tin nhắn',
 	'PM_INBOX'					=> 'Hộp tin nhận',
+	'PM_MARK_ALL_READ' => 'Đánh dấu tất cả thư đã đọc',
+	'PM_MARK_ALL_READ_SUCCESS' => 'Tất cả thư cá nhân trong thư mục này đã được đánh dấu là đã đọc',
 	'PM_NO_USERS'				=> 'Thành viên bạn vừa yêu cầu thêm vào không tồn tại.',
 	'PM_OUTBOX'					=> 'Hộp tin chuyển đi',
 	'PM_SENTBOX'				=> 'Hộp tin đã gửi',
 	'PM_SUBJECT'				=> 'Tiêu đề tin nhắn',
 	'PM_TO'						=> 'Người nhận',
+	'PM_TOOLS' => 'Công cụ tin nhắn',
+	'PM_USERS_REMOVED_NO_PERMISSION' => 'Một số người dùng không thể được thêm vì họ không có quyền đọc tin nhắn riêng tư',
 	'PM_USERS_REMOVED_NO_PM'	=> 'Bạn không thể thêm vào một vài thành viên bởi vì họ đã vô hiệu chức năng nhận tin nhắn của mình.',
 	'POPUP_ON_PM'				=> 'Mở cửa sổ thông báo khi có tin nhắn mới',
 	'POST_EDIT_PM'				=> 'Sửa tin nhắn',
@@ -366,6 +441,8 @@ $lang = array_merge($lang, array(
 	'PREFERENCES_UPDATED'		=> 'Sở thích cá nhân của bạn đã được cập nhật thành công.',
 	'PROFILE_INFO_NOTICE'		=> 'Lưu ý rằng những thông tin này mọi thành viên khác đều có thể xem được. Hãy cẩn thận khi bạn cung cấp những thông tin cá nhân trên đây. Những mục thông tin có đánh dấu * bắt buộc phải khai báo.',
 	'PROFILE_UPDATED'			=> 'Thông tin cá nhân của bạn đã được cập nhật.',
+	'PROFILE_AUTOLOGIN_KEYS' => 'Các khóa đăng nhập "Remember Me" tự động đăng nhập bạn khi bạn truy cập vào bảng. Nếu bạn đăng xuất, khóa đăng nhập nhớ tôi chỉ bị xóa trên máy tính bạn đang sử dụng để đăng xuất. Ở đây bạn có thể thấy các khóa đăng nhập nhớ được tạo trên các máy tính khác mà bạn đã sử dụng để truy cập trang web này. ',
+	'PROFILE_NO_AUTOLOGIN_KEYS' => 'Không có khóa đăng nhập "Remember Me" đã lưu.',
 
 	'RECIPIENT'							=> 'Người nhận',
 	'RECIPIENTS'						=> 'Những người nhận',
@@ -390,8 +467,10 @@ $lang = array_merge($lang, array(
 	'RULE_DELETED'						=> 'Quy định đã được gỡ bỏ thành công.',
 	'RULE_LIMIT_REACHED'				=> 'Bạn không thể thêm quy định cho tin nhắn riêng nữa. Bạn đã dùng hết số lượng quy định cho phép.',
 	'RULE_NOT_DEFINED'					=> 'Quy định cá nhân không được xác định chính xác.',
-	'RULE_REMOVED_MESSAGE'				=> 'Một tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
-	'RULE_REMOVED_MESSAGES'				=> '%d tin nhắn đã bị gỡ bỏ căn cứ theo bộ lọc tin nhắn.',
+	'RULE_REMOVED_MESSAGES'				=> array(
+		1	=> '%d tin nhắn đã bị xóa do bộ lọc tin nhắn riêng tư.',
+		2	=> '%d tin nhắn cá nhân đã bị xóa do bộ lọc tin nhắn riêng tư.',
+	),
 
 	'SAME_PASSWORD_ERROR'		=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn.',
 	'SEARCH_YOUR_POSTS'			=> 'Xem những bài viết của bạn',
@@ -401,6 +480,9 @@ $lang = array_merge($lang, array(
 	'SIGNATURE_EXPLAIN'			=> 'Chữ ký cá nhân được đính kèm sau mỗi bài viết mà bạn gửi. Số ký tự tối đa được phép sử dụng trong chữ ký cá nhân là <strong>%d</strong> ký tự.',
 	'SIGNATURE_PREVIEW'			=> 'Xem trước chữ ký cá nhân',
 	'SIGNATURE_TOO_LONG'		=> 'Chữ ký cá nhân của bạn quá dài.',
+	'SELECT_CURRENT_TIME' => 'Chọn thời gian hiện tại',
+	'SELECT_TIMEZONE' => 'Chọn múi giờ',
+
 	'SORT'						=> 'Sắp xếp',
 	'SORT_COMMENT'				=> 'Chú thích tập tin',
 	'SORT_DOWNLOADS'			=> 'Số lần tải về',
@@ -410,7 +492,13 @@ $lang = array_merge($lang, array(
 	'SORT_SIZE'					=> 'Dung lượng tập tin',
 
 	'TIMEZONE'					=> 'Múi giờ',
+	'TIMEZONE_DATE_SUGGESTION' => 'Đề xuất:% s',
+	'TIMEZONE_INVALID' => 'Múi giờ bạn đã chọn không hợp lệ.',
 	'TO'						=> 'Người nhận',
+	'TO_MASS'					=> 'Người nhận',
+	'TO_ADD'					=> 'Thêm người nhận',
+	'TO_ADD_MASS'				=> 'Thêm những người nhận',
+	'TO_ADD_GROUPS'				=> 'Thêm nhóm',
 	'TOO_MANY_RECIPIENTS'		=> 'Có quá nhiều người nhận.',
 	'TOO_MANY_REGISTERS'		=> 'Bạn đã vượt quá số lượng đăng ký thành viên cho phép trong phiên kết nối này. Hãy thử lại vào lúc khác!',
 
@@ -419,11 +507,20 @@ $lang = array_merge($lang, array(
 	'UCP_ADMIN_ACTIVATE'		=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ Email hợp lệ trước khi tài khoản của bạn được kích hoạt. Người quản trị sẽ xem qua tài khoản của bạn và nếu được chấp nhận bạn sẽ nhận được một Email thông báo đến địa chỉ Email mà bạn đã nhập.',
 	'UCP_AIM'					=> 'Tài khoản AIM',
 	'UCP_ATTACHMENTS'			=> 'Tập tin đính kèm của bạn',
+	'UCP_AUTH_LINK' => 'Tài khoản bên ngoài',
+	'UCP_AUTH_LINK_ASK' => 'Bạn hiện không có tài khoản nào được liên kết với dịch vụ bên ngoài này. Nhấp vào nút bên dưới để liên kết tài khoản bảng của bạn với một tài khoản với dịch vụ bên ngoài này ',
+	'UCP_AUTH_LINK_ID' => 'Số nhận dạng duy nhất',
+	'UCP_AUTH_LINK_LINK' => 'Liên kết',
+	'UCP_AUTH_LINK_MANAGE' => 'Quản lý các liên kết tài khoản bên ngoài',
+	'UCP_AUTH_LINK_NOT_SUPPORTED' => 'Liên kết tài khoản bảng với các dịch vụ bên ngoài không được phương thức xác thực hiện tại của bảng này hỗ trợ.',
+	'UCP_AUTH_LINK_TITLE' => 'Quản lý các liên kết tài khoản bên ngoài của bạn',
+	'UCP_AUTH_LINK_UNLINK' => 'Hủy liên kết',
 	'UCP_COPPA_BEFORE'			=> 'Trước %s',
 	'UCP_COPPA_ON_AFTER'		=> 'Hoặc sau %s',
 	'UCP_EMAIL_ACTIVATE'		=> 'Lưu ý rằng bạn cần phải nhập vào một địa chỉ Email hợp lệ trước khi tài khoản của bạn được kích hoạt. Bạn sẽ nhận được một Email thông báo đến địa chỉ Email mà bạn đã nhập với khoá kích hoạt được đính kèm bên trong Email.',
 	'UCP_ICQ'					=> 'Số tài khoản ICQ',
 	'UCP_JABBER'				=> 'Tài khoản Jabber',
+	'UCP_LOGIN_LINK' => 'Thiết lập một liên kết tài khoản bên ngoài',
 
 	'UCP_MAIN'					=> 'Tổng quan',
 	'UCP_MAIN_ATTACHMENTS'		=> 'Tập tin đính kèm',
@@ -432,8 +529,11 @@ $lang = array_merge($lang, array(
 	'UCP_MAIN_FRONT'			=> 'Trang trước',
 	'UCP_MAIN_SUBSCRIBED'		=> 'Bảng theo dõi',
 
-	'UCP_MSNM'					=> 'Tài khoản MSN',
 	'UCP_NO_ATTACHMENTS'		=> 'Bạn chưa tải lên bất kỳ tập tin nào.',
+	'UCP_NOTIFICATION_LIST' => 'Quản lý thông báo',
+	'UCP_NOTIFICATION_LIST_EXPLAIN' => 'Tại đây bạn có thể xem tất cả các thông báo trước đây',
+	'UCP_NOTIFICATION_OPTIONS' => 'Chỉnh sửa tùy chọn thông báo',
+	'UCP_NOTIFICATION_OPTIONS_EXPLAIN' => 'Tại đây bạn có thể đặt các phương thức thông báo ưa thích cho bảng.',
 
 	'UCP_PREFS'					=> 'Thiết lập hệ thống',
 	'UCP_PREFS_PERSONAL'		=> 'Sửa thiết lập cá nhân',
@@ -454,11 +554,13 @@ $lang = array_merge($lang, array(
 	'UCP_PROFILE_PROFILE_INFO'	=> 'Sửa thông tin cá nhân',
 	'UCP_PROFILE_REG_DETAILS'	=> 'Sửa thiết lập tài khoản',
 	'UCP_PROFILE_SIGNATURE'		=> 'Sửa chữ ký cá nhân',
+	'UCP_PROFILE_AUTOLOGIN_KEYS' => 'Quản lý "Ghi nhớ" khóa đăng nhập',
 
 	'UCP_USERGROUPS'			=> 'Nhóm',
 	'UCP_USERGROUPS_MEMBER'		=> 'Sửa tư cách thành viên',
 	'UCP_USERGROUPS_MANAGE'		=> 'Quản lý nhóm',
 
+	'UCP_PASSWORD_RESET_DISABLED' => 'Chức năng đặt lại mật khẩu đã bị tắt. Nếu bạn cần trợ giúp truy cập tài khoản của mình, vui lòng liên hệ với% sBoard Administrator% s ',
 	'UCP_REGISTER_DISABLE'					=> 'Hiện tại website không cho đăng ký thành viên mới.',
 	'UCP_REMIND'							=> 'Gửi mật khẩu',
 	'UCP_RESEND'							=> 'Gửi Email kích hoạt tài khoản',
@@ -491,10 +593,13 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_PM'				=> 'Tin nhắn kế tiếp',
 	'VIEW_PM'					=> 'Xem tin nhắn',
 	'VIEW_PM_INFO'				=> 'Thông tin chi tiết về tin nhắn',
-	'VIEW_PM_MESSAGE'			=> 'Chỉ có <strong>1</strong> tin nhắn',
-	'VIEW_PM_MESSAGES'			=> 'Có <strong>%d</strong> tin nhắn',
+		'VIEW_PM_MESSAGES'			=> array(
+		1	=> '%d thông điệp',
+		2	=> '%d tin nhắn',
+	),
 	'VIEW_PREVIOUS_HISTORY'		=> 'Tin nhắn trước trong quá trình gửi tin',
 	'VIEW_PREVIOUS_PM'			=> 'Tin nhắn trước',
+	'VIEW_PROFILE'				=> 'Xem hồ sơ',
 	'VIEW_SIGS'					=> 'Hiển thị chữ ký cá nhân',
 	'VIEW_SMILIES'				=> 'Hiển thị những biểu tượng vui',
 	'VIEW_TOPICS_DAYS'			=> 'Hiển thị những chủ đề cách đây',
@@ -527,7 +632,7 @@ $lang = array_merge($lang, array(
 		'SENDER'	=> 'Người gửi',
 		'MESSAGE'	=> 'Nội dung',
 		'STATUS'	=> 'Trạng thái',
-		'TO'		=> 'Người nhận'
+		'TO'		=> 'Người nhận',
 	),
 	'PM_RULE' => array(
 		'IS_LIKE'		=> 'giống như',
@@ -546,7 +651,6 @@ $lang = array_merge($lang, array(
 		'TO_ME'			=> 'đến tôi'
 	),
 
-
 	'GROUPS_EXPLAIN'	=> 'Những nhóm làm nhiệm vụ của quản trị viên sẽ làm việc tốt hơn các thành viên quản trị riêng lẻ rất nhiều. Mặc định, bạn sẽ được đặt tham gia vào một nhóm xác định, đây là nhóm mặc định của bạn. Nhóm này sẽ phân biệt bạn là thành viên của nhóm với các thành viên của những nhóm khác thông qua màu sắc trên tên thành viên, hình đại diện, xếp hạng… Tuỳ thuộc vào quyết định của người quản trị có cho phép hay không mà bạn có thể thay đổi nhóm mặc định của mình. Bạn cũng có thể được tự thêm vào hoặc tự mình tham gia vào các nhóm thành viên khác. Một vài nhóm có thể đòi hỏi bạn thiết lập cấp phép bổ sung để xem một vài thông tin của nhóm hay năng lực để tham gia vào trong một số lĩnh vực riêng của họ.',
 	'GROUP_LEADER'		=> 'Là người lãnh đạo của nhóm',
 	'GROUP_MEMBER'		=> 'Là thành viên của nhóm',
@@ -559,5 +663,3 @@ $lang = array_merge($lang, array(
 	'NO_PENDING'	=> 'Không phải là thành viên đang chờ quyết định của nhóm',
 	'NO_NONMEMBER'	=> 'Không phải là thành viên của bất cứ nhóm nào',
 ));
-
-?>

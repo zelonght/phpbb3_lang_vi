@@ -1,12 +1,13 @@
 <?php
-/** 
+/**
 *
-* acp_modules [Vietnamese]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: modules.php,v 1.09 2010/08/23 23:54:00
-* @copyright (c) 2006, 2007 phpBBVietNam Group, (c) 2009 - 2010 ytuongsangtaovn.com
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -80,5 +81,3 @@ $lang = array_merge($lang, array(
 
 	'SELECT_MODULE'			=> 'Chọn một gói thành phần chức năng',
 ));
-
-?>
