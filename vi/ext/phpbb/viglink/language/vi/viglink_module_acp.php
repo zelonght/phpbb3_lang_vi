@@ -38,17 +38,17 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'ACP_VIGLINK_SETTINGS'			=> 'VigLink settings',
-	'ACP_VIGLINK_SETTINGS_EXPLAIN'	=> 'VigLink is third-party service that discretely monetises links posted by users of your forum without any change to the user experience. When users click on your outbound links to products or services and buy something, the merchants pay VigLink a commission, of which a share is donated to the phpBB project. By choosing to enable VigLink and donating proceeds to the phpBB project, you are supporting our open source organisation and ensuring our continued financial security.',
-	'ACP_VIGLINK_SETTINGS_CHANGE'	=> 'You can change these settings at any time in the “<a href="%1$s">VigLink settings</a>” panel.',
-	'ACP_VIGLINK_SUPPORT_EXPLAIN'	=> 'You will no longer be redirected to this page once you submit your preferred options below, by clicking the Submit button.',
-	'ACP_VIGLINK_ENABLE'			=> 'Enable VigLink',
-	'ACP_VIGLINK_ENABLE_EXPLAIN'	=> 'Enables use of VigLink services.',
-	'ACP_VIGLINK_EARNINGS'			=> 'Claim your own earnings (optional)',
-	'ACP_VIGLINK_EARNINGS_EXPLAIN'  => 'You can claim your own earnings by signing up for a VigLink Convert account.',
-	'ACP_VIGLINK_DISABLED_PHPBB'	=> 'VigLink services have been disabled by phpBB.',
-	'ACP_VIGLINK_CLAIM'				=> 'Claim your earnings',
-	'ACP_VIGLINK_CLAIM_EXPLAIN'		=> 'You can claim your forum’s earnings from VigLink monetised links, instead of donating the earnings to the phpBB project. To manage your account settings, sign up for a “VigLink Convert” account by clicking on “Convert account”.',
-	'ACP_VIGLINK_CONVERT_ACCOUNT'	=> 'Convert account',
-	'ACP_VIGLINK_NO_CONVERT_LINK'	=> 'VigLink convert account link could not be retrieved.',
+	'ACP_VIGLINK_SETTINGS'			=> 'Thiết lập VigLink',
+	'ACP_VIGLINK_SETTINGS_EXPLAIN'	=> 'VigLink là dịch vụ của bên thứ ba nhúng các liên kết tài trợ (quảng cáo) vào nội dung liên quan do thành viên gửi bài mà không làm ảnh hưởng đến trải nghiệm của người dùng. Khi có người nhấn vào liên kết và mua sản phẩm, người bán trả phí cho VigLink và một phần trong số đó được quyên góp cho dự án phpBB. Khi chọn kích hoạt VigLink và quyên góp cho dự án phpBB là bạn đã ủng hộ cho nhóm phát triển chúng tôi rất nhiều để tiếp tục hoàn thiện và phát triển phần mềm này.',
+	'ACP_VIGLINK_SETTINGS_CHANGE'	=> 'Bạn có thể thay đổi quyết định này bất kỳ lúc nào tại trang <a href="%1$s">thiết lập VigLink</a>.',
+	'ACP_VIGLINK_SUPPORT_EXPLAIN'	=> 'Bạn sẽ không bị chuyển tới trang này nữa nếu bạn thiết lập tùy chọn mình mong muốn bên dưới.',
+	'ACP_VIGLINK_ENABLE'			=> 'Bật VigLink',
+	'ACP_VIGLINK_ENABLE_EXPLAIN'	=> 'Sử dụng dịch vụ của VigLink.',
+	'ACP_VIGLINK_EARNINGS'			=> 'Yêu cầu tiền bạn kiếm được (không bắt buộc)',
+	'ACP_VIGLINK_EARNINGS_EXPLAIN'  => 'Bạn có thể yêu cầu tiền mình kiếm được bằng cách đăng ký một tài khoản VigLink để chuyển đổi.',
+	'ACP_VIGLINK_DISABLED_PHPBB'	=> 'Dịch vụ của VigLink đã bị vô hiệu bởi phpBB.',
+	'ACP_VIGLINK_CLAIM'				=> 'Yêu cầu tiền bạn kiếm được',
+	'ACP_VIGLINK_CLAIM_EXPLAIN'		=> 'Bạn có thể yêu cầu tiền mình kiếm được thông qua các liên kết tài trợ của VigLink, thay vì quyên góp nó cho dự án phpBB. Để quản lý tài khoản của mình, hãy đăng ký một tài khoản VigLink và bấm vào “Chuyển đổi tài khoản”.',
+	'ACP_VIGLINK_CONVERT_ACCOUNT'	=> 'Chuyển đổi tài khoản',
+	'ACP_VIGLINK_NO_CONVERT_LINK'	=> 'Liên kết đến tài khoản VigLink chuyển đổi không truy cập được.'
 ));
