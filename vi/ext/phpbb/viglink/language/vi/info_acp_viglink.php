@@ -36,8 +36,9 @@ if (empty($lang) || !is_array($lang))
 // Some characters you may want to copy&paste:
 // ’ » “ ” …
 //
+*/
 
 $lang = array_merge($lang, array(
-	'ACP_VIGLINK_SETTINGS'		=> 'Cài đặt VigLink',
-	'LOG_VIGLINK_CHECK_FAIL'	=> '<strong>Cài đặt VigLink không thể kiểm chứng bởi phpBB.com</strong><br />» %s',
+	'ACP_VIGLINK_SETTINGS'		=> 'Thiết lập VigLink',
+	'LOG_VIGLINK_CHECK_FAIL'	=> '<strong>Thiết lập cho VigLink không thể kiểm chứng bởi phpBB.com</strong><br />» %s',
 ));
