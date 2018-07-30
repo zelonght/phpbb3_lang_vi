@@ -1,13 +1,13 @@
-Subject: Post approved - "{POST_SUBJECT}"
+Subject: Bài viết của bạn đã được duyệt - "{POST_SUBJECT}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because your post "{POST_SUBJECT}" at "{SITENAME}" was approved by a moderator or administrator.
+Bạn nhận được thông báo này bởi vì bài viết "{POST_SUBJECT}" của bạn tại diễn đàn "{SITENAME}" đã được chấp nhận bởi một điều hành viên hoặc quản trị viên.
 
-If you want to view the post, click the following link:
+Nếu bạn muốn xem bài viết, hãy bấm vào liên kết dưới đây:
 {U_VIEW_POST}
 
-If you want to view the topic, click the following link:
+Nếu bạn muốn xem chủ đề, hãy bấm vào liên kết dưới đây:
 {U_VIEW_TOPIC}
 
 {EMAIL_SIG}

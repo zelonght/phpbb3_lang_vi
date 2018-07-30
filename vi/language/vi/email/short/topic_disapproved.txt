@@ -1,11 +1,10 @@
-Subject: Topic disapproved - "{TOPIC_TITLE}"
+Subject: Chủ đề bị từ chối - "{TOPIC_TITLE}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because your topic "{TOPIC_TITLE}" at "{SITENAME}" was disapproved by a moderator or administrator.
+Bạn nhận được thông báo này bởi vì chủ đề "{TOPIC_TITLE}" của bạn tại diễn đàn "{SITENAME}" đã bị từ chối bởi một điều hành viên hoặc quản trị viên.
 
-The following reason was given for the disapproval:
-
+Nguyên nhân chủ đề của bạn bị từ chối là:
 {REASON}
 
 {EMAIL_SIG}

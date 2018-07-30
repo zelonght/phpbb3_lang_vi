@@ -1,20 +1,19 @@
-Subject: Topic reply notification - "{TOPIC_TITLE}"
+Subject: Thông báo trả lời chủ đề - "{TOPIC_TITLE}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because a topic you bookmarked, "{TOPIC_TITLE}" at "{SITENAME}", has received a reply since your last visit. You can use the following link to view the replies made, no more notifications will be sent until you visit the topic.
+Bạn nhận được thông báo này vì chủ để "{TOPIC_TITLE}" mà bạn đã đánh dấu tại diễn đàn "{SITENAME}" có một bài trả lời mới kể từ lần ghé thăm trước của bạn. Bạn có thể sử dụng liên kết bên dưới để xem lại và trả lời. Sẽ không có thêm bất kì thông báo nào nữa gửi đến bạn cho đến khi bạn xem lại chủ đề.
 
-If you want to view the newest post made since your last visit, click the following link:
+Nếu bạn muốn xem bài viết mới nhất trong chủ đề, hãy bấm vào liên kết dưới đây:
 {U_NEWEST_POST}
 
-If you want to view the topic, click the following link:
+Nếu bạn muốn xem chủ đề, hãy bấm vào liên kết dưới đây:
 {U_TOPIC}
 
-If you want to view the forum, click the following link:
+Nếu bạn muốn xem chuyên mục, hãy bấm vào liên kết dưới đây:
 {U_FORUM}
 
-If you no longer wish to receive updates about replies to bookmarks, please update your notification settings here:
-
+Nếu bạn không muốn nhận những thông báo về việc chủ đề mình đánh dấu có bài trả lời, hãy vui lòng cập nhật lại thiết lập thông báo tại đây:
 {U_NOTIFICATION_SETTINGS}
 
 {EMAIL_SIG}
