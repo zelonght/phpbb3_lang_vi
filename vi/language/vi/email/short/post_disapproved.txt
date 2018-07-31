@@ -1,11 +1,10 @@
-Subject: Post disapproved - "{POST_SUBJECT}"
+Subject: Bài viết của bạn đã bị từ chối - "{POST_SUBJECT}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because your post "{POST_SUBJECT}" at "{SITENAME}" was disapproved by a moderator or administrator.
+Bạn nhận được thông báo này bởi vì bài viết "{POST_SUBJECT}" của bạn tại diễn đàn "{SITENAME}" đã bị từ chối bởi một điều hành viên hoặc quản trị viên.
 
-The following reason was given for the disapproval:
-
+Nguyên nhân bài viết của bạn bị từ chối là:
 {REASON}
 
 {EMAIL_SIG}

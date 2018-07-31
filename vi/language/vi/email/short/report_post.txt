@@ -1,13 +1,13 @@
-Subject: Post report - "{TOPIC_TITLE}"
+Subject: Báo cáo bài viết - "{TOPIC_TITLE}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because the post "{POST_SUBJECT}" at "{SITENAME}" was reported.
+Bạn nhận được thông báo này vì bài viết "{POST_SUBJECT}" tại diễn đàn "{SITENAME}" đã được báo cáo.
 
-If you want to view the report, click the following link:
+Nếu bạn muốn xem báo cáo, hãy bấm vào liên kết dưới đây:
 {U_VIEW_REPORT}
 
-If you want to view the post, click the following link:
+Nếu bạn muốn xem bài viết, hãy bấm vào liên kết dưới đây:
 {U_VIEW_POST}
 
 {EMAIL_SIG}

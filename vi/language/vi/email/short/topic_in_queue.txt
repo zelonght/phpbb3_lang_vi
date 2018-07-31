@@ -1,13 +1,13 @@
-Subject: Topic moderation notification - "{TOPIC_TITLE}"
+Subject: Thông báo kiểm duyệt chủ đề - "{TOPIC_TITLE}"
 
-Hello {USERNAME},
+Chào bạn, {USERNAME}
 
-You are receiving this notification because the topic "{TOPIC_TITLE}" at "{SITENAME}" needs approval.
+Bạn nhận được thông báo này vì chủ đề "{TOPIC_TITLE}" của bạn tại diễn đàn "{SITENAME}" cần được kiểm duyệt nội dung trước khi đăng.
 
-If you want to view the topic, click the following link:
+Nếu bạn muốn xem chủ đề, hãy bấm vào liên kết dưới đây:
 {U_VIEW_TOPIC}
 
-If you want to view the forum, click the following link:
+Nếu bạn muốn xem chuyên mục, hãy bấm vào liên kết dưới đây:
 {U_FORUM}
 
 {EMAIL_SIG}
