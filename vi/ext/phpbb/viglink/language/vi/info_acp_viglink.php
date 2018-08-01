@@ -36,7 +36,6 @@ if (empty($lang) || !is_array($lang))
 // Some characters you may want to copy&paste:
 // ’ » “ ” …
 //
-*/
 
 $lang = array_merge($lang, array(
 	'ACP_VIGLINK_SETTINGS'		=> 'Thiết lập VigLink',
