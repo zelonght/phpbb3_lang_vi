@@ -50,7 +50,6 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'			=> 'Đẩy chủ đề lên',
 
 	'CODE'					=> 'Mã',
-	'COLLAPSE_QR'			=> 'Ẩn Gửi trả lời nhanh',
 
 	'DELETE_TOPIC'			=> 'Xoá chủ đề',
 	'DELETED_INFORMATION' => 'Bị xóa bởi %1$s trên %2$s',
@@ -116,12 +115,11 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Chủ đề kế tiếp',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Chủ đề trước',
 	'VIEW_RESULTS'			=> 'Xem kết quả bình chọn',
-		'VIEW_TOPIC_POSTS'		=> array(
-		1	=> '1 bài viết',
+	'VIEW_TOPIC_POSTS'		=> array(
+		1	=> '%d bài viết',
 		2	=> '%d bài viết',
 	),
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
-	'VISIT_WEBSITE'			=> 'Ghé thăm website của người gửi',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
 	'VOTE_CONVERTED'		=> 'Thay đổi bình chọn không được hỗ trợ cho các bình chọn được chuyển đổi.',
 
