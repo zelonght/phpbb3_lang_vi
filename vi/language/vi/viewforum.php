@@ -45,16 +45,16 @@ $lang = array_merge($lang, array(
 	'ICON_ANNOUNCEMENT'		=> 'Thông báo',
 	'ICON_STICKY'			=> 'Chú ý',
 
-	'LOGIN_NOTIFY_FORUM'	=> 'Hãy vui lòng đăng nhập để xem chuyên mục này.',
+	'LOGIN_NOTIFY_FORUM'		=> 'Hãy vui lòng đăng nhập để xem chuyên mục này.',
 
 	'MARK_TOPICS_READ'		=> 'Đánh dấu tất cả chủ đề như là đã xem',
 
 	'NEW_POSTS_HOT'			=> 'Có bài viết mới [ Nhiều người xem ]',
 	'NEW_POSTS_LOCKED'		=> 'Có bài viết mới [ Đã khoá ]',
 	'NO_NEW_POSTS_HOT'		=> 'Không có bài viết mới [ Nhiều người xem ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Không có bài viết mới [ Đã khoá ]',
+	'NO_NEW_POSTS_LOCKED'		=> 'Không có bài viết mới [ Đã khoá ]',
 	'NO_READ_ACCESS'		=> 'Bạn không được cấp phép để xem các chủ đề trong chuyên mục này.',
-	'NO_FORUMS_IN_CATEGORY'	=> 'Danh mục này không có diễn đàn.',
+	'NO_FORUMS_IN_CATEGORY'		=> 'Danh mục này không có diễn đàn.',
 	'NO_UNREAD_POSTS_HOT'		=> 'Không có bài viết chưa xem [ Nhiều người xem ]',
 	'NO_UNREAD_POSTS_LOCKED'	=> 'Không có bài viết chưa xem [ Đã khóa ]',
 
@@ -63,11 +63,11 @@ $lang = array_merge($lang, array(
 	'TOPICS_MARKED'			=> 'Những chủ đề trong chuyên mục này đã được đánh dấu xem rồi.',
 
 	'UNREAD_POSTS_HOT'		=> 'Bài viết chưa xem [ Nhiều người xem ]',
-	'UNREAD_POSTS_LOCKED'	=> 'Bài viết chưa xem [ Đã khóa ]',
+	'UNREAD_POSTS_LOCKED'		=> 'Bài viết chưa xem [ Đã khóa ]',
 
 	'VIEW_FORUM'			=> 'Xem chuyên mục',
 	'VIEW_FORUM_TOPICS'		=> array(
-		1	=> '1 chủ đề',
+		1	=> '%d chủ đề',
 		2	=> '%d chủ đề',
 	),
 ));
