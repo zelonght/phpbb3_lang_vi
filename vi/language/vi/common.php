@@ -50,7 +50,7 @@ $lang = array_merge($lang, array(
 	// You can define different rules for the determination of plural forms here.
 	// See https://area51.phpbb.com/docs/dev/32x/language/plurals.html for more information
 	// or ask the translation manager for help.
-	'PLURAL_RULE'		=> 1,
+	'PLURAL_RULE'		=> 0,
 	'1_DAY'			=> '1 ngày',
 	'1_MONTH'		=> '1 tháng',
 	'1_YEAR'		=> '1 năm',
@@ -344,12 +344,12 @@ $lang = array_merge($lang, array(
 	'INACTIVE'					=> 'Không hoạt động',
 	'INDEX'						=> 'Trang chủ',
 	'INFORMATION'				=> 'Thông tin',
-	'INSECURE_REDIRECT'			=> 'Tried to redirect to potentially insecure url.',
+	'INSECURE_REDIRECT'			=> 'Đã chuyển trang đến địa chỉ URL không an toàn.',
 	'INTERESTS'					=> 'Sở thích',
 	'INVALID_DIGEST_CHALLENGE'	=> 'Giao thức yêu cầu ký số không hợp lệ.',
 	'INVALID_EMAIL_LOG'			=> '<strong>%s</strong> có lẽ là một địa chỉ Email không hợp lệ?',
-	'INVALID_FEED_ATTACHMENTS'	=> 'The selected feed tried fetching attachments with invalid constraints.',
-	'INVALID_PLURAL_RULE'		=> 'The chosen plural rule is invalid. Valid values are integers between 0 and 15.',
+	'INVALID_FEED_ATTACHMENTS'	=> 'Kênh RSS được chọn đã truy xuất đến các tập tin đính kèm không hợp lệ.',
+	'INVALID_PLURAL_RULE'		=> 'Quy tắc số nhiều đã chọn không hợp lệ. Giá trị hợp lệ là số nguyên từ 0 đến 15.',
 	'IP'						=> 'Địa chỉ IP',
 	'IP_BLACKLISTED'			=> 'Địa chỉ IP của bạn %1$s đã bị chặn bởi vì nó có trong danh sách ngăn cấm. Để biết thêm chi tiết, hãy vui lòng xem tại đây <a href="%2$s">%2$s</a>.',
 
@@ -370,7 +370,7 @@ $lang = array_merge($lang, array(
 	'LDAP_NO_SERVER_CONNECTION'			=> 'Không thể kết nối đến máy chủ LDAP.',
 	'LDAP_SEARCH_FAILED'				=> 'Có lỗi xảy ra khi tìm kiếm thư mục LDAP.',
 	'LEGEND'							=> 'Chú thích',
-	'LIVE_SEARCHES_NOT_ALLOWED'			=> 'Live searches are not allowed.',
+	'LIVE_SEARCHES_NOT_ALLOWED'			=> 'Chức năng gợi ý tìm kiếm không được phép sử dụng.',
 	'LOADING'							=> 'tải',
 	'LOCATION'							=> 'Đến từ',
 	'LOCK_POST'							=> 'Khoá bài viết',
