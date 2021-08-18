@@ -37,40 +37,39 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'APPROVE'								=> 'Phê duyệt',
-	'ATTACHMENT'						=> 'Tập tin đính kèm',
+	'APPROVE'				=> 'Phê duyệt',
+	'ATTACHMENT'				=> 'Tập tin đính kèm',
 	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Chức năng gửi tập tin đính kèm đã bị vô hiệu.',
 
-	'BOOKMARK_ADDED'		=> 'Đã đánh dấu chủ đề thành công.',
-	'BOOKMARK_ERR'			=> 'Đánh dấu chủ đề thất bại. Hãy thử lại.',
-	'BOOKMARK_REMOVED'		=> 'Đã gỡ bỏ đánh dấu chủ đề thành công.',
-	'BOOKMARK_TOPIC'		=> 'Đánh dấu chủ đề',
-	'BOOKMARK_TOPIC_REMOVE'	=> 'Gỡ bỏ đánh dấu',
+	'BOOKMARK_ADDED'			=> 'Đã đánh dấu chủ đề thành công.',
+	'BOOKMARK_ERR'				=> 'Đánh dấu chủ đề thất bại. Hãy thử lại.',
+	'BOOKMARK_REMOVED'			=> 'Đã gỡ bỏ đánh dấu chủ đề thành công.',
+	'BOOKMARK_TOPIC'			=> 'Đánh dấu chủ đề',
+	'BOOKMARK_TOPIC_REMOVE'			=> 'Gỡ bỏ đánh dấu',
 	'BUMPED_BY'				=> 'Được đẩy lên lần cuối bởi <strong>%1$s</strong> vào ngày %2$s.',
-	'BUMP_TOPIC'			=> 'Đẩy chủ đề lên',
+	'BUMP_TOPIC'				=> 'Đẩy chủ đề lên',
 
 	'CODE'					=> 'Mã',
-	'COLLAPSE_QR'			=> 'Ẩn Gửi trả lời nhanh',
 
-	'DELETE_TOPIC'			=> 'Xoá chủ đề',
-	'DELETED_INFORMATION' => 'Bị xóa bởi %1$s trên %2$s',
-	'DISAPPROVE' => 'Từ chối',
-	'DOWNLOAD_NOTICE' => 'Bạn không có quyền cần thiết để xem các tệp đính kèm với bài đăng này.',
+	'DELETE_TOPIC'				=> 'Xoá chủ đề',
+	'DELETED_INFORMATION' 			=> 'Bị xóa bởi %1$s trên %2$s',
+	'DISAPPROVE' 				=> 'Từ chối',
+	'DOWNLOAD_NOTICE' 			=> 'Bạn không có quyền cần thiết để xem các tệp đính kèm với bài đăng này.',
 
 	'EDITED_TIMES_TOTAL'	=> array(
 		1	=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
 		2	=> 'Sửa lần cuối bởi <strong>%1$s</strong> vào ngày %2$s với %3$d lần sửa trong tổng số.',
 	),
-	'EMAIL_TOPIC'			=> 'Gửi Email giới thiệu',
-	'ERROR_NO_ATTACHMENT'	=> 'Tập tin đính kèm bạn vừa chọn không tồn tại.',
+	'EMAIL_TOPIC'				=> 'Gửi Email giới thiệu',
+	'ERROR_NO_ATTACHMENT'			=> 'Tập tin đính kèm bạn vừa chọn không tồn tại.',
 
-	'FILE_NOT_FOUND_404'	=> 'Tập tin <strong>%s</strong> không tồn tại.',
-	'FORK_TOPIC'			=> 'Sao chép chủ đề',
-	'FULL_EDITOR'			=> 'Trình soạn thảo đầy đủ',
+	'FILE_NOT_FOUND_404'			=> 'Tập tin <strong>%s</strong> không tồn tại.',
+	'FORK_TOPIC'				=> 'Sao chép chủ đề',
+	'FULL_EDITOR'				=> 'Trình soạn thảo đầy đủ',
 
-	'LINKAGE_FORBIDDEN'		=> 'Bạn không được phép xem, tải về hoặc liên kết đến website này.',
-	'LOGIN_NOTIFY_TOPIC'	=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
-	'LOGIN_VIEWTOPIC'		=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
+	'LINKAGE_FORBIDDEN'			=> 'Bạn không được phép xem, tải về hoặc liên kết đến website này.',
+	'LOGIN_NOTIFY_TOPIC'			=> 'Hãy vui lòng đăng nhập để xem chủ đề này.',
+	'LOGIN_VIEWTOPIC'			=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem chủ đề này.',
 
 	'MAKE_ANNOUNCE'				=> 'Thay đổi thành “Thông báo”',
 	'MAKE_GLOBAL'				=> 'Thay đổi thành “Thông báo chung”',
@@ -116,12 +115,11 @@ $lang = array_merge($lang, array(
 	'VIEW_NEXT_TOPIC'		=> 'Chủ đề kế tiếp',
 	'VIEW_PREVIOUS_TOPIC'	=> 'Chủ đề trước',
 	'VIEW_RESULTS'			=> 'Xem kết quả bình chọn',
-		'VIEW_TOPIC_POSTS'		=> array(
-		1	=> '1 bài viết',
+	'VIEW_TOPIC_POSTS'		=> array(
+		1	=> '%d bài viết',
 		2	=> '%d bài viết',
 	),
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
-	'VISIT_WEBSITE'			=> 'Ghé thăm website của người gửi',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
 	'VOTE_CONVERTED'		=> 'Thay đổi bình chọn không được hỗ trợ cho các bình chọn được chuyển đổi.',
 
