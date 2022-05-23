@@ -35,6 +35,8 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
+	'CLI_APCU_CACHE_NOTICE'				=> 'Bộ nhớ cache APCu phải được xóa thông qua Bảng điều khiển quản trị.',
+	
 	'CLI_CONFIG_CANNOT_CACHED'			=> 'Set this option if the configuration option changes too frequently to be efficiently cached.',
 	'CLI_CONFIG_CURRENT'				=> 'Current configuration value, use 0 and 1 to specify boolean values',
 	'CLI_CONFIG_DELETE_SUCCESS'			=> 'Successfully deleted config %s.',

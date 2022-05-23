@@ -43,6 +43,7 @@ $lang = array_merge($lang, array(
 	
 	'BACKUP_DELETE'		=> 'Tập tin sao lưu đã được xoá thành công.',
 	'BACKUP_INVALID'	=> 'Tập tin bạn vừa chọn sao lưu không hợp lệ.',
+	'BACKUP_NOT_SUPPORTED'	=> 'Bản sao lưu đã chọn không được hỗ trợ',
 	'BACKUP_OPTIONS'	=> 'Tuỳ chọn sao lưu',
 	'BACKUP_SUCCESS'	=> 'Tập tin sao lưu đã được tạo thành công.',
 	'BACKUP_TYPE'		=> 'Loại tập tin sao lưu',

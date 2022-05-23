@@ -43,6 +43,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'					=> 'Tạo bình chọn',
 	'ADD_POLL_EXPLAIN'			=> 'Nếu bạn không muốn thêm vào một bình chọn trong chủ đề của mình, hãy để trống phần này.',
 	'ALREADY_DELETED'			=> 'Xin lỗi, bài viết này vừa bị xoá.',
+	'ATTACH_COMMENT_NO_EMOJIS'	=> 'Nhận xét đính kèm chứa các ký tự bị cấm (Emoji).',
 	'ATTACH_DISK_FULL'			=> 'Dung lượng đĩa cứng không đủ để tải tập tin đính kèm này lên.',
 	'ATTACH_QUOTA_REACHED'		=> 'Xin lỗi, dung lượng cấp phép tải lên cho diễn đàn đã hết.',
 	'ATTACH_SIG'				=> 'Đính kèm chữ ký cá nhân (Chữ ký có thể thay đổi từ bảng điều khiển dành cho thành viên của bạn)',
@@ -145,10 +146,12 @@ $lang = array_merge($lang, array(
 	'LOAD_DRAFT_EXPLAIN'		=> 'Với công cụ này, bạn có thể chọn cho mình bản nháp để tiếp tục soạn bài viết. Bài viết hiện tại của bạn sẽ được huỷ bỏ và tất cả nội dung trong bài viết sẽ được xoá. Xem, sửa và xoá những bản nháp trong bảng điều khiển thành viên của bạn.',
 	'LOGIN_EXPLAIN_BUMP'		=> 'Bạn cần phải đăng nhập để đẩy các chủ đề trong chuyên mục này.',
 	'LOGIN_EXPLAIN_DELETE'		=> 'Bạn cần phải đăng nhập để xóa các bài viết trong chuyên mục này.',
+	'LOGIN_EXPLAIN_SOFT_DELETE'	=> 'Bạn cần đăng nhập để xóa mềm các bài viết trong diễn đàn này.',
 	'LOGIN_EXPLAIN_POST'		=> 'Bạn cần phải đăng nhập để gửi bài trong chuyên mục này.',
 	'LOGIN_EXPLAIN_QUOTE'		=> 'Bạn cần phải đăng nhập để trích dẫn các bài viết trong chuyên mục này.',
 	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn cần phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
 
+	'MAX_ATTACHMENT_FILESIZE'	=> 'Kích thước tệp tối đa cho mỗi tệp đính kèm: %s.',
 	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ có thể chọn kích thước văn bản tối đa là <strong>%1$d</strong>.',
 	'MAX_FLASH_HEIGHT_EXCEEDED' => array(
 		1 => 'Tệp flash của bạn chỉ có thể cao tới %d pixel.',
@@ -167,7 +170,7 @@ $lang = array_merge($lang, array(
 		2 => 'Hình ảnh của bạn chỉ có thể rộng tới %d pixel.',
 	),
 
-	'MESSAGE_BODY_EXPLAIN '=> array(
+	'MESSAGE_BODY_EXPLAIN'=> array(
 		0 => '', // không có nghĩa là không có giới hạn, vì vậy chúng tôi không xem thông báo ở đây.
 		1 => 'Nhập tin nhắn của bạn ở đây, nó có thể chứa không quá <strong> %d </strong> ký tự.',
 		2 => 'Nhập tin nhắn của bạn ở đây, nó có thể chứa không quá <strong> %d </strong> ký tự.',

@@ -49,6 +49,8 @@ $lang = array_merge($lang, array(
 	'CONTINUE_INDEXING_EXPLAIN'				=> 'Quá trình tạo chỉ mục đã được bắt đầu. Ngoài ra, để truy cập lại vào trang tìm kiếm bạn cần phải hoàn tất việc tạo chỉ mục hoặc hủy bỏ thao tác này.',
 	'CREATE_INDEX'							=> 'Tạo chỉ mục',
 
+	'DEFAULT_SEARCH_RETURN_CHARS'			=> 'Số lượng ký tự trả về mặc định',
+	'DEFAULT_SEARCH_RETURN_CHARS_EXPLAIN'	=> 'Số lượng ký tự mặc định sẽ được trả về trong khi tìm kiếm. Giá trị 0 sẽ trả về toàn bộ bài đăng.',
 	'DELETE_INDEX'							=> 'Xoá chỉ mục',
 	'DELETING_INDEX_IN_PROGRESS'			=> 'Đang tiến hành xoá chỉ mục',
 	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'Phương pháp tìm kiếm hiện tại đang dọn dẹp chỉ mục tìm kiếm của nó. Quá trình này có thế mất một vài phút.',
@@ -116,6 +118,9 @@ $lang = array_merge($lang, array(
 	),
 	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
 		2	=> 'All posts up to post id %2$d have been removed from the search index.<br />Deleting in progress…',
+	),
+	'SEARCH_INDEX_DELETE_REDIRECT_RATE'		=> array(
+		2	=> 'Tỷ lệ xóa hiện tại là khoảng %1$.1f bài viết mỗi giây.<br />Đang xóa…',
 	),
 	'SEARCH_INDEX_CREATED'					=> 'Đã lập chỉ mục thành công cho tất cả bài viết trong cơ sở dữ liệu.',
 	'SEARCH_INDEX_REMOVED'					=> 'Đã xoá thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',

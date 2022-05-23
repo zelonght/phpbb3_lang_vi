@@ -87,6 +87,7 @@ $lang = array_merge($lang, array(
 	'RESULT_DAYS'			=> 'Giới hạn kết quả tìm kiếm cách đây',
 	'RESULT_SORT'			=> 'Sắp xếp kết quả tìm kiếm theo',
 	'RETURN_FIRST'			=> 'Xem trước nội dung trong khoảng',
+	'RETURN_FIRST_EXPLAIN'	=> 'Đặt thành 0 để hiển thị toàn bộ bài đăng.',
 	'GO_TO_SEARCH_ADV'	=> 'Quay về tìm kiếm nâng cao',
 
 	'SEARCHED_FOR'				=> 'Điều kiện tìm kiếm đã sử dụng',

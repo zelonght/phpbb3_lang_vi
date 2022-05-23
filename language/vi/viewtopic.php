@@ -88,6 +88,7 @@ $lang = array_merge($lang, array(
 	'NO_UNREAD_POSTS'		=> 'Không có bài viết chưa xem mới nào trong chủ đề này.',
 	'NO_VOTE_OPTION'		=> 'Bạn phải chọn một đối tượng khi bình chọn.',
 	'NO_VOTES'				=> 'Không có bình chọn',
+	'NO_AUTH_PRINT_TOPIC'	=> 'Bạn không được phép in các chủ đề.',
 
 	'POLL_ENDED_AT'			=> 'Bình chọn này sẽ kết thúc vào ngày %s',
 	'POLL_RUN_TILL'			=> 'Bình chọn cho đến ngày %s',

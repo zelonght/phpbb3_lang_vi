@@ -111,8 +111,10 @@ $lang = array_merge($lang, array(
 
 	'IMAGE_LINK_SIZE'			=> 'Kích thước hình ảnh sẽ hiển thị như liên kết',
 	'IMAGE_LINK_SIZE_EXPLAIN'	=> 'Hiển thị những hình ảnh được đính kèm như là một liên kết văn bản trong dòng nếu kích thước hình ảnh lớn hơn kích thước đã chọn. Thiết lập <strong>0 Pixel x 0 Pixel</strong> để vô hiệu chức năng này.',
-	'IMAGICK_PATH'				=> 'Đường dẫn đến chương trình Imagemagick',
-	'IMAGICK_PATH_EXPLAIN'		=> 'Đường dẫn chính xác đến ứng dụng chuyển đổi hình ảnh Imagemagick trên máy chủ, ví dụ như <samp>/usr/bin/</samp>.',
+	'IMAGE_QUALITY'				=> 'Quality of uploaded image attachments (JPEG only)',
+	'IMAGE_QUALITY_EXPLAIN'		=> 'Specify value between 50% (smaller file size) and 90% (higher quality). Quality higher than 90% increases filesize and is disabled. Setting only applies if maximum image dimensions are set to a value other than 0px by 0px.',
+	'IMAGE_STRIP_METADATA'		=> 'Strip image metadata (JPEG only)',
+	'IMAGE_STRIP_METADATA_EXPLAIN'	=> 'Strip Exif metadata, e.g. author name, GPS coordinates and camera details. Setting only applies if maximum image dimensions are set to a value other than 0px by 0px.',
 
 	'MAX_ATTACHMENTS'				=> 'Số tập tin đính kèm tối đa trong mỗi bài viết',
 	'MAX_ATTACHMENTS_PM'			=> 'Số tập tin đính kèm tối đa trong mỗi tin nhắn',
@@ -131,6 +133,8 @@ $lang = array_merge($lang, array(
 	'NOT_ASSIGNED'				=> 'Không chỉ định',
 	'NO_ATTACHMENTS'			=> 'Không tìm thấy tệp đính kèm nào trong giai đoạn này.',
 	'NO_EXT_GROUP'				=> 'Không có nhóm tập tin nào',
+	'NO_EXT_GROUP_ALLOWED_PM'	=> 'Không được <a href="%s">phép sử dụng nhóm tiện ích mở rộng</a> cho tin nhắn riêng tư.',
+	'NO_EXT_GROUP_ALLOWED_POST'	=> 'Không được <a href="%s">phép sử dụng nhóm tiện ích mở rộng</a> cho các bài đăng.',
 	'NO_EXT_GROUP_NAME'			=> 'Bạn chưa nhập tên nhóm tập tin',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Không có nhóm tập tin nào được xác định.',
 	'NO_FILE_CAT'				=> 'Không có loại tập tin nào',	
@@ -170,4 +174,5 @@ $lang = array_merge($lang, array(
 	'UPLOAD_DIR_EXPLAIN'			=> 'Thư mục chứa những tập tin đính kèm được tải lên trong hệ thống. Lưu ý rằng nếu bạn thay đổi thư mục này trong khi trong thư mục đã có những tập tin đính kèm được tải lên, bạn cần phải tự mình sao chép những tập tin này đến vị trí thư mục mới đã chọn.',
 	'UPLOAD_ICON'					=> 'Biểu tượng tập tin',
 	'UPLOAD_NOT_DIR'				=> 'Thư mục tải lên bạn vừa chọn không phải là địa chỉ của một thư mục.',
+	'UPLOAD_POST_NOT_EXIST'			=> 'Tập tin “%1$s” không thể tải lên vì  số bài đăng %2$d không tồn tại.',
 ));

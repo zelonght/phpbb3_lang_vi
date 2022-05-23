@@ -241,6 +241,7 @@ $lang = array_merge($lang, array(
 	'CRON_NO_SUCH_TASK'		=> 'Could not find cron task “%s”.',
 	'CRON_NO_TASK'			=> 'No cron tasks need to be run right now.',
 	'CRON_NO_TASKS'			=> 'No cron tasks could be found.',
+	'CSV_INVALID'			=> 'The provided comma-separated setting “%1$s” is invalid. The values should be delimited by comma only, it should not contain any leading or trailing delimiters.',
 	'CURRENT_VERSION'		=> 'Current version',
 
 	'DEACTIVATE'				=> 'Ngưng kích hoạt',
@@ -321,12 +322,15 @@ $lang = array_merge($lang, array(
 	'TOTAL_SIZE'			=> 'Total size',
 
 	'UCP'					=> 'User Control Panel',
+	'URL_INVALID'			=> 'The provided URL for the setting “%1$s” is invalid.',
+	'URL_SCHEME_INVALID'	=> 'The provided scheme “%2$s” in comma-separated setting “%1$s” is invalid. Scheme should start with a latin character followed by alphanumeric characters, hyphens or dots.',
 	'USERNAMES_EXPLAIN'		=> 'Place each username on a separate line.',
 	'USER_CONTROL_PANEL'	=> 'User Control Panel',
 
 	'UPDATE_NEEDED'			=> 'The board is not up to date.',
 	'UPDATE_NOT_NEEDED'		=> 'The board is up to date.',
 	'UPDATES_AVAILABLE'		=> 'Updates available:',
+
 	'WARNING'				=> 'Cảnh báo',
 ));
 
@@ -376,6 +380,8 @@ $lang = array_merge($lang, array(
 	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
 	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'Chuyển đổi ký tự xuất cho phương thức HTTP chưa được cấu hình đúng cách',
 	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_DEFAULT_CHARSET'							=> 'Bộ ký tự mặc định được định cấu hình không đúng',
+	'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> '<var>default_charset</var> phải được đặt thành <samp>UTF-8</samp>. Bạn có thể kiểm tra giá trị hiện tại trên <samp>PHP information</samp> page.',
 
 	'FILES_PER_DAY'		=> 'Số tập tin đính kèm/ngày',
 	'FORUM_STATS'		=> 'Thống kê hệ thống',
@@ -547,6 +553,7 @@ $lang = array_merge($lang, array(
 	'LOG_BBCODE_ADD'		=> '<strong>Đã thêm vào thẻ BBCode mới</strong><br />» %s',
 	'LOG_BBCODE_EDIT'		=> '<strong>Đã chỉnh sửa thẻ BBCode</strong><br />» %s',
 	'LOG_BBCODE_DELETE'		=> '<strong>Đã xoá thẻ BBCode</strong><br />» %s',
+	'LOG_BBCODE_CONFIGURATION_ERROR'	=> '<strong>Lỗi khi định cấu hình BBCode</strong>: %1$s<br />» %2$s',
 
 	'LOG_BOT_ADDED'		=> '<strong>Bot mới đã được tạo</strong><br />» %s',
 	'LOG_BOT_DELETE'	=> '<strong>Đã xoá Bot</strong><br />» %s',

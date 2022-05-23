@@ -97,6 +97,7 @@ $lang = array_merge($lang, array(
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Ghi nhận số lượt người đã bấm vào chuyên mục liên kết.',
 	'FORUM_NAME'						=> 'Tên chuyên mục',
 	'FORUM_NAME_EMPTY'					=> 'Bạn phải nhập tên cho chuyên mục này.',
+	'FORUM_NAME_EMOJI'					=> 'Tên diễn đàn bạn đã nhập không hợp lệ.<br>Nó chứa các ký tự không được hỗ trợ sau:<br>%s',
 	'FORUM_PARENT'						=> 'Chuyên mục chính',
 	'FORUM_PASSWORD'					=> 'Mật khẩu chuyên mục',
 	'FORUM_PASSWORD_CONFIRM'			=> 'Xác nhận mật khẩu chuyên mục',
@@ -128,6 +129,8 @@ $lang = array_merge($lang, array(
 	'GENERAL_FORUM_SETTINGS'	=> 'Thiết lập chuyên mục tổng quát',
 
 	'LINK'					=> 'Liên kết',
+	'LIMIT_SUBFORUMS'			=> 'Giới hạn chú giải để chỉ dẫn child-subforums',
+	'LIMIT_SUBFORUMS_EXPLAIN'	=> 'Giới hạn các chuyên mục con được hiển thị đối với các chuyên mục con là hậu duệ trực tiếp (con) của diễn đàn hiện tại. Tắt tính năng này sẽ hiển thị tất cả các kết cấu con với tùy chọn “Liệt kê các thành phần con trong chú giải” được bật, bất kể độ sâu.',
 	'LIST_INDEX'			=> 'Liệt kê chuyên này trong phần chú giải của chuyên mục chứa nó',
 	'LIST_INDEX_EXPLAIN'	=> 'Hiển thị chuyên mục này trong trang trong phần chú giải của chuyên mục chứa nó.',
 	'LIST_SUBFORUMS'			=> 'Liệt kê các chuyên mục con của nó trong chú thích',
