@@ -1,0 +1,14 @@
+Subject: Có bản cập nhật phpBB {NEW_VERSION} cho "{SITENAME}"
+
+Chào {USERNAME},
+
+Đây là thông báo cho biết đã có bản cập nhật mới cho cài đặt phpBB của bạn.
+
+Phiên bản hiện tại là {CURRENT_VERSION}, còn phiên bản mới nhất là {NEW_VERSION}. Bạn rất nên luôn cập nhật diễn đàn để đạt mức bảo mật, ổn định và hiệu năng cao nhất.
+
+Bạn có thể xem chi tiết bản phát hành trong Bảng điều khiển quản trị của cài đặt phpBB.
+{U_BOARD}
+
+Để được trợ giúp về quá trình cập nhật, hãy tham khảo tài liệu hoặc truy cập diễn đàn hỗ trợ phpBB.
+
+{EMAIL_SIG}

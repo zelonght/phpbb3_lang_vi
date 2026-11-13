@@ -1,0 +1,9 @@
+Subject: Báo cáo đã đóng - "{PM_SUBJECT}"
+
+Chào {USERNAME},
+
+Báo cáo bạn đã gửi về tin nhắn riêng "{PM_SUBJECT}" tại "{SITENAME}" đã được điều hành viên hoặc quản trị viên xử lý. Báo cáo hiện đã đóng.
+
+Nếu còn câu hỏi, vui lòng liên hệ {CLOSER_NAME} bằng tin nhắn riêng.
+
+{EMAIL_SIG}

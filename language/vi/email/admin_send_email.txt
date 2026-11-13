@@ -1,0 +1,12 @@
+Đây là email do quản trị viên của "{SITENAME}" gửi cho bạn. Nếu thư này là thư rác, có nội dung lạm dụng hoặc bình luận khiến bạn khó chịu, vui lòng liên hệ quản trị viên web của diễn đàn qua địa chỉ:
+
+{CONTACT_EMAIL}
+
+Hãy gửi kèm toàn bộ email này, đặc biệt là phần tiêu đề.
+
+Nội dung thư gửi cho bạn:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+{MESSAGE}
+
+{EMAIL_SIG}
