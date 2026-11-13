@@ -1,9 +1,13 @@
-Subject: phpBB is correctly configured to send emails
+Subject: phpBB đã được cấu hình đúng để gửi email
 
-Hello {USERNAME},
+Chào {USERNAME},
 
-Congratulations. If you received this email, phpBB is correctly configured to send emails.
+Chúc mừng. Nếu nhận được email này, phpBB đã được cấu hình đúng để gửi email.
 
-In case you require assistance, please visit the phpBB support forums - https://www.phpbb.com/community/
+<!-- IF MESSAGE -->
+{MESSAGE}
+
+<!-- ENDIF -->
+Nếu cần trợ giúp, hãy truy cập diễn đàn hỗ trợ phpBB - https://www.phpbb.com/community/
 
 {EMAIL_SIG}

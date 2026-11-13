@@ -1,8 +1,8 @@
-Tiêu d?: Ðóng báo cáo - "{PM_SUBJECT}"
+Tiï¿½u d?: ï¿½ï¿½ng bï¿½o cï¿½o - "{PM_SUBJECT}"
 
-Xin chào {USERNAME},
+Xin chï¿½o {USERNAME},
 
-B?n nh?n du?c thông báo này vì báo cáo c?a b?n liên quan d?n tin nh?n riêng "{PM_SUBJECT}" ? trang web "{SITENAME}" v?a du?c x? lý b?i m?t nhà di?u hành hay qu?n tr?. Báo cao bây gi? s? du?c dóng l?i. N?u b?n có th?c m?c, xin liên h? {CLOSER_NAME} b?ng tin nh?n riêng.
+B?n nh?n du?c thï¿½ng bï¿½o nï¿½y vï¿½ bï¿½o cï¿½o c?a b?n liï¿½n quan d?n tin nh?n riï¿½ng "{PM_SUBJECT}" ? trang web "{SITENAME}" v?a du?c x? lï¿½ b?i m?t nhï¿½ di?u hï¿½nh hay qu?n tr?. Bï¿½o cao bï¿½y gi? s? du?c dï¿½ng l?i. N?u b?n cï¿½ th?c m?c, xin liï¿½n h? {CLOSER_NAME} b?ng tin nh?n riï¿½ng.
 
 
 {EMAIL_SIG}

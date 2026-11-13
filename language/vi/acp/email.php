@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'SEND_TO_GROUP'			=> 'Gửi đến nhóm',
 	'SEND_TO_USERS'			=> 'Gửi đến thành viên',
 	'SEND_TO_USERS_EXPLAIN'	=> 'Việc nhập tên thành viên vào khung dưới đây sẽ thay thế cho bất cứ nhóm nào đã được chọn bên trên. Mỗi dòng bạn chỉ nhập một tên thành viên xác định.',
-	
+
 	'MAIL_BANNED'			=> 'Gửi email tới thành viên bị cấm',
 	'MAIL_BANNED_EXPLAIN'	=> 'Khi gửi email hàng loạt đến cho các nhóm, bạn có thể chọn lựa có gửi email đến các thành thành viên đã bị cấm hay không.',
 	'MAIL_HIGH_PRIORITY'	=> 'Cao',
@@ -62,7 +62,7 @@ $lang = array_merge($lang, array(
 	'MAIL_PRIORITY'			=> 'Ưu tiên',
 	'MASS_MESSAGE'			=> 'Nội dung Email của bạn',
 	'MASS_MESSAGE_EXPLAIN'	=> 'Bạn chỉ được phép nhập văn bản thuần tuý trong nội dung Email. Tất cả các thẻ đánh dấu sẽ được gỡ bỏ trong quá trình gửi đi.',
-	
+
 	'NO_EMAIL_MESSAGE'		=> 'Bạn phải nhập nội dung Email để gửi.',
 	'NO_EMAIL_SUBJECT'		=> 'Bạn phải xác định tiêu đề cho Email của mình.',
 ));

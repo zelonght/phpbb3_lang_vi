@@ -24,7 +24,7 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
+// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -55,7 +55,7 @@ $lang = array_merge($lang, array(
 	'DEST_LANG_EXPLAIN'		=> 'Chọn một ngôn ngữ thích hợp cho người nhận tin nhắn này.',
 
 	'EDIT_PROFILE'			=> 'Chỉnh sửa hồ sơ',
-	
+
 	'EMAIL_BODY_EXPLAIN'	=> 'Email này sẽ được gửi dưới dạng văn bản thuần tuý, vì thế bạn đừng sử dụng bất cứ thẻ lệnh HTML hay BBCode nào trong nội dung Email này. Địa chỉ hồi âm của Email này sẽ được thiết lập là địa chỉ Email của bạn.',
 	'EMAIL_DISABLED'		=> 'Xin lỗi, tất cả chức năng liên quan đến Email trong hệ thống đã bị vô hiệu.',
 	'EMAIL_SENT'			=> 'Email đã được gửi thành công.',
@@ -93,16 +93,16 @@ $lang = array_merge($lang, array(
 	'LAST_ACTIVE'				=> 'Lần hoạt động trước',
 	'LESS_THAN'					=> 'Ít hơn',
 	'LIST_USERS'				=> array(
-		1	=> '1 thành viên',
+		1	=> '%d thành viên',
 		2	=> '%d thành viên',
 	),
 	'LOGIN_EXPLAIN_TEAM'		=> 'Diễn đàn yêu cầu bạn phải đăng ký và đăng nhập để xem danh sách nhóm.',
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem danh sách thành viên.',
-	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',	
+	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để thực hiện tìm kiếm thành viên.',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem thông tin cá nhân của thành viên.',
 
 	'MANAGE_GROUP'			=> 'Quản lý nhóm',
-	'MORE_THAN'				=> 'More than',
+	'MORE_THAN'				=> 'Nhiều hơn',
 
 	'NO_CONTACT_FORM'		=> 'Biểu mẫu liên hệ của quản trị viên diễn đàn đã bị tắt.',
 	'NO_CONTACT_PAGE'		=> 'Trang liên hệ của quản trị viên diễn đàn đã bị tắt.',
@@ -134,7 +134,7 @@ $lang = array_merge($lang, array(
 
 	'USERNAME_BEGINS_WITH'	=> 'Tên thành viên bắt đầu bằng',
 	'USER_ADMIN'			=> 'Quản trị viên',
-	'USER_BAN'				=> 'Cấm thành viên',	
+	'USER_BAN'				=> 'Cấm thành viên',
 	'USER_FORUM'			=> 'Thống kê thành viên',
 	'USER_LAST_REMINDED'	=> array(
 		0		=> 'Chưa gửi thư nhắc nhở',
@@ -148,7 +148,6 @@ $lang = array_merge($lang, array(
 	'VIEWING_PROFILE'		=> 'Đang xem thông tin cá nhân của %s',
 	'VIEW_FACEBOOK_PROFILE'	=> 'Xem hồ sơ trên Facebook',
 	'VIEW_SKYPE_PROFILE'	=> 'Xem hồ sơ Skype',
-	'VIEW_TWITTER_PROFILE'	=> 'Xem hồ sơ trên Twitter',
-	'VIEW_YOUTUBE_CHANNEL'	=> 'Xem kênh YouTube',
-	'VIEW_GOOGLEPLUS_PROFILE' => 'Xem hồ sơ trên Google+',
+	'VIEW_TWITTER_PROFILE'	=> 'Xem hồ sơ X',
+	'VIEW_YOUTUBE_PROFILE'	=> 'Xem hồ sơ YouTube',
 ));

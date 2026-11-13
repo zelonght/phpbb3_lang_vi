@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 	'IP_UNBAN'					=> 'Ngưng cấm hoặc ngưng loại trừ địa chỉ IP',
 	'IP_UNBAN_EXPLAIN'			=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều địa chỉ IP cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những địa chỉ IP bị loại trừ được đánh dấu nổi bật.',
 
-	'LENGTH_BAN_INVALID'	=> 'Ngày tháng thi hành lệnh cấm phải sử dụng định dạng <kbd>YYYY-MM-DD</kbd>.',
+	'LENGTH_BAN_INVALID'		=> 'Ngày tháng thi hành lệnh cấm phải sử dụng định dạng <kbd>YYYY-MM-DD</kbd>.',
 
 	'OPTIONS_BANNED'			=> 'Bị cấm',
 	'OPTIONS_EXCLUDED'			=> 'Được loại trừ',
@@ -81,6 +81,4 @@ $lang = array_merge($lang, array(
 	'USER_NO_BANNED'			=> 'Không có thành viên nào bị cấm',
 	'USER_UNBAN'				=> 'Ngưng cấm hoặc ngưng loại trừ thành viên',
 	'USER_UNBAN_EXPLAIN'		=> 'Bạn có thể ngưng cấm hoặc ngưng loại trừ nhiều thành viên cùng lúc trong một thao tác bằng cách kết hợp hiệu quả chuột và bàn phím từ máy tính và trình duyệt. Những thành viên bị loại trừ được đánh dấu nổi bật.',
-	
-
 ));

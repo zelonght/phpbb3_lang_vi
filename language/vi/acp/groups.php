@@ -38,8 +38,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE_EXPLAIN'		=> 'Với công cụ này, bạn có thể quản lý tất cả nhóm trong hệ thống. Bạn có thể xoá, tạo mới hay chỉnh sửa những nhóm hiện có. Ngoài ra, bạn cũng có thể chọn ra người lãnh đạo nhóm, thay đổi loại nhóm tự do/ẩn/cố định cũng như cập nhật tên nhóm và giới thiệu về nhóm.',
-	'ADD_GROUP_CATEGORY'			=> 'Add category',
-	'ADD_USERS'						=> 'Add users',
+	'ADD_GROUP_CATEGORY'			=> 'Thêm loại nhóm',
+	'ADD_USERS'						=> 'Thêm thành viên',
 	'ADD_USERS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thêm những thành viên mới cho nhóm. Bạn cũng có thể thay đổi nhóm mặc định cho các thành viên được chọn. Ngoài ra, bạn cũng có thể xác định thành viên trở thành người lãnh đạo của nhóm. Hãy nhập mỗi tên thành viên trên một dòng xác định.',
 
 	'COPY_PERMISSIONS'				=> 'Sao chép thiết lập cấp phép từ',
@@ -53,13 +53,13 @@ $lang = array_merge($lang, array(
 	'GROUP_APPROVED'				=> 'Thành viên được chấp nhận',
 	'GROUP_AVATAR'					=> 'Hình đại diện của nhóm',
 	'GROUP_AVATAR_EXPLAIN'			=> 'Hình ảnh được hiển thị trong bảng quản lý của nhóm.',
-	'GROUP_CATEGORY_NAME'			=> 'Category name',
-	'GROUP_CLOSED'					=> 'Closed',
+	'GROUP_CATEGORY_NAME'			=> 'Tên loại nhóm',
+	'GROUP_CLOSED'					=> 'Nhóm cố định',
 	'GROUP_COLOR'					=> 'Màu nhóm',
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
-		'GROUP_CONFIRM_ADD_USERS'		=> array(
-		1	=> 'Are you sure that you want to add the user %2$s to the group?',
-		2	=> 'Are you sure that you want to add the users %2$s to the group?',
+	'GROUP_CONFIRM_ADD_USERS'		=> array(
+		1	=> 'Bạn có chắc chắn muốn thêm thành viên %2$s vào nhóm?',
+		2	=> 'Bạn có chắc chắn muốn thêm các thành viên %2$s vào nhóm?',
 	),
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
 	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
@@ -102,8 +102,8 @@ $lang = array_merge($lang, array(
 	'GROUP_SETTINGS_SAVE'			=> 'Thiết lập của nhóm',
 	'GROUP_SKIP_AUTH'				=> 'Miễn xét đối với trưởng nhóm',
 	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Nếu chọn thì trưởng nhóm không kế thừa các xét quyền trên nhóm.',
-	'GROUP_SPECIAL'					=> 'Pre-defined',
-	'GROUP_TEAMPAGE'				=> 'Display group on teampage',
+	'GROUP_SPECIAL'					=> 'Chỉ định trước',
+	'GROUP_TEAMPAGE'				=> 'Hiện nhóm trên trang thông tin nhóm',
 	'GROUP_TYPE'					=> 'Loại nhóm',
 	'GROUP_TYPE_EXPLAIN'			=> 'Chọn loại nhóm cho phép các thành viên tham gia vào nhóm hay xem thông tin về nhóm.',
 	'GROUP_UPDATED'					=> 'Thiết lập của nhóm đã được cập nhật thành công.',
@@ -113,40 +113,40 @@ $lang = array_merge($lang, array(
 	'GROUP_USERS_REMOVE'			=> 'Thành viên đã được gỡ bỏ khỏi nhóm và những thiết lập mặc định đã được chọn thành công.',
 	'GROUP_USERS_INVALID'			=> 'Không có người dùng nào được thêm vào nhóm vì những tên người dùng sau không tồn tại: %s',
 
-	'LEGEND_EXPLAIN'				=> 'These are the groups which are displayed in the group legend:',
-	'LEGEND_SETTINGS'				=> 'Legend settings',
-	'LEGEND_SORT_GROUPNAME'			=> 'Sort legend by group name',
-	'LEGEND_SORT_GROUPNAME_EXPLAIN'	=> 'The order below is ignored when this option is enabled.',
+	'LEGEND_EXPLAIN'				=> 'Những nhóm hiển thị trong phần chú thích:',
+	'LEGEND_SETTINGS'				=> 'Thiết lập chú thích',
+	'LEGEND_SORT_GROUPNAME'			=> 'Sắp xếp chú thích theo tên nhóm',
+	'LEGEND_SORT_GROUPNAME_EXPLAIN'	=> 'Nếu bật tùy chọn này, thứ tự sắp xếp bên dưới sẽ thay đổi lại theo tên nhóm.',
 
-	'MANAGE_LEGEND'			=> 'Manage group legend',
-	'MANAGE_TEAMPAGE'		=> 'Manage teampage',
+	'MANAGE_LEGEND'			=> 'Quản lí chú thích nhóm',
+	'MANAGE_TEAMPAGE'		=> 'Quản lí trang thông tin nhóm',
 	'MAKE_DEFAULT_FOR_ALL'	=> 'Chọn làm nhóm mặc định cho tất cả thành viên',
 	'MEMBERS'				=> 'Thành viên',
 
 	'NO_GROUP'					=> 'Không có nhóm nào được xác định.',
-	'NO_GROUPS_ADDED'			=> 'No groups added yet.',
-	'NO_GROUPS_CREATED'			=> 'No groups created yet.',
+	'NO_GROUPS_ADDED'			=> 'Chưa thêm vào bất kì nhóm nào.',
+	'NO_GROUPS_CREATED'			=> 'Chưa có nhóm nào được tạo.',
 	'NO_PERMISSIONS'			=> 'Đừng sao chép thiết lập cấp phép',
 	'NO_USERS'					=> 'Bạn chưa nhập vào bất kỳ thành viên nào.',
 	'NO_USERS_ADDED'			=> 'Không có thành viên nào được thêm vào nhóm.',
 	'NO_VALID_USERS'			=> 'Bạn chưa nhập vào thành viên hợp lệ nào cho hành động này.',
 
-	'PENDING_MEMBERS'			=> 'Pending',
-	
-	'SELECT_GROUP'				=> 'Select a group',
+	'PENDING_MEMBERS'			=> 'Chờ duyệt',
+
+	'SELECT_GROUP'				=> 'Chọn một nhóm',
 	'SPECIAL_GROUPS'			=> 'Nhóm đặc biệt',
 	'SPECIAL_GROUPS_EXPLAIN'	=> 'Có một vài loại nhóm đặc biệt khác hẳn với các nhóm còn lại, những nhóm này không thể xoá cũng như chỉnh sửa trực tiếp được. Tuy nhiên, bạn vẫn có thể thêm thành viên mới vào những nhóm này và thay đổi những thiết lập đơn giản.',
 
-	'TEAMPAGE'					=> 'Teampage',
-	'TEAMPAGE_DISP_ALL'			=> 'All memberships',
-	'TEAMPAGE_DISP_DEFAULT'		=> 'User’s default group only',
-	'TEAMPAGE_DISP_FIRST'		=> 'First membership only',
-	'TEAMPAGE_EXPLAIN'			=> 'These are the groups which are displayed on the teampage:',
-	'TEAMPAGE_FORUMS'			=> 'Display moderated forums',
-	'TEAMPAGE_FORUMS_EXPLAIN'	=> 'If set to yes, moderators will have a list with all of the forums where they have moderator permissions displayed in their row. This can be very database intensive for big boards.',
-	'TEAMPAGE_MEMBERSHIPS'		=> 'Display user memberships',
-	'TEAMPAGE_SETTINGS'			=> 'Teampage settings',
-	'TOTAL_MEMBERS'				=> 'Members',
+	'TEAMPAGE'					=> 'Trang thông tin nhóm',
+	'TEAMPAGE_DISP_ALL'			=> 'Tất cả tư cách thành viên',
+	'TEAMPAGE_DISP_DEFAULT'		=> 'Chỉ nhóm mặc định của thành viên',
+	'TEAMPAGE_DISP_FIRST'		=> 'Chỉ tư cách thành viên đầu tiên',
+	'TEAMPAGE_EXPLAIN'			=> 'Những nhóm hiển thị trên trang thông tin nhóm:',
+	'TEAMPAGE_FORUMS'			=> 'Hiện chuyên mục quản lí',
+	'TEAMPAGE_FORUMS_EXPLAIN'	=> 'Nếu bật tùy chọn này, các điều hành viên sẽ có thêm thông tin về chuyên mục mà họ đang quản lí. Thiết lập này có thể tốn thời gian truy vấn cơ sở dữ liệu khi số lượng chuyên mục lớn.',
+	'TEAMPAGE_MEMBERSHIPS'		=> 'Hiện tư cách thành viên',
+	'TEAMPAGE_SETTINGS'			=> 'Thiết lập trang thông tin nhóm',
+	'TOTAL_MEMBERS'				=> 'Số thành viên',
 
 	'USERS_APPROVED'				=> 'Thành viên đã được chấp nhận thành công.',
 	'USER_DEFAULT'					=> 'Thành viên mặc định',
@@ -156,5 +156,3 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Bật tuỳ chọn này để thiết lập nhóm này làm nhóm mặc định cho các thành viên đã thêm vào.',
 	'USER_GROUP_LEADER'				=> 'Chọn làm người lãnh đạo nhóm',
 ));
-
-?>

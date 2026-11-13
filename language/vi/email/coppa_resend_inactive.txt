@@ -17,15 +17,15 @@ Hoặc gửi Email về địa chỉ:
 Tên thành viên: {USERNAME}
 Địa chỉ Email: {EMAIL_ADDRESS}
 
-TÔI ĐÃ XEM XÉT KỸ CÁC THÔNG TIN BÊN TRÊN VÀ ĐỒNG Ý CHO PHÉP ĐỨA TRẺ CỦA TÔI THAM GIA VÀO WEBSITE "{SITENAME}" VỚI NHỮNG THÔNG TIN LƯU TRỮ BÊN TRÊN. 
-TÔI BIẾT NHỮNG THÔNG TIN TRÊN CÓ THỂ ĐƯỢC THAY ĐỔI LẠI BẤT CỨ KHI NÀO VỚI MỘT MẬT KHẨU ĐĂNG NHẬP THÀNH CÔNG VÀO TÀI KHOẢN THÀNH VIÊN. 
+TÔI ĐÃ XEM XÉT KỸ CÁC THÔNG TIN BÊN TRÊN VÀ ĐỒNG Ý CHO PHÉP ĐỨA TRẺ CỦA TÔI THAM GIA VÀO WEBSITE "{SITENAME}" VỚI NHỮNG THÔNG TIN LƯU TRỮ BÊN TRÊN.
+TÔI BIẾT NHỮNG THÔNG TIN TRÊN CÓ THỂ ĐƯỢC THAY ĐỔI LẠI BẤT CỨ KHI NÀO VỚI MỘT MẬT KHẨU ĐĂNG NHẬP THÀNH CÔNG VÀO TÀI KHOẢN THÀNH VIÊN.
 TÔI BIẾT TÔI CÓ THỂ YÊU CẦU NHỮNG THÔNG TIN TRÊN ĐƯỢC GỠ BỎ KHỎI WEBSITE "{SITENAME}" BẤT CỨ LÚC NÀO.
 
-Cha mẹ hoặc người bảo hộ 
+Cha mẹ hoặc người bảo hộ
 (Ghi rõ họ tên tại đây): ______________________________
 
 
-(Ký tên tại đây): ____________________ 
+(Ký tên tại đây): ____________________
 
 Ngày tháng: _______________
 

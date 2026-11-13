@@ -51,15 +51,15 @@ $lang = array_merge($lang, array(
 
 		<h2>Danh sách cấp phép</h2>
 		<p>Sử dụng danh sách cấp phép, bạn có thể xem toàn bộ những thiết lập cấp phép đã chỉ định cho các quản trị viên, thành viên, điều hành viên chính, điều hành viên hay chuyên mục.</p>
-	
+
 		<br />
 
 		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lý thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo chương 1.5 trong tài liệu hướng dẫn trực tuyến <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Quick Start Guide</a> của chúng tôi.</p>
 	',
 
-	'ACL_NEVER'				=> 'Không bao giờ',	
+	'ACL_NEVER'				=> 'Không bao giờ',
 	'ACL_SET'				=> 'Thiết lập cấp phép',
-	'ACL_SET_EXPLAIN'		=> 'Những thiết lập cấp phép được thiết lập đơn giản bằng cách chọn <samp>CÓ</samp>/<samp>KHÔNG</samp> trong từng mục tương ứng. Thiết lập một tuỳ chọn là <samp>KHÔNG BAO GIỜ</samp> cho một thành viên hay nhóm sẽ thay thế cho bất kỳ giá trị nào được chỉ định đến. Nếu bạn không muốn chỉ định cấp phép trong một tuỳ chọn nào dành cho thành viên hay nhóm, hãy chọn <samp>KHÔNG</samp>. Nếu các giá trị được chỉ định trong tuỳ chọn đã có trong thiết lập cá nhân của thành viên, hãy chọn <samp>KHÔNG BAO GIỜ</samp> để sử dụng thiết lập của thành viên. Tất cả các đối tượng được đánh dấu chọn trong ô kiểm phía trước sẽ được sao chép thiết lập cấp phép giống như thiết lập cấp phép bạn đã chỉ định.',
+	'ACL_SET_EXPLAIN'		=> 'Quyền hạn dựa trên hệ thống đơn giản <strong>CÓ</strong>/<strong>KHÔNG</strong>. Đặt một tùy chọn thành <strong>KHÔNG BAO GIỜ</strong> cho thành viên hoặc nhóm sẽ ghi đè mọi giá trị khác. Nếu không muốn gán giá trị cho tùy chọn này, hãy chọn <strong>KHÔNG</strong>; giá trị được gán ở nơi khác sẽ được ưu tiên, nếu không hệ thống sẽ xem như <strong>KHÔNG BAO GIỜ</strong>. Mọi đối tượng được đánh dấu sẽ sao chép bộ quyền bạn đã xác định. Lưu ý rằng việc đặt quyền quản trị cho tài khoản sáng lập không có tác dụng vì quyền quản trị của họ luôn là <strong>CÓ</strong>.',
 	'ACL_SETTING'			=> 'Thiết lập',
 
 	'ACL_TYPE_A_'			=> 'Cấp phép quản trị viên',
@@ -73,7 +73,7 @@ $lang = array_merge($lang, array(
 	'ACL_TYPE_LOCAL_M_'		=> 'Cấp phép điều hành viên',
 	'ACL_TYPE_LOCAL_F_'		=> 'Cấp phép chuyên mục',
 
-	'ACL_NO'				=> 'Không',	
+	'ACL_NO'				=> 'Không',
 	'ACL_VIEW'				=> 'Xem thiết lập cấp phép',
 	'ACL_VIEW_EXPLAIN'		=> 'Với công cụ này, bạn có thể toàn bộ thiết lập cấp phép đã chỉ định cho thành viên/nhóm. Ô màu đỏ cho biết thành viên/nhóm đó chưa được thiết lập cấp phép và ngược lại, ô màu xanh lá tức là thành viên/nhóm đó đã được thiết lập cấp phép.',
 	'ACL_YES'				=> 'Có',
@@ -81,7 +81,7 @@ $lang = array_merge($lang, array(
 	'ACP_ADMINISTRATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép của người quản trị đối với thành viên và nhóm. Tất cả thành viên được cấp phép quản trị viên đều có thể xem bảng điều khiển của quản trị viên.',
 	'ACP_FORUM_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thành viên hay nhóm sẽ trở thành điều hành viên của chuyên mục. Để chỉ định thành viên được phép truy cập chuyên mục, chỉ định thiết lập cấp phép của điều hành viên chính hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
 	'ACP_FORUM_PERMISSIONS_EXPLAIN'				=> 'Với công cụ này, bạn có thể thay đổi những thành viên và nhóm nào có thể truy cập vào chuyên mục. Để chỉ định điều hành viên hay quản trị viên, hãy sử dụng trang cấp phép tương ứng.',
-	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể xao chép cấp phép từ chuyên mục này đến một hay nhiều chuyên mục khác.',	
+	'ACP_FORUM_PERMISSIONS_COPY_EXPLAIN'		=> 'Với công cụ này, bạn có thể xao chép cấp phép từ chuyên mục này đến một hay nhiều chuyên mục khác.',
 	'ACP_GLOBAL_MODERATORS_EXPLAIN'				=> 'Với công cụ này, bạn có thể chỉ định thiết lập cấp phép của điều hành viên chính cho các thành viên hay nhóm. Những điều hành viên chính đều giống với các điều hành viên bình thường ngoại trừ việc họ có thể truy cập bất cứ chuyên mục nào.',
 	'ACP_GROUPS_FORUM_PERMISSIONS_EXPLAIN'		=> 'Với công cụ này, bạn có thể chỉ định những cấp phép chuyên mục dành cho nhóm.',
 	'ACP_GROUPS_PERMISSIONS_EXPLAIN'			=> 'Với công cụ này, bạn có thể chỉ định những thiết lập cấp phép chung cho cấp phép thành viên - nhóm, cấp phép điều hành viên chính và quản trị viên. Thiết lập cấp phép thành viên như sử dụng hình đại diện, gửi tin nhắn… ; thiết lập cấp phép điều hành viên chính như chấp nhận bài viết, quản lý chủ đề, quản lý bảng cấm… và cuối cùng thiết lập cấp phép quản trị viên như thay đổi thiết lập cấp phép, tạo các thẻ BBCode tùy biến, quản lý chuyên mục… Những thiết lập cấp phép thành viên riêng lẻ ít khi cần thay đổi, phương pháp chúng tôi khuyên bạn nên dùng là đặt những thành viên vào chung trong nhóm và thiết lập cấp phép cho nhóm sẽ dễ dàng hơn.',
@@ -102,7 +102,7 @@ $lang = array_merge($lang, array(
 	'ADD_USERS'					=> 'Thêm thành viên',
 	'ADVANCED_PERMISSIONS'		=> 'Thiết lập cấp phép nâng cao',
 	'ALL_GROUPS'				=> 'Chọn tất cả nhóm',
-	'ALL_NEVER'					=> 'Chọn tất cả không bao giờ',	
+	'ALL_NEVER'					=> 'Chọn tất cả không bao giờ',
 	'ALL_NO'					=> 'Chọn tất cả không',
 	'ALL_USERS'					=> 'Chọn tất cả thành viên',
 	'ALL_YES'					=> 'Chọn tất cả có',
@@ -115,8 +115,8 @@ $lang = array_merge($lang, array(
 	'COPY_PERMISSIONS_FORUM_FROM_EXPLAIN'	=> 'Chuyên mục nguồn mà bạn muốn xao chép.',
 	'COPY_PERMISSIONS_FORUM_TO_EXPLAIN'		=> 'Các chuyên mục đính đến và bạn muốn dán cấp phép.',
 	'COPY_PERMISSIONS_FROM'					=> 'Xao chép cấp phép từ chuyên mục',
-	'COPY_PERMISSIONS_TO'					=> 'Chép cấp phép đến chuyên mục',	
-	
+	'COPY_PERMISSIONS_TO'					=> 'Chép cấp phép đến chuyên mục',
+
 	'CREATE_ROLE'				=> 'Tạo nhiệm vụ mới',
 	'CREATE_ROLE_FROM'			=> 'Sử dụng thiết lập từ…',
 	'CUSTOM'					=> 'Tuỳ chọn…',
@@ -208,7 +208,7 @@ $lang = array_merge($lang, array(
 	'ROLE_DESCRIPTION_USER_NOPM'			=> 'Hạn chế chức năng thiết lập và không được phép sử dụng tin nhắn.',
 	'ROLE_DESCRIPTION_USER_STANDARD'		=> 'Có thể sử dụng hầu hết chức năng của thành viên nhưng không thể thay đổi tên thành viên hay bị giới hạn thời gian gửi bài giữa hai bài viết.',
 	'ROLE_DESCRIPTION_USER_NEW_MEMBER'		=> 'A role for members of the special newly registered users group; contains <samp>NEVER</samp> permissions to lock features for new users.',
-	
+
 	'ROLE_DESCRIPTION_EXPLAIN'		=> 'Bạn có thể nhập vào một giới thiệu ngắn về nhiệm vụ này có vai trò như thế nào trong hệ thống. Nội dung bạn nhập vào đây cũng sẽ được hiển thị trong trang thiết lập cấp phép.',
 	'ROLE_DESCRIPTION_LONG'			=> 'Giới thiệu về nhiệm vụ mà bạn nhập quá dài. Hãy giới hạn nội dung giới thiệu này trong <strong>4000</strong> ký tự.',
 	'ROLE_DETAILS'					=> 'Thông tin nhiệm vụ',
@@ -228,26 +228,26 @@ $lang = array_merge($lang, array(
 	'SET_USERS_PERMISSIONS'			=> 'Thiết lập cấp phép thành viên',
 	'SET_USERS_FORUM_PERMISSIONS'	=> 'Thiết lập cấp phép chuyên mục cho thành viên',
 
-	'TRACE_DEFAULT'							=> 'Mặc định, mọi thiết lập cấp phép đều là <samp>KHÔNG</samp> (chưa thiết lập). Vì thế, những thiết lập cấp phép có thể được thay thế bằng những thiết lập khác.',
-	'TRACE_FOR'								=> 'Xác định cho',
-	'TRACE_GLOBAL_SETTING'					=> '%s (toàn bộ)',
-	'TRACE_GROUP_NEVER_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
+	'TRACE_DEFAULT'					=> 'Mặc định, mọi thiết lập cấp phép đều là <samp>KHÔNG</samp> (chưa thiết lập). Vì thế, những thiết lập cấp phép có thể được thay thế bằng những thiết lập khác.',
+	'TRACE_FOR'						=> 'Xác định cho',
+	'TRACE_GLOBAL_SETTING'			=> '%s (toàn bộ)',
+	'TRACE_GROUP_NEVER_TOTAL_NEVER'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
 	'TRACE_GROUP_NEVER_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> giống như tất cả kết quả vì thế kết quả cũ được giữ lại.',
-	'TRACE_GROUP_NEVER_TOTAL_NO'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_NEVER_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_NEVER_TOTAL_YES'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>KHÔNG BAO GIỜ</samp> cho thành viên này.',
-	'TRACE_GROUP_NEVER_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>KHÔNG BAO GIỜ</samp> cho thành viên này.',
-	'TRACE_GROUP_NO'						=> 'Thiết lập cấp phép của nhóm này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
-	'TRACE_GROUP_NO_LOCAL'					=> 'Thiết lập cấp phép của nhóm trong chuyên mục này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
-	'TRACE_GROUP_YES_TOTAL_NEVER'			=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>KHÔNG BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_GROUP_YES_TOTAL_NEVER_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>KHÔNG BAO GIỜ</samp> không thể bị thay thế.',
-	'TRACE_GROUP_YES_TOTAL_NO'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_YES_TOTAL_NO_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
-	'TRACE_GROUP_YES_TOTAL_YES'				=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
-	'TRACE_GROUP_YES_TOTAL_YES_LOCAL'		=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
-	'TRACE_PERMISSION'						=> 'Xác định cấp phép - %s',
-	'TRACE_RESULT'							=> 'Xác định kết quả',
-	'TRACE_SETTING'							=> 'Thiết lập xác định',
+	'TRACE_GROUP_NEVER_TOTAL_NO'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
+	'TRACE_GROUP_NEVER_TOTAL_NO_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
+	'TRACE_GROUP_NEVER_TOTAL_YES'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>KHÔNG BAO GIỜ</samp> cho thành viên này.',
+	'TRACE_GROUP_NEVER_TOTAL_YES_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>KHÔNG BAO GIỜ</samp> sẽ thay thế cho tất cả giá trị <samp>CÓ</samp> trở thành <samp>KHÔNG BAO GIỜ</samp> cho thành viên này.',
+	'TRACE_GROUP_NO'				=> 'Thiết lập cấp phép của nhóm này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
+	'TRACE_GROUP_NO_LOCAL'			=> 'Thiết lập cấp phép của nhóm trong chuyên mục này là <samp>KHÔNG</samp> vì thế toàn bộ giá trị cũ được giữ lại.',
+	'TRACE_GROUP_YES_TOTAL_NEVER'	=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>KHÔNG BAO GIỜ</samp> không thể bị thay thế.',
+	'TRACE_GROUP_YES_TOTAL_NEVER_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> nhưng tất cả giá trị <samp>KHÔNG BAO GIỜ</samp> không thể bị thay thế.',
+	'TRACE_GROUP_YES_TOTAL_NO'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
+	'TRACE_GROUP_YES_TOTAL_NO_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> sẽ trở thành tất cả giá trị mới bởi vì nó chưa được thiết lập (thiết lập thành <samp>KHÔNG</samp>).',
+	'TRACE_GROUP_YES_TOTAL_YES'		=> 'Thiết lập cấp phép của nhóm này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
+	'TRACE_GROUP_YES_TOTAL_YES_LOCAL'	=> 'Thiết lập cấp phép của nhóm trong chuyên mục này đã được chọn là <samp>CÓ</samp> và toàn bộ thiết lập cấp phép vừa được chọn là <samp>CÓ</samp>, vì thế tất cả giá trị được giữ lại.',
+	'TRACE_PERMISSION'				=> 'Xác định cấp phép - %s',
+	'TRACE_RESULT'					=> 'Xác định kết quả',
+	'TRACE_SETTING'					=> 'Thiết lập xác định',
 
 	'TRACE_USER_GLOBAL_YES_TOTAL_YES'		=> 'Thiết lập cấp phép thành viên trong chuyên mục độc lập được đánh giá là <samp>CÓ</samp> nhưng toàn bộ số thiết lập cấp phép được chọn là <samp>CÓ</samp>, vì thế toàn bộ số giá trị được giữ lại. %sTheo dõi cấp phép chung%s',
 	'TRACE_USER_GLOBAL_YES_TOTAL_NEVER'		=> 'Thiết lập cấp phép thành viên trong chuyên mục độc lập được đánh giá là <samp>CÓ</samp> thay thế cho giá trị hiện tại là <samp>KHÔNG BAO GIỜ</samp>. %sTheo dõi cấp phép chung%s',
@@ -282,6 +282,6 @@ $lang = array_merge($lang, array(
 	'VIEW_GLOBAL_PERMS'		=> 'Xem thiết lập cấp phép chung',
 	'VIEW_PERMISSIONS'		=> 'Xem thiết lập cấp phép',
 
-	'WRONG_PERMISSION_TYPE'	=> 'Loại thiết lập cấp phép sai đã được chọn',
+	'WRONG_PERMISSION_TYPE'				=> 'Loại thiết lập cấp phép sai đã được chọn',
 	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Thiết lập cấp phép sai định dạng, phpBB không thể sử dụng thông tin thiết lập này một cách chính xác.',
 ));

@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của người sáng lập.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'Bạn không thể yêu cầu kích hoạt lại tài khoản của chính mình.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'Bạn không thể gỡ bỏ tài khoản của khách.',
-	'CANNOT_REMOVE_FOUNDER'			=> 'You are not allowed to remove founder accounts.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'Bạn không thể gỡ bỏ tài khoản người sáng lập.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'Bạn không thể gỡ bỏ tài khoản thành viên của chính mình.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'Bạn không thể tăng cấp những thành viên bị cấm trở thành người sáng lập.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'Bạn cần phải kích hoạt tài khoản của thành viên trước khi bạn tăng cấp cho thành viên này trở thành người sáng lập và chỉ có những thành viên đã kích hoạt mới có thể tăng cấp được.',
@@ -67,11 +67,11 @@ $lang = array_merge($lang, array(
 	'FOUNDER'						=> 'Người sáng lập',
 	'FOUNDER_EXPLAIN'				=> 'Người sáng lập có tất cả quyền hạn của quản trị viên và không bao giờ bị cấm, xoá hay thay đổi bởi bất kỳ thành viên nào.',
 
-	'GROUP_APPROVE'		=> 'Chấp nhận thành viên',
-	'GROUP_DEFAULT'		=> 'Chọn làm nhóm mặc định của thành viên',
-	'GROUP_DELETE'		=> 'Gỡ bỏ thành viên khỏi nhóm',
-	'GROUP_DEMOTE'		=> 'Giáng chức người lãnh đạo nhóm',
-	'GROUP_PROMOTE'		=> 'Thăng chức thành người lãnh đạo nhóm',
+	'GROUP_APPROVE'					=> 'Chấp nhận thành viên',
+	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
+	'GROUP_DELETE'					=> 'Gỡ bỏ thành viên khỏi nhóm',
+	'GROUP_DEMOTE'					=> 'Giáng chức người lãnh đạo nhóm',
+	'GROUP_PROMOTE'					=> 'Thăng chức thành người lãnh đạo nhóm',
 
 	'IP_WHOIS_FOR'			=> 'Tra cứu địa chỉ IP cho %s',
 
@@ -126,7 +126,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_SPECIAL'			=> 'Loại nhóm đặc biệt, là thành viên của nhóm',
 	'USER_LIFTED_NR'				=> 'Gỡ bỏ thành công thành viên userâ€™s ra khỏi Thành viên mới đăng ký.',
 	'USER_NO_ATTACHMENTS'			=> 'Chưa đính kèm bất kỳ tập tin nào.',
-	'USER_NO_POSTS_TO_DELETE'		=> 'Thành viên này không có bài viết nào để giữ lại hay xóa.',
+	'USER_NO_POSTS_TO_DELETE'			=> 'Thành viên này không có bài viết nào để giữ lại hay xóa.',
 	'USER_OUTBOX_EMPTIED'			=> 'Làm rỗng thành công hộp tin nhắn riêng gửi đi của userâ€™s.',
 	'USER_OUTBOX_EMPTY'				=> 'hộp tin nhắn riêng gửi đi của userâ€™s đã rỗng từ trước.',
 	'USER_OVERVIEW_UPDATED'			=> 'Thông tin chi tiết về thành viên đã được cập nhật thành công.',
@@ -138,6 +138,6 @@ $lang = array_merge($lang, array(
 	'USER_RANK'						=> 'Xếp hạng của thành viên',
 	'USER_RANK_UPDATED'				=> 'Xếp hạng của thành viên đã được cập nhật thành công.',
 	'USER_SIG_UPDATED'				=> 'Chữ ký cá nhân của thành viên đã được cập nhật thành công.',
-	'USER_WARNING_LOG_DELETED'		=> 'No information available. Possibly the log entry has been deleted.',
+	'USER_WARNING_LOG_DELETED'		=> 'Không nhận được cảnh cáo nào. Có thể bản ghi cảnh cáo đã bị xóa.',
 	'USER_TOOLS'					=> 'Công cụ đơn giản',
 ));

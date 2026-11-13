@@ -41,8 +41,8 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'CONTROLLER_ARGUMENT_VALUE_MISSING'	=> 'Missing value for argument #%1$s: <strong>%3$s</strong> in class <strong>%2$s</strong>',
-	'CONTROLLER_NOT_SPECIFIED'			=> 'No controller has been specified.',
-	'CONTROLLER_METHOD_NOT_SPECIFIED'	=> 'No method was specified for the controller.',
-	'CONTROLLER_SERVICE_UNDEFINED'		=> 'The service for controller “<strong>%s</strong>” is not defined in ./config/services.yml.',
+	'CONTROLLER_ARGUMENT_VALUE_MISSING'	=> 'Thiếu giá trị khai báo cho tham số #%1$s: <strong>%3$s</strong> trong lớp <strong>%2$s</strong>',
+	'CONTROLLER_NOT_SPECIFIED'			=> 'Không có lớp điều khiển nào được xác định.',
+	'CONTROLLER_METHOD_NOT_SPECIFIED'	=> 'Không có phương thức nào xác định trong lớp điều khiển.',
+	'CONTROLLER_SERVICE_UNDEFINED'		=> 'Dịch vụ cho lớp điều khiển “<strong>%s</strong>” không được xác định trong <samp>./config/services.yml</samp>.',
 ));

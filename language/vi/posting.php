@@ -24,7 +24,7 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-// DEVELOPERS PLEASE NOTE 
+// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -73,11 +73,11 @@ $lang = array_merge($lang, array(
 	'CANNOT_POST_ANNOUNCE'		=> 'Xin lỗi, bạn không thể tạo thông báo.',
 	'CANNOT_POST_STICKY'		=> 'Xin lỗi, bạn không thể tạo chú ý.',
 	'CHANGE_TOPIC_TO'			=> 'Thay đổi loại chủ đề thành',
-	'CHARS_POST_CONTAINS' => array(
+	'CHARS_POST_CONTAINS'		=> array(
 		1 => 'Thư của bạn chứa %1$d ký tự.',
 		2 => 'Thư của bạn chứa %1$d ký tự.',
 	),
-	'CHARS_SIG_CONTAINS' => array(
+	'CHARS_SIG_CONTAINS'		=> array(
 		1 => 'Chữ ký của bạn chứa %1$d ký tự.',
 		2 => 'Chữ ký của bạn chứa %1$d ký tự.',
 	),
@@ -88,26 +88,26 @@ $lang = array_merge($lang, array(
 	'DELETE_MESSAGE'			=> 'Xoá bài viết',
 	'DELETE_MESSAGE_CONFIRM'	=> 'Bạn có chắc chắn muốn xoá bài viết này?',
 	'DELETE_OWN_POSTS'			=> 'Xin lỗi, bạn chỉ có thể xoá những bài viết của chính mình.',
-	'DELETE_PERMANENTLY' => 'Xóa vĩnh viễn',
-	'DELETE_POST_CONFIRM' => 'Bạn có chắc chắn muốn xóa bài đăng này?',
-	'DELETE_POST_PERMANENTLY_CONFIRM' => 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa bài đăng này không?',
-	'DELETE_POST_PERMANENTLY' => array(
+	'DELETE_PERMANENTLY'		=> 'Xóa vĩnh viễn',
+	'DELETE_POST_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa bài đăng này?',
+	'DELETE_POST_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa bài đăng này không?',
+	'DELETE_POST_PERMANENTLY'	=> array(
 		1 => 'Xóa vĩnh viễn bài đăng này để bài đăng không thể khôi phục được',
 		2 => 'Xóa vĩnh viễn %1$d bài đăng để chúng không thể phục hồi',
 	),
 	'DELETE_POSTS_CONFIRM'		=> 'Bạn có chắc chắn muốn xoá bài viết này?',
-	'DELETE_POSTS_PERMANENTLY_CONFIRM' => 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa các bài đăng này không?',
-	'DELETE_REASON' => 'Lý do xóa',
-	'DELETE_REASON_EXPLAIN' => 'Lý do xóa được chỉ định sẽ hiển thị cho người kiểm duyệt.',
-	'DELETE_POST_WARN' => 'Xóa bài đăng này',
-	'DELETE_TOPIC_CONFIRM' => 'Bạn có chắc chắn muốn xóa chủ đề này không?',
-	'DELETE_TOPIC_PERMANENTLY' => array(
+	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa các bài đăng này không?',
+	'DELETE_REASON'				=> 'Lý do xóa',
+	'DELETE_REASON_EXPLAIN'		=> 'Lý do xóa được chỉ định sẽ hiển thị cho người kiểm duyệt.',
+	'DELETE_POST_WARN'			=> 'Xóa bài đăng này',
+	'DELETE_TOPIC_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa chủ đề này không?',
+	'DELETE_TOPIC_PERMANENTLY'	=> array(
 		1 => 'Xóa vĩnh viễn chủ đề này để không thể khôi phục',
 		2 => 'Xóa vĩnh viễn %1$d chủ đề để chúng không thể phục hồi',
 	),
-	'DELETE_TOPIC_PERMANENTLY_CONFIRM' => 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa chủ đề này không?',
-	'DELETE_TOPICS_CONFIRM' => 'Bạn có chắc chắn muốn xóa các chủ đề này không?',
-	'DELETE_TOPICS_PERMANENTLY_CONFIRM' => 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa các chủ đề này không?',	'DISABLE_BBCODE'			=> 'Tắt các thẻ <strong>BBCode</strong>',
+	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa chủ đề này không?',
+	'DELETE_TOPICS_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa các chủ đề này không?',
+	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'Bạn có chắc chắn muốn <strong> vĩnh viễn </strong> xóa các chủ đề này không?',
 	'DISABLE_BBCODE'			=> 'Tắt BBCode',
 	'DISABLE_MAGIC_URL'			=> 'Không tự động phân tích cú pháp các URL',
 	'DISABLE_SMILIES'			=> 'Tắt <strong>Biểu tượng vui</strong>',
@@ -152,25 +152,25 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_REPLY'		=> 'Bạn cần phải đăng nhập để trả lời các chủ đề trong chuyên mục này.',
 
 	'MAX_ATTACHMENT_FILESIZE'	=> 'Kích thước tệp tối đa cho mỗi tệp đính kèm: %s.',
-	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ có thể chọn kích thước văn bản tối đa là <strong>%1$d</strong>.',
-	'MAX_FLASH_HEIGHT_EXCEEDED' => array(
+	'MAX_FONT_SIZE_EXCEEDED'	=> 'Bạn chỉ được phép tăng kích cỡ phông chữ đến %d.',
+	'MAX_FLASH_HEIGHT_EXCEEDED'	=> array(
 		1 => 'Tệp flash của bạn chỉ có thể cao tới %d pixel.',
 		2 => 'Các tệp flash của bạn chỉ có thể cao tới %d pixel.',
 	),
-	'MAX_FLASH_WIDTH_EXCEEDED' => array(
+	'MAX_FLASH_WIDTH_EXCEEDED'	=> array(
 		1 => 'Các tệp flash của bạn chỉ có thể rộng tới %d pixel.',
 		2 => 'Các tệp flash của bạn chỉ có thể rộng tối đa %d pixel.',
 	),
-	'MAX_IMG_HEIGHT_EXCEEDED' => array(
+	'MAX_IMG_HEIGHT_EXCEEDED'	=> array(
 		1 => 'Hình ảnh của bạn chỉ có thể cao tới %1$d pixel.',
 		2 => 'Hình ảnh của bạn chỉ có thể cao tới %1$d pixel.',
 	),
-	'MAX_IMG_WIDTH_EXCEEDED' => array(
+	'MAX_IMG_WIDTH_EXCEEDED'	=> array(
 		1 => 'Hình ảnh của bạn chỉ có thể rộng tới %d pixel.',
 		2 => 'Hình ảnh của bạn chỉ có thể rộng tới %d pixel.',
 	),
 
-	'MESSAGE_BODY_EXPLAIN'=> array(
+	'MESSAGE_BODY_EXPLAIN'		=> array(
 		0 => '', // không có nghĩa là không có giới hạn, vì vậy chúng tôi không xem thông báo ở đây.
 		1 => 'Nhập tin nhắn của bạn ở đây, nó có thể chứa không quá <strong> %d </strong> ký tự.',
 		2 => 'Nhập tin nhắn của bạn ở đây, nó có thể chứa không quá <strong> %d </strong> ký tự.',
@@ -185,12 +185,12 @@ $lang = array_merge($lang, array(
 	'NO_POLL_TITLE'				=> 'Bạn chưa nhập câu hỏi bình chọn.',
 	'NO_POST'					=> 'Bài viết bạn vừa yêu cầu không tồn tại.',
 	'NO_POST_MODE'				=> 'Không xác định chế độ bài viết.',
-	'NO_TEMP_DIR'				=> 'Temporary folder could not be found or is not writable.',
+	'NO_TEMP_DIR'				=> 'Không tìm thấy thư mục tạm hoặc thư mục này không thể ghi.',
 
 	'PARTIAL_UPLOAD'			=> 'Tập tin đính kèm bạn vừa chọn chỉ được tải lên một phần và chưa hoàn chỉnh.',
-	'PHP_UPLOAD_STOPPED'		=> 'A PHP extension has stopped the file upload.',
+	'PHP_UPLOAD_STOPPED'		=> 'Phần mở rộng PHP đã dừng tiến trình tải lên tập tin.',
 	'PHP_SIZE_NA'				=> 'Dung lượng tập tin đính kèm quá lớn.<br />Không thể xác định dung lượng tập tin tối đa được xác lập bởi PHP trong tập tin <code>php.ini</code>.',
-	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là <strong>%d</strong> MB.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi được.',
+	'PHP_SIZE_OVERRUN'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tập tin được phép tải lên tối đa là %1$d %2$s.<br />Dung lượng tối đa này được xác lập trong tập tin <strong>php.ini</strong> và không thể tự thay đổi.',
 	'PLACE_INLINE'				=> 'Đặt trong dòng',
 	'POLL_DELETE'				=> 'Xoá bình chọn',
 	'POLL_FOR'					=> 'Thời gian bình chọn',
@@ -231,8 +231,8 @@ $lang = array_merge($lang, array(
 	'PROGRESS_BAR'				=> 'Thanh tiến trình',
 
 	'QUOTE_DEPTH_EXCEEDED'		=> array(
-		1	=> 'You may embed only %d quote within each other.',
-		2	=> 'You may embed only %d quotes within each other.',
+		1	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
+		2	=> 'Bạn chỉ có thể trích dẫn lại <strong>%d</strong> bài trong một bài viết.',
 	),
 	'QUOTE_NO_NESTING'			=> 'Bạn không được nhúng dấu ngoặc kép vào nhau.',
 
@@ -240,7 +240,7 @@ $lang = array_merge($lang, array(
 	'SAVE'						=> 'Lưu',
 	'SAVE_DATE'					=> 'Đã lưu vào ngày',
 	'SAVE_DRAFT'				=> 'Lưu bản nháp',
-	'SAVE_DRAFT_CONFIRM'		=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kỳ các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',	
+	'SAVE_DRAFT_CONFIRM'		=> 'Lưu ý rằng bạn chỉ có thể lưu vào bản nháp tiêu đề và nội dung của bài viết, bất kỳ các thành phần khác sẽ được gỡ bỏ. Bạn có chắc chắn muốn lưu bản nháp của mình ngay bây giờ?',
 	'SMILIES'					=> 'Biểu tượng vui',
 	'SMILIES_ARE_OFF'			=> 'Biểu tượng vui đang <em>TẮT</em>',
 	'SMILIES_ARE_ON'			=> 'Biểu tượng vui đang <em>BẬT</em>',
@@ -267,10 +267,9 @@ $lang = array_merge($lang, array(
 	'TOPIC_BUMPED'				=> 'Chủ đề đã được đẩy lên thành công.',
 
 	'UNAUTHORISED_BBCODE'		=> 'Bạn không thể sử dụng những thẻ lệnh BBCode sau: “%s”.',
-	'UNGLOBALISE_EXPLAIN'		=> 'Để chuyển đổi chủ đề này từ loại thông báo quan trọng thành chủ đề bình thường, bạn cần phải chọn chuyên mục chứa chủ đề này.',
-	'UNSUPPORTED_CHARACTERS_MESSAGE' => 'Thư của bạn chứa các ký tự không được hỗ trợ sau: <br /> %s',
-	'UNSUPPORTED_CHARACTERS_SUBJECT' => 'Chủ đề của bạn chứa các ký tự không được hỗ trợ sau: <br /> %s',
-	'UPDATE_COMMENT' => 'Cập nhật nhận xét',
+	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Thư của bạn chứa các ký tự không được hỗ trợ sau: <br /> %s',
+	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Chủ đề của bạn chứa các ký tự không được hỗ trợ sau: <br /> %s',
+	'UPDATE_COMMENT'			=> 'Cập nhật nhận xét',
 	'URL_INVALID'				=> 'Địa chỉ URL bạn vừa nhập không chính xác.',
 	'URL_NOT_FOUND'				=> 'Không thể tìm thấy tập tin bạn vừa chọn.',
 	'URL_IS_OFF'				=> 'Thẻ [url] đang <em>TẮT</em>',
@@ -279,11 +278,11 @@ $lang = array_merge($lang, array(
 	'USER_CANNOT_DELETE'		=> 'Bạn không thể xoá bài viết trong chuyên mục này.',
 	'USER_CANNOT_EDIT'			=> 'Bạn không thể sửa bài viết trong chuyên mục này.',
 	'USER_CANNOT_REPLY'			=> 'Bạn không thể trả lời bài viết trong chuyên mục này.',
-	'USER_CANNOT_FORUM_POST'	=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',	
+	'USER_CANNOT_FORUM_POST'	=> 'Bạn không thể thực hiện các thao tác gửi bài trong chuyên mục này vì loại chủ đề này không hỗ trợ.',
 
-	'VIEW_MESSAGE'		=> '%sXem bài viết vừa gửi của bạn%s',
+	'VIEW_MESSAGE'				=> '%sXem bài viết vừa gửi của bạn%s',
 	'VIEW_PRIVATE_MESSAGE'		=> '%sXem tin nhắn riêng bạn vừa gửi%s',
 
-	'WRONG_FILESIZE'	=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là <strong>%1d %2s</strong>.',
-	'WRONG_SIZE'		=> 'Kích thước hình ảnh bạn vừa chọn là <strong>%5$d</strong> Pixel về chiều rộng và <strong>%6$d</strong> Pixel về chiều cao. Kích thước hình ảnh không được phép nhỏ hơn <strong>%1$d</strong> Pixel về chiều rộng và <strong>%2$d</strong> Pixel về chiều cao cũng như không được phép lớn hơn <strong>%3$d</strong> Pixel về chiều rộng và <strong>%4$d</strong> Pixel về chiều cao.',
+	'WRONG_FILESIZE'			=> 'Dung lượng tập tin đính kèm quá lớn, dung lượng tối đa cho phép là %1$d %2$s.',
+	'WRONG_SIZE'				=> 'Hình ảnh phải rộng ít nhất %1$s, cao ít nhất %2$s và rộng tối đa %3$s, cao tối đa %4$s. Hình ảnh đã gửi rộng %5$s và cao %6$s.',
 ));

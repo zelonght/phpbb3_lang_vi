@@ -40,9 +40,9 @@ $lang = array_merge($lang, array(
 	'ACP_FILES'						=> 'Tập tin ngôn ngữ dùng trong bảng điều khiển của quản trị viên',
 	'ACP_LANGUAGE_PACKS_EXPLAIN'	=> 'Bảng điều khiển này sẽ giúp bạn cài đặt hoặc gỡ bỏ các gói ngôn ngữ trong hệ thống.',
 
-	'DELETE_LANGUAGE_CONFIRM'		=> 'Are you sure you wish to delete “%s”?',
+	'DELETE_LANGUAGE_CONFIRM'		=> 'Bạn có chắc chắn muốn xóa “%s”?',
 
-	'INSTALLED_LANGUAGE_PACKS'	=> 'Những gói ngôn ngữ đã cài đặt',
+	'INSTALLED_LANGUAGE_PACKS'		=> 'Những gói ngôn ngữ đã cài đặt',
 
 	'LANGUAGE_DETAILS_UPDATED'			=> 'Thông tin chi tiết về gói ngôn ngữ đã được cập nhật thành công.',
 	'LANGUAGE_PACK_ALREADY_INSTALLED'	=> 'Gói ngôn ngữ này đã được cài đặt.',
@@ -61,7 +61,7 @@ $lang = array_merge($lang, array(
 	'LANG_ISO_CODE'						=> 'Mã ISO',
 	'LANG_LOCAL_NAME'					=> 'Tên hệ thống',
 
-	'MISSING_LANG_FILES'		=> 'Tập tin ngôn ngữ bị thiếu: <strong style="color:red">%s</strong>',
+	'MISSING_LANG_FILES'		=> 'Tập tin ngôn ngữ bị thiếu',
 	'MISSING_LANG_VARIABLES'	=> 'Những biến ngôn ngữ bị thiếu',
 
 	'NO_FILE_SELECTED'				=> 'Bạn chưa xác định một tập tin ngôn ngữ.',
@@ -74,8 +74,5 @@ $lang = array_merge($lang, array(
 
 	'UNINSTALLED_LANGUAGE_PACKS'	=> 'Những gói ngôn ngữ đã gỡ bỏ',
 
-	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> 'Browse language packs database',
-
+	'BROWSE_LANGUAGE_PACKS_DATABASE'	=> 'Tìm gói ngôn ngữ',
 ));
-
-?>

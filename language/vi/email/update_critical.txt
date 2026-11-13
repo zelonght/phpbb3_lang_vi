@@ -1,0 +1,14 @@
+Subject: Có bản cập nhật phpBB {NEW_VERSION} - Yêu cầu cập nhật khẩn cấp cho "{SITENAME}"
+
+Chào {USERNAME},
+
+Đây là thông báo cho biết một bản cập nhật bảo mật nghiêm trọng đã được phát hành cho cài đặt phpBB của bạn và cần được cài đặt ngay lập tức.
+
+Phiên bản hiện tại là {CURRENT_VERSION}; đã có phiên bản mới chứa các bản vá bảo mật nghiêm trọng. Chúng tôi khuyên bạn cập nhật diễn đàn ngay lên phiên bản mới nhất {NEW_VERSION} để bảo đảm cài đặt luôn an toàn và được bảo vệ.
+
+Bạn có thể xem chi tiết bản phát hành trong Bảng điều khiển quản trị của cài đặt phpBB.
+{U_BOARD}
+
+Để được trợ giúp về quá trình cập nhật, hãy tham khảo tài liệu hoặc truy cập diễn đàn hỗ trợ phpBB.
+
+{EMAIL_SIG}

@@ -50,6 +50,8 @@ $lang = array_merge($lang, array(
 	'BOT_DELETED'		=> 'Máy tìm kiếm đã được xoá thành công.',
 	'BOT_EDIT'			=> 'Sửa máy tìm kiếm',
 	'BOT_EDIT_EXPLAIN'	=> 'Với công cụ này, bạn có thể thêm vào một máy tìm kiếm mới hay chỉnh sửa một máy tìm kiếm sẵn có. Bạn có thể xác định một chuỗi định danh, có thể cộng thêm với một hay nhiều địa chỉ IP, thậm chí là một vùng trong địa chỉ IP để làm kết quả định danh máy tìm kiếm. Hãy cẩn thận trong việc xác định kết quả định danh máy tìm kiếm bằng chuỗi hay địa chỉ IP. Bạn cũng có thể chọn giao diện và ngôn ngữ riêng trong hệ thống cho máy tìm kiếm khi ghé thăm website. Bạn sẽ tiết kiệm được nhiều băng thông website của mình bằng cách chọn một giao diện đơn giản không nạp quá nhiều hình ảnh cho máy tìm kiếm. Bạn cũng phải nhớ thiết lập cấp phép thích hợp cho những loại máy tìm kiếm đặc biệt này.',
+	'BOT_GROUP'			=> 'Nhóm bot',
+	'BOT_GROUP_EXPLAIN'	=> 'Chọn nhóm mà bot này thuộc về.',
 	'BOT_LANG'			=> 'Ngôn ngữ dành cho máy tìm kiếm',
 	'BOT_LANG_EXPLAIN'	=> 'Chọn ngôn ngữ hiện tại xác định cho máy tìm kiếm trong trình duyệt.',
 	'BOT_LAST_VISIT'	=> 'Lần ghé thăm trước',
@@ -66,6 +68,7 @@ $lang = array_merge($lang, array(
 	'ERR_BOT_AGENT_MATCHES_UA'	=> 'Máy tìm kiếm mà bạn vừa cung cấp tương tự với một trong những máy tìm kiếm đã được sử dụng. Hãy điều chỉnh lại định danh cho máy tìm kiếm này.',
 	'ERR_BOT_NO_IP'				=> 'Địa chỉ IP mà bạn vừa nhập không hợp lệ hoặc do tên miền này không thể sử dụng được.',
 	'ERR_BOT_NO_MATCHES'		=> 'Bạn phải khai báo ít nhất là một kết quả định danh hoặc địa chỉ IP cho kết quả xác định của máy tìm kiếm này.',
+	'ERR_BOT_NO_NAME'			=> 'Bạn phải nhập tên cho bot.',
 
 	'NO_BOT'		=> 'Không thể tìm thấy bất kỳ máy tìm kiếm nào với số ID đã xác định',
 	'NO_BOT_GROUP'	=> 'Không thể tìm thấy nhóm máy tìm kiếm đặc biệt.',

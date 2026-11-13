@@ -35,99 +35,87 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'EXTENSION'					=> 'Extension',
-	'EXTENSIONS'				=> 'Extensions',
-	'EXTENSIONS_ADMIN'			=> 'Extensions Manager',
-	'EXTENSIONS_EXPLAIN'		=> 'The Extensions Manager is a tool in your phpBB Board which allows you to manage all of your extensions statuses and view information about them.',
-	'EXTENSION_INVALID_LIST'	=> 'The “%s” extension is not valid.<br />%s<br /><br />',
-	'EXTENSION_NOT_AVAILABLE'	=> 'The selected extension is not available for this board, please verify your phpBB and PHP versions are allowed (see the details page).',
-	'EXTENSION_DIR_INVALID'		=> 'The selected extension has an invalid directory structure and cannot be enabled.',
-	'EXTENSION_NOT_ENABLEABLE'	=> 'The selected extension cannot be enabled, please verify the extension’s requirements.',
-	'EXTENSION_NOT_INSTALLED'	=> 'The extension %s is not available. Please check that you have installed it correctly.',
+	'EXTENSION'					=> 'Phần mở rộng',
+	'EXTENSIONS'				=> 'Phần mở rộng',
+	'EXTENSIONS_ADMIN'			=> 'Quản lí phần mở rộng',
+	'EXTENSIONS_EXPLAIN'		=> 'Công cụ quản lí phần mở rộng giúp bạn dễ dàng cài đặt, xem thông tin yêu cầu cũng như vô hiệu các chức năng mới bổ sung cho hệ thống phpBB của mình.',
+	'EXTENSION_INVALID_LIST'	=> 'Phần mở rộng “%s” không hợp lệ.<br />%s<br /><br />',
+	'EXTENSION_NOT_AVAILABLE'	=> 'Phần mở rộng đã chọn không thể sử dụng trên hệ thống này. Bạn hãy vui lòng kiểm tra lại phiên bản phpBB cũng như PHP được hỗ trợ bên dưới.',
+	'EXTENSION_DIR_INVALID'		=> 'Phần mở rộng đã chọn có cấu trúc thư mục không hợp lệ và không thể cài đặt.',
+	'EXTENSION_NOT_ENABLEABLE'	=> 'Phần mở rộng đã chọn không thể sử dụng, vui lòng kiểm tra lại yêu cầu cài đặt.',
+	'EXTENSION_NOT_INSTALLED'	=> 'Phần mở rộng “%s” không thể sử dụng. Vui lòng kiểm tra lại quá trình cài đặt.',
 
-	'DETAILS'				=> 'Details',
+	'DETAILS'				=> 'Thông tin chi tiết',
 
-	'EXTENSIONS_DISABLED'	=> 'Disabled Extensions',
-	'EXTENSIONS_ENABLED'	=> 'Enabled Extensions',
+	'EXTENSIONS_NOT_INSTALLED'	=> 'Tiện ích mở rộng chưa được cài đặt',
+	'EXTENSIONS_DISABLED'		=> 'Phần mở rộng đã vô hiệu',
+	'EXTENSIONS_ENABLED'		=> 'Phần mở rộng đang dùng',
 
-	'EXTENSION_DELETE_DATA'	=> 'Delete data',
-	'EXTENSION_DISABLE'		=> 'Disable',
-	'EXTENSION_ENABLE'		=> 'Enable',
+	'EXTENSION_DELETE_DATA'	=> 'Xóa dữ liệu',
+	'EXTENSION_DISABLE'		=> 'Vô hiệu',
+	'EXTENSION_ENABLE'		=> 'Cài đặt',
 
-	'EXTENSION_DELETE_DATA_EXPLAIN'	=> 'Deleting an extension’s data removes all of its data and settings. The extension files are retained so it can be enabled again.',
-	'EXTENSION_DISABLE_EXPLAIN'		=> 'Disabling an extension retains its files, data and settings but removes any functionality added by the extension.',
-	'EXTENSION_ENABLE_EXPLAIN'		=> 'Enabling an extension allows you to use it on your board.',
+	'EXTENSION_DELETE_DATA_EXPLAIN'	=> 'Thao tác này sẽ xóa sạch mọi tập tin hay thiết lập mà phần mở rộng đã tạo ra. Các tập tin ban đầu của phần mở rộng vẫn được giữ lại, vì thế bạn có thể cài đặt lại nếu muốn.',
+	'EXTENSION_DISABLE_EXPLAIN'		=> 'Việc vô hiệu sẽ không xóa đi các tập tin, dữ liệu hay thiết lập của một phần mở rộng, nhưng các chức năng của nó sẽ không còn hoạt động.',
+	'EXTENSION_ENABLE_EXPLAIN'		=> 'Bạn phải cài đặt một phần mở rộng trước khi có thể sử dụng chức năng của nó trên hệ thống.',
 
-	'EXTENSION_DELETE_DATA_IN_PROGRESS'	=> 'The extension’s data is currently being deleted. Please do not leave or refresh this page until it is completed.',
-	'EXTENSION_DISABLE_IN_PROGRESS'	=> 'The extension is currently being disabled. Please do not leave or refresh this page until it is completed.',
-	'EXTENSION_ENABLE_IN_PROGRESS'	=> 'The extension is currently being enabled. Please do not leave or refresh this page until it is completed.',
+	'EXTENSION_DELETE_DATA_IN_PROGRESS'	=> 'Dữ liệu của phần mở rộng đang được xóa. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
+	'EXTENSION_DISABLE_IN_PROGRESS'	=> 'Phần mở rộng đang được vô hiệu. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
+	'EXTENSION_ENABLE_IN_PROGRESS'	=> 'Phần mở rộng đang được cài đặt. Vui lòng đừng đóng hay nạp lại trang này cho đến khi hoàn tất.',
 
-	'EXTENSION_DELETE_DATA_SUCCESS'	=> 'The extension’s data was deleted successfully',
-	'EXTENSION_DISABLE_SUCCESS'		=> 'The extension was disabled successfully',
-	'EXTENSION_ENABLE_SUCCESS'		=> 'The extension was enabled successfully',
+	'EXTENSION_DELETE_DATA_SUCCESS'	=> 'Dữ liệu của phần mở rộng đã được xóa thành công.',
+	'EXTENSION_DISABLE_SUCCESS'		=> 'Phần mở rộng đã được vô hiệu thành công.',
+	'EXTENSION_ENABLE_SUCCESS'		=> 'Phần mở rộng đã được bật thành công.',
 
-	'EXTENSION_NAME'			=> 'Extension Name',
-	'EXTENSION_ACTIONS'			=> 'Actions',
-	'EXTENSION_OPTIONS'			=> 'Options',
-	'EXTENSION_INSTALL_HEADLINE'=> 'Installing an extension',
-	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol>
-			<li>Download an extension from phpBB’s extensions database</li>
-			<li>Unzip the extension and upload it to the <samp>ext/</samp> directory of your phpBB board</li>
-			<li>Enable the extension, here in the Extensions manager</li>
-		</ol>',
-	'EXTENSION_UPDATE_HEADLINE'	=> 'Updating an extension',
-	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol>
-			<li>Disable the extension</li>
-			<li>Delete the extension’s files from the filesystem</li>
-			<li>Upload the new files</li>
-			<li>Enable the extension</li>
-		</ol>',
-	'EXTENSION_REMOVE_HEADLINE'	=> 'Completely removing an extension from your board',
-	'EXTENSION_REMOVE_EXPLAIN'	=> '<ol>
-			<li>Disable the extension</li>
-			<li>Delete the extension’s data</li>
-			<li>Delete the extension’s files from the filesystem</li>
-		</ol>',
+	'EXTENSION_NAME'			=> 'Tên phần mở rộng',
+	'EXTENSION_ACTIONS'			=> 'Thao tác',
+	'EXTENSION_OPTIONS'			=> 'Tùy chọn',
+	'EXTENSION_INSTALL_HEADLINE'=> 'Cài đặt phần mở rộng',
+	'EXTENSION_INSTALL_EXPLAIN'	=> '<ol><li>Tải một tiện ích mở rộng từ cơ sở dữ liệu tiện ích mở rộng của phpBB</li><li>Giải nén tiện ích và tải nó lên thư mục <samp>ext/</samp> của diễn đàn phpBB</li><li>Kích hoạt tiện ích tại đây, trong Trình quản lý tiện ích mở rộng</li></ol>',
+	'EXTENSION_UPDATE_HEADLINE'	=> 'Cập nhật phần mở rộng',
+	'EXTENSION_UPDATE_EXPLAIN'	=> '<ol><li>Vô hiệu hóa tiện ích mở rộng</li><li>Xóa các tập tin của tiện ích khỏi hệ thống tập tin</li><li>Tải các tập tin mới lên</li><li>Kích hoạt tiện ích mở rộng</li></ol>',
+	'EXTENSION_REMOVE_HEADLINE'	=> 'Gỡ bỏ toàn bộ phần mở rộng khỏi hệ thống',
+	'EXTENSION_REMOVE_EXPLAIN'	=> '<ol><li>Vô hiệu hóa tiện ích mở rộng</li><li>Xóa dữ liệu của tiện ích</li><li>Xóa các tập tin của tiện ích khỏi hệ thống tập tin</li></ol>',
 
-	'EXTENSION_DELETE_DATA_CONFIRM'	=> 'Are you sure that you wish to delete the data associated with “%s”?<br /><br />This removes all of its data and settings and cannot be undone!',
-	'EXTENSION_DISABLE_CONFIRM'		=> 'Are you sure that you wish to disable the “%s” extension?',
-	'EXTENSION_ENABLE_CONFIRM'		=> 'Are you sure that you wish to enable the “%s” extension?',
-	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Are you sure that you wish to force the use of unstable version?',
+	'EXTENSION_DELETE_DATA_CONFIRM'	=> 'Bạn có chắc chắn muốn xóa dữ liệu được tạo ra bởi “%s”?<br /><br />Mọi dữ liệu và thiết lập đã xóa sẽ không thể phục hồi lại!',
+	'EXTENSION_DISABLE_CONFIRM'		=> 'Bạn có chắc chắn muốn vô hiệu phần mở rộng “%s”?',
+	'EXTENSION_ENABLE_CONFIRM'		=> 'Bạn có chắc chắn muốn cài đặt phần mở rộng “%s”?',
+	'EXTENSION_FORCE_UNSTABLE_CONFIRM'	=> 'Bạn có chắc chắn muốn sử dụng phiên bản đang thử nghiệm?',
 
-	'RETURN_TO_EXTENSION_LIST'	=> 'Return to the extension list',
+	'RETURN_TO_EXTENSION_LIST'	=> 'Quay về danh sách phần mở rộng',
 
-	'EXT_DETAILS'			=> 'Extension Details',
-	'DISPLAY_NAME'			=> 'Display Name',
-	'CLEAN_NAME'			=> 'Clean Name',
-	'TYPE'					=> 'Type',
-	'DESCRIPTION'			=> 'Description',
-	'VERSION'				=> 'Version',
-	'HOMEPAGE'				=> 'Homepage',
-	'PATH'					=> 'File Path',
-	'TIME'					=> 'Release Time',
-	'LICENSE'				=> 'Licence',
+	'EXT_DETAILS'			=> 'Thông tin gói cài đặt',
+	'DISPLAY_NAME'			=> 'Tên hiển thị',
+	'CLEAN_NAME'			=> 'Tên gốc',
+	'TYPE'					=> 'Loại',
+	'DESCRIPTION'			=> 'Giới thiệu',
+	'VERSION'				=> 'Phiên bản',
+	'HOMEPAGE'				=> 'Trang chủ',
+	'PATH'					=> 'Đường dẫn tập tin',
+	'TIME'					=> 'Ngày phát hành',
+	'LICENSE'				=> 'Bản quyền',
 
-	'REQUIREMENTS'			=> 'Requirements',
-	'PHPBB_VERSION'			=> 'phpBB Version',
-	'PHP_VERSION'			=> 'PHP Version',
-	'AUTHOR_INFORMATION'	=> 'Author Information',
-	'AUTHOR_NAME'			=> 'Name',
+	'REQUIREMENTS'			=> 'Yêu cầu',
+	'PHPBB_VERSION'			=> 'Phiên bản phpBB',
+	'PHP_VERSION'			=> 'Phiên bản PHP',
+	'AUTHOR_INFORMATION'	=> 'Thông tin tác giả',
+	'AUTHOR_NAME'			=> 'Tên',
 	'AUTHOR_EMAIL'			=> 'Email',
-	'AUTHOR_HOMEPAGE'		=> 'Homepage',
-	'AUTHOR_ROLE'			=> 'Role',
+	'AUTHOR_HOMEPAGE'		=> 'Website',
+	'AUTHOR_ROLE'			=> 'Chức vụ',
 
-	'NOT_UP_TO_DATE'		=> '%s is not up to date',
-	'UP_TO_DATE'			=> '%s is up to date',
-	'ANNOUNCEMENT_TOPIC'	=> 'Release Announcement',
-	'DOWNLOAD_LATEST'		=> 'Download Version',
-	'NO_VERSIONCHECK'		=> 'No version check information given.',
+	'NOT_UP_TO_DATE'		=> '%s có bản cập nhật mới',
+	'UP_TO_DATE'			=> '%s là bản mới nhất',
+	'ANNOUNCEMENT_TOPIC'	=> 'Thông báo phát hành',
+	'DOWNLOAD_LATEST'		=> 'Tải về phiên bản mới',
+	'NO_VERSIONCHECK'		=> 'Không hỗ trợ kiểm tra phiên bản mới.',
 
-	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Re-Check all versions',
-	'FORCE_UNSTABLE'					=> 'Always check for unstable versions',
-	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Version check settings',
+	'VERSIONCHECK_FORCE_UPDATE_ALL'		=> 'Kiểm tra lại phiên bản mới toàn bộ',
+	'FORCE_UNSTABLE'					=> 'Kiểm tra cả những phiên bản mới đang thử nghiệm',
+	'EXTENSIONS_VERSION_CHECK_SETTINGS'	=> 'Thiết lập kiểm tra phiên bản',
 
-	'BROWSE_EXTENSIONS_DATABASE'		=> 'Browse extensions database',
+	'BROWSE_EXTENSIONS_DATABASE'		=> 'Tìm phần mở rộng',
 
-	'META_FIELD_NOT_SET'	=> 'Required meta field %s has not been set.',
-	'META_FIELD_INVALID'	=> 'Meta field %s is invalid.',
+	'META_FIELD_NOT_SET'	=> 'Mục thông tin yêu cầu “%s” không được khai báo.',
+	'META_FIELD_INVALID'	=> 'Mục thông tin “%s” không hợp lệ.',
 ));

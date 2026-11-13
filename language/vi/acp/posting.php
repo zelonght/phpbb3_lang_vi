@@ -41,13 +41,13 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BBCODES_EXPLAIN'		=> 'BBCode là một dạng thức bổ sung đặc biệt của mã HTML, bản thân tương tự gần giống như HTML, cho phép bạn tuỳ biến sử dụng và điều khiển dễ dàng hơn mã HTML. Với công cụ này, bạn có thể thêm vào, gỡ bỏ hay chỉnh sửa những thẻ BBCode tuỳ chọn.',
 	'ADD_BBCODE'				=> 'Tạo thẻ BBCode mới',
- 
-	'BBCODE_DANGER'				=> 'Thẻ BBCode bạn đang muốn thêm vào sử dụng {TEXT} nằm trong thuộc tính của HTML. Điều này có thể gây ra lỗi bảo mật XSS. Hãy thử dùng với {SIMPLETEXT} hay {INTTEXT} để an toàn hơn. Chỉ tiếp tục thêm vào nếu bạn hiểu rõ về khả năng gây hại này hay {TEXT} bắt buộc phải sử dụng.',
+
+	'BBCODE_DANGER'				=> 'BBCode bạn đang thêm có vẻ không an toàn. Nếu BBCode dùng mã {TEXT} trong ngữ cảnh nhạy cảm, hãy thử một loại hạn chế hơn. Chỉ tiếp tục nếu bạn hiểu rõ các rủi ro liên quan.',
 	'BBCODE_DANGER_PROCEED'		=> 'Tiến hành', //'I understand the risk',
 
 	'BBCODE_ADDED'				=> 'Thẻ BBCode đã được tạo thành công.',
 	'BBCODE_EDITED'				=> 'Thẻ BBCode đã được chỉnh sửa thành công.',
-	'BBCODE_DELETED'			=> 'The BBCode has been removed successfully.',
+	'BBCODE_DELETED'			=> 'Thẻ BBCode đã được gỡ bỏ thành công.',
 	'BBCODE_NOT_EXIST'			=> 'Thẻ BBCode bạn vừa chọn không tồn tại.',
 	'BBCODE_HELPLINE'			=> 'Hướng dẫn sử dụng thẻ BBCode',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Mục thông tin hướng dẫn sử dụng này sẽ được hiển thị khi rê chuột lên thẻ BBCode tương ứng trong phần soạn bài viết.',
@@ -57,7 +57,6 @@ $lang = array_merge($lang, array(
 	'BBCODE_INVALID_TAG_NAME'	=> 'Tên thẻ BBCode bạn vừa chọn đã được sử dụng.',
 	'BBCODE_INVALID'			=> 'Thẻ BBCode của bạn được tạo từ một biểu mẫu không hợp lệ.',
 	'BBCODE_INVALID_TEMPLATE'	=> 'Mẫu BBCode của bạn không hợp lệ.',
-	'BBCODE_OPEN_ENDED_TAG'		=> 'Thẻ BBCode tùy chọn của bạn phải có thẻ mở đầu và thẻ kết thúc.',
 	'BBCODE_TAG'				=> 'Thẻ BBCode',
 	'BBCODE_TAG_TOO_LONG'		=> 'Tên của thẻ BBCode bạn vừa nhập quá dài.',
 	'BBCODE_TAG_DEF_TOO_LONG'	=> 'Tên định danh của thẻ BBCode bạn vừa nhập quá dài. Hãy vui lòng sử dụng tên định danh cho thẻ ngắn hơn.',
@@ -79,17 +78,31 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
 	'tokens'	=>	array(
-		'TEXT'			=> 'Bất kỳ văn bản nào, bao gồm các ký tự, chữ số… Bạn không nên sử dụng những mã thay thế này trong các thẻ lệnh HTML. Thay vào đó, bạn hãy sử dụng <var>IDENTIFIER</var> hoặc <var>SIMPLETEXT</var>.',
-		'SIMPLETEXT'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới.',
-		'INTTEXT'		=> 'Ký tự Unicode, số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối, dấu gạch dưới và các ký tự tab, ký tự xuống dòng.',
-		'IDENTIFIER'	=> 'Những ký tự từ bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới.',
-		'NUMBER'		=> 'Bất kỳ giá trị số nào.',
-		'EMAIL'			=> 'Địa chỉ Email hợp lệ.',
-		'URL'			=> 'Địa chỉ URL hợp lệ sử dụng bất kỳ giao thức nào (http, ftp… không thể sử dụng được vì các vấn đề với mã Javascript). Nếu bạn không nhập vào giao thức, &quot;http://&quot; sẽ được sử dụng làm tiền tố đầu của chuỗi.',
-		'LOCAL_URL'		=> 'Địa chỉ URL trong hệ thống. Địa chỉ URL này phải liên quan đến các trang trong hệ thống và không thể chứa một tên miền khác hay giao thức nào.',
-		'RELATIVE_URL'	=> 'A relative URL. You can use this to match parts of a URL, but be careful: a full URL is a valid relative URL. When you want to use relative URLs of your board, use the LOCAL_URL token.',
-		'COLOR'			=> 'A HTML colour, can be either in the numeric form <samp>#FF1234</samp> or a <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS colour keyword</a> such as <samp>fuchsia</samp> or <samp>InactiveBorder</samp>',
-	)
+		'TEXT' => 'Mọi loại văn bản, bao gồm ký tự nước ngoài, chữ số, v.v…',
+		'SIMPLETEXT' => 'Ký tự trong bảng chữ cái Latinh (A-Z), chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối và dấu gạch dưới',
+		'INTTEXT' => 'Ký tự chữ Unicode, chữ số, khoảng trắng, dấu phẩy, dấu chấm, dấu trừ, dấu cộng, dấu gạch nối, dấu gạch dưới và ký tự khoảng trắng.',
+		'IDENTIFIER' => 'Ký tự trong bảng chữ cái Latinh (A-Z), chữ số, dấu gạch nối và dấu gạch dưới',
+		'NUMBER' => 'Một chuỗi chữ số bất kỳ',
+		'EMAIL' => 'Địa chỉ email hợp lệ',
+		'URL' => 'URL hợp lệ dùng bất kỳ giao thức được phép nào (http, ftp, v.v.; không thể dùng để khai thác JavaScript). Nếu không có giao thức, hệ thống sẽ thêm tiền tố “http://”.',
+		'LOCAL_URL' => 'URL cục bộ. URL phải tương đối với trang chủ đề, không được chứa tên máy chủ hay giao thức vì liên kết sẽ được thêm tiền tố “%s”',
+		'RELATIVE_URL' => 'URL tương đối. Có thể dùng để khớp một phần URL, nhưng hãy thận trọng: URL đầy đủ cũng là URL tương đối hợp lệ. Khi muốn dùng URL tương đối của diễn đàn, hãy dùng mã LOCAL_URL.',
+		'COLOR' => 'Màu HTML, có thể ở dạng số <samp>#FF1234</samp> hoặc một <a href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">từ khóa màu CSS</a> như <samp>fuchsia</samp> hay <samp>InactiveBorder</samp>',
+		'ALNUM' => 'Ký tự trong bảng chữ cái Latinh (A-Z) và chữ số.',
+		'CHOICE' => 'Một lựa chọn trong các giá trị chỉ định, ví dụ <samp>{CHOICE=spades,hearts,diamonds,clubs}</samp>. Mặc định không phân biệt hoa thường; thêm tùy chọn <samp>caseSensitive</samp> để phân biệt: <samp>{CHOICE=Spades,Hearts,Diamonds,Clubs;caseSensitive}</samp>',
+		'FLOAT' => 'Giá trị thập phân, ví dụ <samp>0.5</samp>.',
+		'HASHMAP' => 'Ánh xạ chuỗi sang nội dung thay thế theo dạng <samp>{HASHMAP=string1:replacement1,string2:replacement2}</samp>. Phân biệt hoa thường. Mặc định giữ nguyên giá trị không xác định.',
+		'INT' => 'Giá trị số nguyên, ví dụ <samp>2</samp>.',
+		'IP' => 'Địa chỉ IPv4 hoặc IPv6 hợp lệ.',
+		'IPPORT' => 'Địa chỉ IPv4 hoặc IPv6 hợp lệ kèm số cổng.',
+		'IPV4' => 'Địa chỉ IPv4 hợp lệ.',
+		'IPV6' => 'Địa chỉ IPv6 hợp lệ.',
+		'MAP' => 'Ánh xạ chuỗi sang nội dung thay thế theo dạng <samp>{MAP=string1:replacement1,string2:replacement2}</samp>. Không phân biệt hoa thường. Mặc định giữ nguyên giá trị không xác định.',
+		'RANGE' => 'Chấp nhận số nguyên trong khoảng chỉ định, ví dụ <samp>{RANGE=-10,42}</samp>.',
+		'REGEXP' => 'Kiểm tra giá trị bằng biểu thức chính quy, ví dụ <samp>{REGEXP=/^foo\\w+bar$/}</samp>.',
+		'TIMESTAMP' => 'Dấu thời gian như <samp>1h30m10s</samp>, được chuyển thành số giây. Cũng chấp nhận một con số.',
+		'UINT' => 'Giá trị số nguyên không dấu. Tương tự <samp>{INT}</samp> nhưng từ chối giá trị nhỏ hơn 0.',
+	),
 ));
 
 // Smilies and topic icons
@@ -108,11 +121,9 @@ $lang = array_merge($lang, array(
 	'CURRENT_SMILIES'			=> 'Biểu tượng vui hiện tại',
 	'CURRENT_SMILIES_EXPLAIN'	=> 'Chọn yêu cầu bạn muốn thực hiện với những biểu tượng vui đã cài đặt hiện tại của mình.',
 
-	'DISPLAY_ON_POSTING'	=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING'		=> 'Hiển thị trong trang gửi bài',
-	'DISPLAY_POSTING_NO'	=> 'Không hiển thị trong trang gửi bài',
-
-
+	'DISPLAY_ON_POSTING'		=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING'			=> 'Hiển thị trong trang gửi bài',
+	'DISPLAY_POSTING_NO'		=> 'Không hiển thị trong trang gửi bài',
 
 	'EDIT_ICONS'				=> 'Sửa biểu tượng bài viết',
 	'EDIT_SMILIES'				=> 'Sửa biểu tượng vui',
@@ -126,17 +137,17 @@ $lang = array_merge($lang, array(
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
 	'ICONS_ADDED'			=> array(
-		0	=> 'No icons were added.',
-		1	=> 'The icon has been added successfully.',
-		2	=> 'The icons have been added successfully.',
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
+		2	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
 	),
 	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
 	'ICONS_EDITED'			=> array(
-		0	=> 'No icons were updated.',
-		1	=> 'The icon has been updated successfully.',
-		2	=> 'The icons have been updated successfully.',
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
+		2	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
 	),
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
@@ -170,9 +181,9 @@ $lang = array_merge($lang, array(
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
 	'SMILIES_ADDED'				=> array(
-		0	=> 'No smilies were added.',
-		1	=> 'The smiley has been added successfully.',
-		2	=> 'The smilies have been added successfully.',
+		0	=> 'Không có biểu tượng nào để thêm vào.',
+		1	=> 'Biểu tượng vui đã được thêm vào thành công.',
+		2	=> 'Biểu tượng vui đã được thêm vào thành công.',
 	),
 	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
@@ -182,9 +193,9 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có thiếu dữ liệu nhập vào.',
 	'SMILIE_NO_FILE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì tập tin tương ứng không tìm thấy.',
 	'SMILIES_EDITED'			=> array(
-		0	=> 'No smilies were updated.',
-		1	=> 'The smiley has been updated successfully.',
-		2	=> 'The smilies have been updated successfully.',
+		0	=> 'Không có biểu tượng nào để cập nhật.',
+		1	=> 'Biểu tượng vui đã được cập nhật thành công.',
+		2	=> 'Biểu tượng vui đã được cập nhật thành công.',
 	),
 	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
@@ -198,8 +209,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
 	'TOO_MANY_SMILIES'			=> array(
-		1	=> 'Limit of %d smiley reached.',
-		2	=> 'Limit of %d smilies reached.',
+		1	=> 'Vượt giới hạn %d biểu tượng vui.',
+		2	=> 'Vượt giới hạn %d biểu tượng vui.',
 	),
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng bạn vừa chọn không chứa dữ liệu thích hợp.',
@@ -231,7 +242,7 @@ $lang = array_merge($lang, array(
 	'ADD_RANK'				=> 'Thêm xếp hạng mới',
 
 	'MUST_SELECT_RANK'		=> 'Bạn phải chọn một xếp hạng.',
-	
+
 	'NO_ASSIGNED_RANK'		=> 'Không có xếp hạng đặc biệt nào được chỉ định.',
 	'NO_RANK_TITLE'			=> 'Bạn chưa nhập vào tên xếp hạng.',
 	'NO_UPDATE_RANKS'		=> 'Xếp hạng đã được xoá thành công. Tuy nhiên, những tài khoản thành viên đang sử dụng xếp hạng này chưa được cập nhật. Bạn sẽ phải tự mình thay đổi lại xếp hạng cho những tài khoản thành viên này.',

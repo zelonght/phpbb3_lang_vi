@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 		2	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
 	),
 
-	'NO_KEYWORDS'			=> 'Bạn phải xác định ít nhất một từ khoá để thực hiện tìm kiếm. Mỗi từ khoá phải có ít nhất là <strong>%d</strong> ký tự và không được nhiều quá <strong>%d</strong> ký tự loại trừ dấu đại diện.',
+	'NO_KEYWORDS'			=> 'Bạn phải nhập ít nhất một từ để tìm kiếm. Mỗi từ phải có ít nhất %s và không được dài quá %s, không tính ký tự đại diện.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',
 	'NO_SEARCH'				=> 'Xin lỗi, bạn không được phép sử dụng công cụ tìm kiếm trong hệ thống.',
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
@@ -115,8 +115,8 @@ $lang = array_merge($lang, array(
 	'SORT_FORUM'				=> 'Chuyên mục',
 	'SORT_POST_SUBJECT'			=> 'Tiêu đề bài viết',
 	'SORT_TIME'					=> 'Ngày gửi bài',
-	'SPHINX_SEARCH_FAILED' => 'Tìm kiếm không thành công: %s',
-	'SPHINX_SEARCH_FAILED_LOG' => 'Rất tiếc, không thể thực hiện tìm kiếm. Thông tin thêm về lỗi này đã được ghi vào nhật ký lỗi. ',
+	'SPHINX_SEARCH_FAILED'		=> 'Tìm kiếm không thành công: %s',
+	'SPHINX_SEARCH_FAILED_LOG'	=> 'Rất tiếc, không thể thực hiện tìm kiếm. Thông tin thêm về lỗi này đã được ghi vào nhật ký lỗi. ',
 
 	'TOO_FEW_AUTHOR_CHARS'	=> array(
 		1 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',

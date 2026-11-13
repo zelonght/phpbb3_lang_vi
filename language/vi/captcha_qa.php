@@ -40,7 +40,7 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_QA'				=> 'Q&amp;A CAPTCHA',
 	'CONFIRM_QUESTION_EXPLAIN'	=> 'Câu hỏi xác nhận này nhằm ngăn ngừa các máy đăng ký tự động.',
 	'CONFIRM_QUESTION_WRONG'	=> 'Bạn trả lời sai câu hỏi xác nhận.',
-	'CONFIRM_QUESTION_MISSING'	=> 'Questions for the captcha could not be retrieved. Please contact a board administrator.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Không tìm thấy dữ liệu dùng cho câu hỏi xác nhận. Vui lòng liên hệ người quản trị.',
 
 	'QUESTION_ANSWERS'			=> 'Các câu trả lời',
 	'ANSWERS_EXPLAIN'			=> 'Hãy nhập vào các trả lời hợp lệ cho câu hỏi, mỗi cái là một dòng.',
@@ -61,5 +61,4 @@ $lang = array_merge($lang, array(
 
 	'QA_ERROR_MSG'				=> 'Hãy nhập vào các trường và nhập vào ít nhất một câu trả lời.',
 	'QA_LAST_QUESTION'			=> 'Bạn không thề xóa tất cả các câu hỏi khi chức năng này đang được hiệu lực.',
-
 ));
