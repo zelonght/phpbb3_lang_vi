@@ -58,9 +58,8 @@ $lang = array_merge($lang, array(
 	'GROUP_COLOR'					=> 'Màu nhóm',
 	'GROUP_COLOR_EXPLAIN'			=> 'Xác định màu phân biệt cho tên thành viên của các thành viên trong nhóm, để trống để sử dụng màu mặc định dành cho thành viên.',
 	'GROUP_CONFIRM_ADD_USERS'		=> array(
-		1	=> 'Bạn có chắc chắn muốn thêm thành viên %2$s vào nhóm?',
-		2	=> 'Bạn có chắc chắn muốn thêm các thành viên %2$s vào nhóm?',
-	),
+	1 => 'Bạn có chắc chắn muốn thêm thành viên %2$s vào nhóm?',
+),
 	'GROUP_CREATED'					=> 'Nhóm đã được tạo thành công.',
 	'GROUP_DEFAULT'					=> 'Chọn làm nhóm mặc định của thành viên',
 	'GROUP_DEFS_UPDATED'			=> 'Nhóm mặc định thiết lập cho tất cả thành viên đã chọn.',

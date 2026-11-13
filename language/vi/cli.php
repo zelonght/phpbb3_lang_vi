@@ -166,10 +166,9 @@ $lang = array_merge($lang, array(
 	'CLI_USER_DELETE_NONE'			=> 'Không có thành viên nào bị xóa theo ID.',
 	'CLI_USER_RECLEAN_START'		=> 'Tạo lại tên tài khoản dùng cho tìm kiếm',
 	'CLI_USER_RECLEAN_DONE'			=> [
-		0	=> 'Đã tạo lại thành công. Không có tên tài khoản nào cần tạo lại.',
-		1	=> 'Đã tạo lại thành công. %d tên tài khoản đã tạo lại.',
-		2	=> 'Đã tạo lại thành công. %d tên tài khoản đã tạo lại.',
-	],
+	0 => 'Đã tạo lại thành công. Không có tên tài khoản nào cần tạo lại.',
+	1 => 'Đã tạo lại thành công. %d tên tài khoản đã tạo lại.',
+],
 ));
 
 // Additional help for commands.

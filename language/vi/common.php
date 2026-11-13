@@ -41,7 +41,7 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'TRANSLATION_INFO'	=> '© Việt hoá bởi <a href="https://hongquangminh.com" rel="nofollow">https://hongquangminh.com</a>. Vietnamese language pack for phpBB 3.3.8',
+	'TRANSLATION_INFO'	=> '© Việt hóa bởi Phan Thanh Hoài (hongquangminh.com). Gói ngôn ngữ tiếng Việt cho phpBB 3.3.19.',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'		=> '|d M Y|',	// 01 Jan 2007 (with Relative days enabled)
 	'DATETIME_FORMAT'	=> '|d M Y, H:i|',	// 01 Jan 2007, 13:37 (with Relative days enabled)
@@ -139,9 +139,8 @@ $lang = array_merge($lang, array(
 	'BOARD_UNAVAILABLE'		=> 'Xin lỗi, hệ thống tạm thời không thể hoạt động được. Bạn hãy vui lòng quay lại sau vài phút nữa.',
 	'BROWSING_FORUM'		=> 'Đang xem chuyên mục này: %1$s',
 	'BROWSING_FORUM_GUESTS'	=> array(
-		1 => 'Người dùng duyệt diễn đàn này: %2$s và %1$d khách',
-		2 => 'Người dùng duyệt diễn đàn này: %2$s và %1$d khách',
-	),
+	1 => 'Người dùng duyệt diễn đàn này: %2$s và %1$d khách',
+),
 	'BUTTON_DELETE'         => 'Xoá',
 	'BUTTON_EDIT'			=> 'Chỉnh sửa',
 	'BUTTON_FORUM_LOCKED'	=> 'Đã khóa',
@@ -166,14 +165,12 @@ $lang = array_merge($lang, array(
 	'CHANGING_PREFERENCES'	=> 'Đang thay đổi thiết lập hệ thống',
 	'CHANGING_PROFILE'		=> 'Đang thay đổi thiết lập cá nhân',
 	'CHARACTERS'			=> array(
-		1	=> '%d tính cách',
-		2	=> '%d nhân vật',
-	),
+	1 => '%d tính cách',
+),
 	// Special version to be used when describing ranges e.g. "min x characters and max y characters"
 	'CHARACTERS_XY'			=> array(
-		1 => '%d ký tự',
-		2 => '%d ký tự',
-	),
+	1 => '%d ký tự',
+),
 	'COLLAPSE_VIEW'			=> 'Xem thu gọn',
 	'CLOSE_WINDOW'			=> 'Đóng cửa sổ',
 	'CODE'					=> 'Mã',
@@ -218,10 +215,9 @@ $lang = array_merge($lang, array(
 	'DOWNLOADED'			=> 'Số lượt tải về',
 	'DOWNLOADING_FILE'		=> 'Đang tải về tập tin',
 	'DOWNLOAD_COUNTS'		=> array(
-		0	=> 'Chưa tải về lần nào',
-		1	=> 'Đã tải về <strong>%d</strong> lần',
-		2	=> 'Đã tải về <strong>%d</strong> lần',
-	),
+	0 => 'Chưa tải về lần nào',
+	1 => 'Đã tải về <strong>%d</strong> lần',
+),
 
 	'EDIT_POST'							=> 'Sửa bài viết',
 	'ELLIPSIS'							=>	'…',
@@ -275,7 +271,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES'			=> 'Nội quy chuyên mục',
 	'FORUM_RULES_LINK'		=> 'Bấm vào đây để xem nội quy của chuyên mục này',
 	'FROM'					=> 'từ',
-	'FSOCK_DISABLED'		=> 'Yêu cầu này không thể được hoàn tất bởi vì chức năng <var>fsockopen</var> đã bị vô hiệu hoặc địa chỉ của máy chủ được truy xuất trong yêu cầu không thể tìm thấy.',
+	'FSOCK_DISABLED'		=> 'Yêu cầu này không thể được hoàn tất bởi vì chức năng fsockopen đã bị vô hiệu hoặc địa chỉ của máy chủ được truy xuất trong yêu cầu không thể tìm thấy.',
 	'FSOCK_TIMEOUT'			=> 'Gặp vấn đề vượt quá thời gian quy định (Timeout) trong khi tiếp nhận thông tin.',
 
 	'FILESYSTEM_CANNOT_CHANGE_FILE_GROUP'		=> 'Không thể thay đổi nhóm tệp',
@@ -329,13 +325,11 @@ $lang = array_merge($lang, array(
 	'GROUP_ERR_USER_LONG'		=> 'Tên của nhóm không được vượt quá <strong>60</strong> ký tự. Tên nhóm bạn vừa nhập quá dài.',
 	'GUEST'						=> 'Khách',
 	'GUEST_USERS_ONLINE'		=> array(
-		1	=> 'Có <strong>%d</strong> khách đang trực tuyến',
-		2	=> 'Có <strong>%d</strong> khách đang trực tuyến',
-	),
+	1 => 'Có <strong>%d</strong> khách đang trực tuyến',
+),
 	'GUEST_USERS_TOTAL'			=> array(
-		1	=> '<strong>%d</strong> khách',
-		2	=> '<strong>%d</strong> khách',
-	),
+	1 => '<strong>%d</strong> khách',
+),
 	'G_ADMINISTRATORS'			=> 'Quản trị viên',
 	'G_AI_CRAWLERS'				=> 'Trình thu thập dữ liệu AI',
 	'G_BOTS'					=> 'Máy tìm kiếm',
@@ -346,13 +340,11 @@ $lang = array_merge($lang, array(
 	'G_NEWLY_REGISTERED'		=> 'Thành viên mới đăng ký',
 
 	'HIDDEN_USERS_ONLINE'		=> array(
-		1	=> '%d người dùng bị ẩn',
-		2	=> '%d người dùng bị ẩn',
-	),
+	1 => '%d người dùng bị ẩn',
+),
 	'HIDDEN_USERS_TOTAL'		=> array(
-		1	=> '%d ẩn',
-		2	=> '%d ẩn',
-	),
+	1 => '%d ẩn',
+),
 	'HIDE_GUESTS'					=> 'Không hiển thị khách',
 	'HIDE_ME'						=> 'Ẩn trạng thái trực tuyến của tôi',
 	'HOURS'							=> 'Giờ',
@@ -439,10 +431,9 @@ $lang = array_merge($lang, array(
 	'MESSAGE'				=> 'Nội dung',
 	'MESSAGES'				=> 'Tin nhắn',
 	'MESSAGES_COUNT'		=> array(
-		0 => 'không giới hạn tin nhắn',
-		1 => '%d tin nhắn',
-		2 => '%d tin nhắn',
-	),
+	0 => 'không giới hạn tin nhắn',
+	1 => '%d tin nhắn',
+),
 	'MESSAGE_BODY'			=> 'Trình bày bài viết',
 	'MINUTES'				=> 'Phút',
 	'MODERATE'				=> 'Quản lý',
@@ -481,22 +472,22 @@ $lang = array_merge($lang, array(
 	// A, B, C and 2 others replied...
 	// A, B, C and others replied...
 	'NOTIFICATION_BOOKMARK'				=> array(
-		1	=> '<strong>Trả lời </strong> từ %1$s trong chủ đề được đánh dấu trang:',
-	),
+	1 => '<strong>Trả lời </strong> từ %1$s trong chủ đề được đánh dấu trang:',
+),
 	'NOTIFICATION_FORUM'				=> '<em>Diễn đàn:</em> %1$s',
 	'NOTIFICATION_GROUP_REQUEST'		=> '<strong>Yêu cầu tham gia</strong> vào nhóm %2$s từ %1$s.',
 	'NOTIFICATION_GROUP_REQUEST_APPROVED'	=> '<strong>Yêu cầu tham gia</strong> vào nhóm %1$s đã được chấp thuận.',
 	'NOTIFICATION_METHOD_INVALID'		=> 'Phương thức thông báo “%s” không hợp lệ.',
 	'NOTIFICATION_PM'					=> '<strong>Tin nhắn riêng </strong> từ %1$s:',
 	'NOTIFICATION_POST'					=> array(
-		1	=> '<strong>Trả lời </strong> từ %1$s in topic:',
-	),
+	1 => '<strong>Trả lời </strong> từ %1$s in topic:',
+),
 	'NOTIFICATION_POST_APPROVED'		=> '<strong>Đã phê duyệt bài đăng</strong>:',
 	'NOTIFICATION_POST_DISAPPROVED'		=> '<strong>Bài đăng bị từ chối</strong>:',
 	'NOTIFICATION_POST_IN_QUEUE'		=> 'Gửi yêu cầu phê duyệt của %1$s:',
 	'NOTIFICATION_QUOTE'				=> array(
-		1	=> '<strong>Được trích dẫn bởi</strong> %1$s in:',
-	),
+	1 => '<strong>Được trích dẫn bởi</strong> %1$s in:',
+),
 	'NOTIFICATION_REFERENCE'			=> '“%1$s”',
 	'NOTIFICATION_REASON'				=> '<em>Lý do:</em> %1$s.',
 	'NOTIFICATION_REPORT_PM'			=> '<strong>Tin nhắn riêng được báo cáo</strong> bởi %1$s:',
@@ -515,8 +506,8 @@ $lang = array_merge($lang, array(
 	// Used in conjunction with NOTIFICATION_BOOKMARK and NOTIFICATION_POST.
 	'NOTIFICATION_MANY_OTHERS'			=> 'khác',
 	'NOTIFICATION_X_OTHERS'				=> array(
-		2	=> '%d người khác',
-	),
+	1 => '%d người khác',
+),
 	'NOTIFY_ADMIN'				=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này.',
 	'NOTIFY_ADMIN_EMAIL'		=> 'Bạn hãy vui lòng thông báo cho quản trị viên hoặc người chủ của website này: <a href="mailto:%1$s">%1$s</a>',
 	'NO_ACCESS_ATTACHMENT'		=> 'Bạn không được phép truy cập tập tin này.',
@@ -564,14 +555,12 @@ $lang = array_merge($lang, array(
 
 	// Nullar/Singular/Plural language entry. The key numbers define the number range in which a certain grammatical expression is valid.
 	'NUM_ATTACHMENTS'		=> array(
-		1	=> '%d tệp đính kèm',
-		2	=> '%d tệp đính kèm',
-	),
+	1 => '%d tệp đính kèm',
+),
 	'NUM_POSTS_IN_QUEUE'		=> array(
-		0			=> 'Không bài viết trong hàng chờ',		// 0
-		1			=> '1 bài viết trong hàng chờ',		// 1
-		2			=> '%d bài viết trong hàng chờ',		// 2+
-	),
+	0 => 'Không bài viết trong hàng chờ',
+	1 => '1 bài viết trong hàng chờ',
+),
 
 	'OCCUPATION'				=> 'Nghề nghiệp',
 	'OFFLINE'					=> 'Ngoại tuyến',
@@ -579,14 +568,12 @@ $lang = array_merge($lang, array(
 	'ONLINE_BUDDIES'			=> 'Bạn thân đang trực tuyến',
 	// "... :: x registered and y hidden"
 	'ONLINE_USERS_TOTAL'		=> array(
-		1	=> 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s và %3$s',
-		2	=> 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s và %3$s',
-	),
+	1 => 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s và %3$s',
+),
 	// "... :: x registered, y hidden and z guests"
 	'ONLINE_USERS_TOTAL_GUESTS'	=> array(
-		1	=> 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s, %3$s và %4$s',
-		2	=> 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s, %3$s và %4$s',
-	),
+	1 => 'Tổng cộng có <strong>%1$d</strong> người dùng trực tuyến :: %2$s, %3$s và %4$s',
+),
 	'OPTIONS'					=> 'Tuỳ chọn',
 
 	'PAGE_NOT_FOUND'		=> 'không tìm thấy trang yêu cầu.',
@@ -595,9 +582,8 @@ $lang = array_merge($lang, array(
 	'PASSWORD'				=> 'Mật khẩu',
 	'PIXEL'					=> 'px',
 	'PIXELS'				=> array(
-		1	=> '%d px',
-		2	=> '%d px',
-	),
+	1 => '%d px',
+),
 	'PLEASE_WAIT'			=> 'Vui lòng đợi.',
 	'PM'					=> 'Tin nhắn',
 	'PM_REPORTED'			=> 'Nhấn để xem báo cáo',
@@ -664,13 +650,11 @@ $lang = array_merge($lang, array(
 	'REGISTERED_USERS'			=> 'Thành viên đang trực tuyến:',
 	// "... and 2 hidden users online"
 	'REG_USERS_ONLINE'			=> array(
-		1	=> 'Có %1$d người dùng đã đăng ký và %2$s trực tuyến',
-		2	=> 'Có %1$d người dùng đã đăng ký và %2$s trực tuyến',
-	),
+	1 => 'Có %1$d người dùng đã đăng ký và %2$s trực tuyến',
+),
 	'REG_USERS_TOTAL'			=> array(
-		1	=> '%d đã đăng ký',
-		2	=> '%d đã đăng ký',
-	),
+	1 => '%d đã đăng ký',
+),
 	'REMOVE'					=> 'Gỡ bỏ',
 	'REMOVE_INSTALL'			=> 'Hãy vui lòng xoá, di chuyển hoặc đổi tên thư mục <samp>install/</samp> trước khi bạn bắt đầu sử dụng hệ thống. Nếu thư mục này vẫn còn hiện diện, bạn sẽ chỉ có thể truy cập vào được bảng điều khiển của quản trị viên.',
 	'REPLIES'					=> 'Trả lời',
@@ -820,31 +804,28 @@ $lang = array_merge($lang, array(
 	'TOPIC_TITLE'		=> 'Tiêu đề',
 	'TOPIC_UNAPPROVED'	=> 'Chủ đề này chưa được chấp nhận',
 	'TOPIC_UNAPPROVED_FORUM'	=> array(
-		1	=> 'Chủ đề đang chờ phê duyệt',
-		2	=> 'Các chủ đề đang chờ phê duyệt',
-	),
+	1 => 'Chủ đề đang chờ phê duyệt',
+),
 	'TOPIC_DELETED'		=> 'Chủ đề này đã bị xóa.',
 	'TOTAL_ATTACHMENTS'	=> 'Tập tin đính kèm',
 	'TOTAL_LOGS'		=> array(
-		1	=> '%d nhật ký',
-		2	=> '%d nhật ký',
-	),
+	1 => '%d nhật ký',
+),
 	'TOTAL_PMS'		=> array(
-		1	=> '%d tin nhắn trong tổng số',
-		2	=> '%d tin nhắn trong tổng số',
-	),
+	1 => '%d tin nhắn trong tổng số',
+),
 	'TOPIC_POLL'		=> 'Chủ đề này có cuộc thăm dò ý kiến.',
 	'TOTAL_POSTS'		=> 'Tổng số bài đăng',
 	'TOTAL_POSTS_COUNT'	=> array(
-		2	=> 'Tổng số bài đăng <strong>%d</strong>',
-	),
+	1 => 'Tổng số bài đăng <strong>%d</strong>',
+),
 	'TOPIC_REPORTED'	=> 'Chủ đề này đã được báo cáo',
 	'TOTAL_TOPICS'		=> array(
-		2	=> 'Tổng số chủ đề <strong>%d</strong>',
-	),
+	1 => 'Tổng số chủ đề <strong>%d</strong>',
+),
 	'TOTAL_USERS'		=> array(
-		2	=> 'Tổng số thành viên <strong>%d</strong>',
-	),
+	1 => 'Tổng số thành viên <strong>%d</strong>',
+),
 	'TRACKED_PHP_ERROR'	=> 'Các lỗi PHP đã được phát hiện: %s',
 	'TWITTER'			=> 'X',
 
@@ -871,9 +852,8 @@ $lang = array_merge($lang, array(
 	'USER_AVATAR'			=> 'Hình đại diện của thành viên',
 	'USER_CANNOT_READ'		=> 'Bạn không thể xem những bài viết trong chuyên mục này.',
 	'USER_POSTS'			=> array(
-		1	=> '%d bài viết',
-		2	=> '%d bài viết',
-	),
+	1 => '%d bài viết',
+),
 	'USERS'					=> 'Người',
 	'USE_PERMISSIONS'		=> 'Kiểm tra thiết lập cấp phép của thành viên',
 
@@ -882,10 +862,9 @@ $lang = array_merge($lang, array(
 	'VARIANT_DATE_SEPARATOR'	=> ' / ',	// Used in date format dropdown, eg: "Today, 13:37 / 01 Jan 2007, 13:37" ... to join a relative date with calendar date
 	'VIEWED'					=> 'Đã xem',
 	'VIEWED_COUNTS'		=> array(
-		0	=> 'Chưa được xem',
-		1	=> 'Đã xem %d thời gian',
-		2	=> 'Đã xem %d lần',
-	),
+	0 => 'Chưa được xem',
+	1 => 'Đã xem %d thời gian',
+),
 	'VIEWING_CONTACT_ADMIN'		=> 'Xem trang liên hệ',
 	'VIEWING_FAQ'				=> 'Đang xem trợ giúp',
 	'VIEWING_MEMBERS'			=> 'Đang xem thông tin cá nhân của thành viên',
@@ -902,9 +881,8 @@ $lang = array_merge($lang, array(
 	'VIEW_NEWEST_POST'			=> 'Xem bài viết chưa xem đầu tiên',
 	'VIEW_NOTES'				=> 'Xem phản hồi về thành viên',
 	'VIEW_ONLINE_TIMES'			=> array(
-		1	=> 'Thông tin cập nhật mỗi <strong>%d</strong> phút',
-		2	=> 'Thông tin cập nhật mỗi <strong>%d</strong> phút',
-	),
+	1 => 'Thông tin cập nhật mỗi <strong>%d</strong> phút',
+),
 	'VIEW_TOPIC'				=> 'Xem chủ đề',
 	'VIEW_TOPIC_ANNOUNCEMENT'	=> 'Thông báo: ',
 	'VIEW_TOPIC_GLOBAL'			=> 'Thông báo chung: ',
@@ -948,9 +926,8 @@ $lang = array_merge($lang, array(
 		'TOMORROW'	=> 'Tomorrow',
 		'YESTERDAY'	=> 'Yesterday',
 		'AGO'		=> array(
-			0		=> 'less than a minute ago',
-			1		=> '%d minute ago',
-			2		=> '%d minutes ago',
+			0 => 'less than a minute ago',
+			1 => '%d minute ago',
 		),
 
 		'Sunday'	=> 'Chủ nhật',

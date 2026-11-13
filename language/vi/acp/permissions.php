@@ -54,7 +54,7 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lý thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo chương 1.5 trong tài liệu hướng dẫn trực tuyến <a href="http://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">Quick Start Guide</a> của chúng tôi.</p>
+		<p>Để biết thêm nhiều thông tin về những thiết lập này và quản lý thiết lập cấp phép trong hệ thống phpBB, bạn có thể tham khảo chương 1.5 trong tài liệu hướng dẫn trực tuyến <a href="https://www.phpbb.com/support/docs/en/3.3/ug/quickstart/permissions/">Quick Start Guide</a> của chúng tôi.</p>
 	',
 
 	'ACL_NEVER'				=> 'Không bao giờ',

@@ -43,13 +43,11 @@ $lang = array_merge($lang, array(
 	'DISPLAY_RESULTS'		=> 'Xem kết quả tìm kiếm dưới dạng',
 
 	'FOUND_SEARCH_MATCHES'		=> array(
-		1	=> 'Chỉ tìm thấy <strong>%d</strong> kết quả',
-		2	=> 'Đã tìm thấy <strong>%d</strong> kết quả',
-	),
+	1 => 'Chỉ tìm thấy <strong>%d</strong> kết quả',
+),
 	'FOUND_MORE_SEARCH_MATCHES'		=> array(
-		1	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
-		2	=> 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
-	),
+	1 => 'Đã tìm thấy nhiều hơn <strong>%d</strong> kết quả',
+),
 
 	'GLOBAL'				=> 'Thông báo chung',
 
@@ -63,9 +61,8 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Hệ thống yêu cầu bạn phải đăng ký làm thành viên và đăng nhập vào hệ thống để xem các bài viết chưa xem kể từ lần ghé thăm trước.',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
-		1	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
-		2	=> 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
-	),
+	1 => 'Bạn yêu cầu quá nhiều ký tự để tìm. Xin đừng nhập trên %1$d từ.',
+),
 
 	'NO_KEYWORDS'			=> 'Bạn phải nhập ít nhất một từ để tìm kiếm. Mỗi từ phải có ít nhất %s và không được dài quá %s, không tính ký tự đại diện.',
 	'NO_RECENT_SEARCHES'	=> 'Không có tìm kiếm nào được thực hiện gần đây.',
@@ -73,9 +70,8 @@ $lang = array_merge($lang, array(
 	'NO_SEARCH_RESULTS'		=> 'Không tìm thấy kết quả nào.',
 	'NO_SEARCH_LOAD'		=> 'Xin lỗi nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Máy chủ có tải cao. Vui lòng thử lại sau.',
 	'NO_SEARCH_TIME'		=> array(
-		1 => 'Rất tiếc nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Vui lòng thử lại sau %d giây. ',
-		2 => 'Rất tiếc nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Vui lòng thử lại sau %d giây. ',
-	),
+	1 => 'Rất tiếc nhưng bạn không thể sử dụng tìm kiếm tại thời điểm này. Vui lòng thử lại sau %d giây. ',
+),
 	'NO_SEARCH_UNREADS'		=> 'Xin lỗi, chức năng tìm kiếm bài viết chưa xem đã bị vô hiệu.',
 	'WORD_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
 	'WORDS_IN_NO_POST'		=> 'Không tìm thấy kết quả bởi vì những từ khoá <strong>%s</strong> không có trong bất cứ bài viết nào.',
@@ -119,7 +115,6 @@ $lang = array_merge($lang, array(
 	'SPHINX_SEARCH_FAILED_LOG'	=> 'Rất tiếc, không thể thực hiện tìm kiếm. Thông tin thêm về lỗi này đã được ghi vào nhật ký lỗi. ',
 
 	'TOO_FEW_AUTHOR_CHARS'	=> array(
-		1 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',
-		2 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',
-	),
+	1 => 'Bạn phải chỉ định ít nhất %d ký tự của tên tác giả.',
+),
 ));

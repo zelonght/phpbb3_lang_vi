@@ -73,7 +73,7 @@ $lang = array_merge($lang, array(
 
 	'TOKEN'					=> 'Mã thay thế',
 	'TOKENS'				=> 'Những mã thay thế',
-	'TOKENS_EXPLAIN'		=> 'Mã thay thế có nhiệm vụ thay thế cho nguồn nhập vào của thành viên. Nguồn nhập vào chỉ được kiểm tra hợp lệ nếu kết quả định danh của nó chính xác. Nếu cần thiết, bạn có thể đánh số chúng bằng cách thêm vào một con số sau ký tự nằm trong dấu ngoặc móc, ví dụ như <var>{TEXT1}, {TEXT2}</var>.<br /><br />Ngoài ra, những mã thay thế này có thể sử dụng bất kỳ chuỗi ngôn ngữ nào trong thư mục <samp>language/</samp> của hệ thống, giống như: <var>{L_<em>&lt;STRINGNAME&gt;</em>}</var> với <em>&lt;STRINGNAME&gt;</em> là tên của chuỗi đã được phiên dịch trong gói ngôn ngữ mà bạn muốn thêm vào. Ví dụ, <var>{L_WROTE}</var> sẽ hiển thị thành &quot;đã viết&quot; hoặc nội dung khác tùy theo nghĩa phiên dịch trong gói ngôn ngữ mà thành viên chọn.<br /><br /><strong>Lưu ý rằng những mã thay thế được liệt kê bên dưới có thể sử dụng được trong các thẻ BBCode tùy biến.</strong>',
+	'TOKENS_EXPLAIN'		=> 'Mã thay thế là phần giữ chỗ cho dữ liệu do người dùng nhập. Dữ liệu chỉ được chấp nhận nếu khớp với định nghĩa tương ứng. Khi cần, bạn có thể đánh số bằng cách thêm một số làm ký tự cuối bên trong dấu ngoặc, ví dụ {TEXT1}, {TEXT2}.<br /><br />Trong phần HTML thay thế, bạn cũng có thể dùng bất kỳ chuỗi ngôn ngữ nào có trong thư mục language/ theo dạng {L_<em>&lt;STRINGNAME&gt;</em>}, trong đó <em>&lt;STRINGNAME&gt;</em> là tên chuỗi đã dịch cần chèn. Ví dụ, {L_WROTE} sẽ hiển thị “wrote” hoặc bản dịch tương ứng với ngôn ngữ của thành viên.<br /><br /><strong>Lưu ý rằng chỉ các mã thay thế liệt kê bên dưới mới có thể dùng trong BBCode tùy chỉnh.</strong>',
 	'TOKEN_DEFINITION'		=> 'Định danh mã thay thế',
 	'TOO_MANY_BBCODES'		=> 'Bạn không thể tạo quá nhiều thẻ BBCode. Hãy gỡ bỏ một hay nhiều thẻ BBCode rồi thử lại.',
 
@@ -137,18 +137,16 @@ $lang = array_merge($lang, array(
 
 	'ICONS_ADD'				=> 'Thêm biểu tượng bài viết mới',
 	'ICONS_ADDED'			=> array(
-		0	=> 'Không có biểu tượng nào để thêm vào.',
-		1	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
-		2	=> 'Biểu tượng bài viết đã được thêm vào thành công.',
-	),
+	0 => 'Không có biểu tượng nào để thêm vào.',
+	1 => 'Biểu tượng bài viết đã được thêm vào thành công.',
+),
 	'ICONS_CONFIG'			=> 'Cấu hình biểu tượng bài viết',
 	'ICONS_DELETED'			=> 'Biểu tượng bài viết đã được gỡ bỏ thành công.',
 	'ICONS_EDIT'			=> 'Sửa biểu tượng bài viết',
 	'ICONS_EDITED'			=> array(
-		0	=> 'Không có biểu tượng nào để cập nhật.',
-		1	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-		2	=> 'Biểu tượng bài viết đã được cập nhật thành công.',
-	),
+	0 => 'Không có biểu tượng nào để cập nhật.',
+	1 => 'Biểu tượng bài viết đã được cập nhật thành công.',
+),
 	'ICONS_HEIGHT'			=> 'Chiều cao',
 	'ICONS_IMAGE'			=> 'Hình dùng làm biểu tượng bài viết',
 	'ICONS_IMPORTED'		=> 'Gói biểu tượng bài viết đã được cài đặt thành công.',
@@ -181,10 +179,9 @@ $lang = array_merge($lang, array(
 	'SELECT_PACKAGE'			=> 'Chọn một gói biểu tượng',
 	'SMILIES_ADD'				=> 'Thêm biểu tượng vui mới',
 	'SMILIES_ADDED'				=> array(
-		0	=> 'Không có biểu tượng nào để thêm vào.',
-		1	=> 'Biểu tượng vui đã được thêm vào thành công.',
-		2	=> 'Biểu tượng vui đã được thêm vào thành công.',
-	),
+	0 => 'Không có biểu tượng nào để thêm vào.',
+	1 => 'Biểu tượng vui đã được thêm vào thành công.',
+),
 	'SMILIES_CODE'				=> 'Mã nhập',
 	'SMILIES_CONFIG'			=> 'Cấu hình biểu tượng vui',
 	'SMILIES_DELETED'			=> 'Biểu tượng vui đã được gỡ bỏ thành công.',
@@ -193,10 +190,9 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_EMOTION'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì không có thiếu dữ liệu nhập vào.',
 	'SMILIE_NO_FILE'			=> 'Biểu tượng cảm “%s” đã bị bỏ qua, vì tập tin tương ứng không tìm thấy.',
 	'SMILIES_EDITED'			=> array(
-		0	=> 'Không có biểu tượng nào để cập nhật.',
-		1	=> 'Biểu tượng vui đã được cập nhật thành công.',
-		2	=> 'Biểu tượng vui đã được cập nhật thành công.',
-	),
+	0 => 'Không có biểu tượng nào để cập nhật.',
+	1 => 'Biểu tượng vui đã được cập nhật thành công.',
+),
 	'SMILIES_EMOTION'			=> 'Cảm xúc',
 	'SMILIES_HEIGHT'			=> 'Chiều cao',
 	'SMILIES_IMAGE'				=> 'Hình dùng làm biểu tượng vui',
@@ -209,9 +205,8 @@ $lang = array_merge($lang, array(
 	'SMILIES_WIDTH'				=> 'Chiều rộng',
 
 	'TOO_MANY_SMILIES'			=> array(
-		1	=> 'Vượt giới hạn %d biểu tượng vui.',
-		2	=> 'Vượt giới hạn %d biểu tượng vui.',
-	),
+	1 => 'Vượt giới hạn %d biểu tượng vui.',
+),
 
 	'WRONG_PAK_TYPE'	=> 'Gói biểu tượng bạn vừa chọn không chứa dữ liệu thích hợp.',
 ));

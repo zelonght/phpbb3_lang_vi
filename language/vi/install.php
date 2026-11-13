@@ -56,29 +56,29 @@ $lang = array_merge($lang, array(
 
 	// Install page
 	'INSTALL_INTRO'			=> 'Chuẩn bị trước khi cài đặt',
-	'INSTALL_INTRO_BODY'	=> 'Với công cụ này, bạn sẽ bắt đầu quá trình cài đặt hệ thống phpBB3 trên máy chủ của mình.</p><p>Để bắt đầu cài đặt, bạn phải cung cấp cho công cụ cài đặt những thông tin về cơ sở dữ liệu của mình. Nếu bạn không biết thông tin về cơ sở dữ liệu này, hãy vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ Web của bạn và yêu cầu họ cung cấp cho bạn. Bạn sẽ không thể tiếp tục cài đặt mà thiếu những thông tin này. Bạn cần biết:</p>
+	'INSTALL_INTRO_BODY'	=> 'Có thể dùng tùy chọn này để cài đặt phpBB3 lên máy chủ.</p><p>Để tiếp tục, bạn cần các thiết lập cơ sở dữ liệu. Nếu không biết những thông tin này, hãy liên hệ nhà cung cấp dịch vụ lưu trữ. Bạn không thể tiếp tục nếu thiếu chúng. Bạn cần:</p>
 
 	<ul>
-		<li>Loại cơ sở dữ liệu - hệ quản trị cơ sở dữ liệu mà bạn sẽ sử dụng cho hệ thống.</li>
-		<li>Tên miền hoặc địa chỉ DSN của máy chủ cơ sở dữ liệu - địa chỉ của máy chủ cơ sở dữ liệu.</li>
-		<li>Cổng máy chủ cơ sở dữ liệu - cổng của máy chủ cơ sở dữ liệu đang chạy. Đa số khi cài đặt thì mục này không cần thiết.</li>
-		<li>Tên cơ sở dữ liệu - tên của gói cơ sở dữ liệu mà bạn đang dùng để cài đặt trên máy chủ.</li>
-		<li>Tên đăng nhập và mật khẩu kết nối đến cơ sở dữ liệu - thông tin đăng nhập để truy cập vào cơ sở dữ liệu.</li>
+		<li>Loại cơ sở dữ liệu sẽ sử dụng.</li>
+		<li>Tên máy chủ cơ sở dữ liệu hoặc DSN — địa chỉ của máy chủ cơ sở dữ liệu.</li>
+		<li>Cổng máy chủ cơ sở dữ liệu — thường không cần nhập.</li>
+		<li>Tên cơ sở dữ liệu trên máy chủ.</li>
+		<li>Tên đăng nhập và mật khẩu để truy cập cơ sở dữ liệu.</li>
 	</ul>
 
-	<p><strong>Lưu ý:</strong> Nếu bạn cài đặt hệ thống với SQLite, bạn nên nhập vào đường dẫn đầy đủ đến tập tin cơ sở dữ liệu của bạn trong phần thông tin về địa chỉ DSN cũng như để trống phần tên đăng nhập và mật khẩu kết nối đến cơ sở dữ liệu. Vì lý do bảo mật, bạn phải chắc chắn rằng tập tin cơ sở dữ liệu lưu trữ trong thư mục trên máy chủ đó không thể truy cập được từ trình duyệt.</p>
+	<p><strong>Lưu ý:</strong> nếu cài đặt bằng SQLite, hãy nhập đường dẫn đầy đủ đến tập tin cơ sở dữ liệu trong trường DSN và để trống tên đăng nhập cùng mật khẩu. Vì lý do bảo mật, hãy bảo đảm tập tin cơ sở dữ liệu không nằm ở vị trí có thể truy cập từ web.</p>
 
-	<p>Hệ thống phpBB hỗ trợ các hệ quản trị cơ sở dữ liệu dưới đây:</p>
+	<p>phpBB3 hỗ trợ các cơ sở dữ liệu sau:</p>
 	<ul>
-		<li>MySQL 3.23 trở lên (hỗ trợ MySQLi)</li>
+		<li>MySQL 4.1.3 trở lên (yêu cầu MySQLi)</li>
 		<li>PostgreSQL 8.3+</li>
 		<li>SQLite 3.6.15+</li>
-		<li>MS SQL Server 2000 trở lên (trực tiếp hoặc thông qua ODBC)</li>
-		<li>MS SQL Server 2005 trở lên (tự nhiên)</li>
+		<li>MS SQL Server 2000 trở lên (trực tiếp hoặc qua ODBC)</li>
+		<li>MS SQL Server 2005 trở lên (native)</li>
 		<li>Oracle</li>
 	</ul>
 
-	<p>Trong những hệ quản trị cơ sở dữ liệu được hỗ trợ bên trên, chỉ những loại nào có sẵn trên máy chủ của bạn mới được hiển thị trong tùy chọn khi cài đặt.',
+	<p>Chỉ những cơ sở dữ liệu được máy chủ hỗ trợ mới được hiển thị.',
 
 	'ACP_LINK'	=> 'Chuyển đến <a href="%1$s">bảng quản trị</a>',
 
@@ -207,8 +207,8 @@ $lang = array_merge($lang, array(
 	'INST_ERR_PREFIX'				=> 'Tiền tố của mỗi tên bảng dữ liệu bạn vừa xác định đã được sử dụng, hãy vui lòng chọn một tên khác.',
 	'INST_ERR_DB_NO_MYSQLI'			=> 'Phiên bản MySQL được cài đặt trên máy chủ không tương thích với tùy chọn “MySQL với phần mở rộng MySQLi” mà bạn vừa chọn. Hãy thử thay thế bằng tùy chọn “MySQL” để tiếp tục.',
 	'INST_ERR_DB_NO_SQLITE3'		=> 'Phiên bản phần mở rộng SQLite được cài đặt trên máy chủ đã quá cũ. Vui lòng nâng cấp ít nhất đến phiên bản 3.6.15.',
-	'INST_ERR_DB_NO_ORACLE'			=> 'Phiên bản Oracle được cài đặt trên máy chủ yêu cầu bạn phải thiết lập thông số <var>NLS_CHARACTERSET</var> thành <var>UTF-8</var>. Bạn hãy vui lòng nâng cấp hệ thống lên phiên bản 9.2+ hoặc chỉ cần thay đổi lại thông số trên.',
-	'INST_ERR_DB_NO_POSTGRES'		=> 'Cơ sở dữ liệu vừa chọn không được tạo ra trong chế độ mã hóa <var>UNICODE</var> hoặc <var>UTF-8</var>. Bạn hãy vui lòng cài đặt lại với một cơ sở dữ liệu được mã hóa theo <var>UNICODE</var> hoặc <var>UTF-8</var>.',
+	'INST_ERR_DB_NO_ORACLE'			=> 'The version of Oracle installed on this machine requires you to set the NLS_CHARACTERSET parameter to UTF8. Either upgrade your installation to 9.2+ or change the parameter.',
+	'INST_ERR_DB_NO_POSTGRES'		=> 'The database you have selected was not created in UNICODE or UTF8 encoding. Try installing with a database in UNICODE or UTF8 encoding.',
 	'INST_SCHEMA_FILE_NOT_WRITABLE'	=> 'Tập tin cấu trúc dữ liệu không thể ghi',
 
 	//
@@ -327,7 +327,7 @@ $lang = array_merge($lang, array(
 	'SKIP_TASK'		=> 'Bỏ qua thao tác “%s”',
 
 	'TASK_SERVICE_INSTALLER_MISSING'	=> 'Tất cả dịch vụ liên quan cài đặt nên khởi tạo với “installer”',
-	'TASK_CLASS_NOT_FOUND'				=> 'Tên định danh dịch vụ cài đặt không hợp lệ. Tên dịch vụ “%1$s” được dùng, nhưng lại khai báo namespace là “%2$s”. Để biết thêm thông tin, hãy tham khảo tài liệu về <var>task_interface</var>.',
+	'TASK_CLASS_NOT_FOUND'				=> 'Tên định danh dịch vụ cài đặt không hợp lệ. Tên dịch vụ “%1$s” được dùng, nhưng lại khai báo namespace là “%2$s”. Để biết thêm thông tin, hãy tham khảo tài liệu về task_interface.',
 
 	'INSTALLER_CONFIG_NOT_WRITABLE'	=> 'Tập tin cấu hình cài đặt không thể ghi.',
 ));
@@ -348,7 +348,7 @@ $lang = array_merge($lang, array(
 // Common updater messages
 $lang = array_merge($lang, array(
 	'UPDATE_INSTALLATION'			=> 'Cập nhật bản cài đặt của phpBB',
-	'UPDATE_INSTALLATION_EXPLAIN'	=> 'Với tùy chọn này, bạn có thể cập nhật cho bản cài đặt phpBB của mình lên phiên bản mới nhất của phpBB.<br />Trong suốt quá trình thực thi, tất cả các tập tin của bạn sẽ được kiểm tra để đảm bảo tính toàn bộ chưa được chỉnh sửa mã nguồn. Bạn cũng có thể xem trước tất cả thay đổi mã nguồn và tập tin trước khi bắt đầu cập nhật.<br /><br />Tập tin được cập nhật hoàn tất có thể bằng hai cách.</p><h2>Tự mình cập nhật</h2><p>Với phương pháp cập nhật này, bạn chỉ việc tải về những tập tin mà bạn đã chỉnh sửa cá nhân so với tập tin gốc của hệ thống. Điều này giúp bạn không bị mất đi các tập tin mà mình đã chỉnh sửa. Sau khi đã tải về máy thành công, bạn cần phải tự mình tải lên lại những tập tin này đến thư mục định vị chính xác của chúng trong thư mục cài đặt hệ thống phpBB. Khi đã tải lên xong, bạn có thể tiến hành kiểm tra lại các tập tin này để chắc chắn rằng mình đã tải chúng lên đúng thư mục định vị trong hệ thống.</p><h2>Cập nhật tự động với FTP</h2><p>Phương pháp này tương tự như phương pháp đầu tiên nhưng bạn không cần phải tải về những tập tin đã chỉnh sửa rồi phải tải chúng lên trở lại thư mục định vị trong hệ thống. Quá trình này sẽ được thực hiện tự động cho bạn. Ngoài ra, để sử dụng được phương pháp cập nhật này, bạn phải cung cấp thông tin chính xác về tài khoản FTP của mình khi được hệ thống yêu cầu. Sau khi hoàn tất, bạn sẽ được chuyển đến công cụ kiểm tra tập tin để chắc chắn rằng mọi thứ đã được cập nhật chính xác. Cuối cùng, bạn sẽ được chuyển đến công cụ cập nhật cơ sở dữ liệu để hoàn tất toàn bộ quá trình cập nhật cho hệ thống.',
+	'UPDATE_INSTALLATION_EXPLAIN'	=> 'Tùy chọn này cho phép cập nhật bản cài đặt phpBB lên phiên bản mới nhất.<br />Trong quá trình này, tính toàn vẹn của mọi tập tin sẽ được kiểm tra. Bạn có thể xem lại tất cả khác biệt và tập tin trước khi cập nhật.<br /><br />Có hai cách cập nhật tập tin.</p><h2>Cập nhật thủ công</h2><p>Với cách này, bạn chỉ tải xuống bộ tập tin đã thay đổi dành riêng cho bản cài đặt để không làm mất những chỉnh sửa đã thực hiện. Sau khi tải gói xuống, bạn phải tự tải các tập tin lên đúng vị trí trong thư mục gốc phpBB. Khi hoàn tất, bạn có thể chạy lại bước kiểm tra tập tin để xác nhận chúng đã được đặt đúng vị trí.</p><h2>Cập nhật nâng cao bằng FTP</h2><p>Cách này tương tự phương pháp đầu tiên nhưng bạn không cần tự tải xuống rồi tải lên các tập tin đã thay đổi. Hệ thống sẽ thực hiện thay bạn. Để dùng phương pháp này, bạn cần biết thông tin đăng nhập FTP vì hệ thống sẽ yêu cầu. Khi hoàn tất, bạn sẽ được chuyển trở lại bước kiểm tra tập tin để bảo đảm mọi thứ đã được cập nhật chính xác.<br /><br />',
 	'UPDATE_INSTRUCTIONS'			=> '
 		<h1>Thông báo phát hành</h1>
 		<p>Vui lòng đọc thông báo phát hành của phiên bản mới nhất trước khi tiếp tục cập nhật vì thông báo có thể chứa thông tin hữu ích, các liên kết tải xuống đầy đủ và nhật ký thay đổi.</p>
@@ -484,7 +484,7 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	// Common converter messages
 	'CONVERT_NOT_EXIST'			=> 'Chuyển đổi vừa chọn không tồn tại.',
-	'DEV_NO_TEST_FILE'			=> 'Không có giá trị nào được xác định cho biến <var>test_file</var> của gói chức năng chuyển đổi. Nếu bạn là người sử dụng gói chức năng chuyển đổi này, bạn không nên xem lỗi này mà hãy báo cáo cho tác giả của gói chức năng chuyển đổi. Còn nếu bạn là tác giả của gói chức năng chuyển đổi này, bạn phải xác định tên của một tập tin tồn tại trong thư mục nguồn của hệ thống để kiểm tra chính xác đường dẫn.',
+	'DEV_NO_TEST_FILE'			=> 'Không có giá trị nào được xác định cho biến test_file của gói chức năng chuyển đổi. Nếu bạn là người sử dụng gói chức năng chuyển đổi này, bạn không nên xem lỗi này mà hãy báo cáo cho tác giả của gói chức năng chuyển đổi. Còn nếu bạn là tác giả của gói chức năng chuyển đổi này, bạn phải xác định tên của một tập tin tồn tại trong thư mục nguồn của hệ thống để kiểm tra chính xác đường dẫn.',
 	'COULD_NOT_COPY'			=> 'Không thể sao chép tập tin <strong>%1$s</strong> sang <strong>%2$s</strong><br><br>Hãy kiểm tra thư mục đích có tồn tại và máy chủ web có quyền ghi vào đó.',
 	'COULD_NOT_FIND_PATH'		=> 'Không thể tìm thấy đường dẫn đến thư mục cài đặt hệ thống. Hãy kiểm tra thiết lập của bạn rồi thử lại.<br />» <strong>%s</strong> đã được xác định là đường dẫn nguồn.',
 	'CONFIG_PHPBB_EMPTY'		=> 'Biến số cấu hình của hệ thống phpBB cho “%s” còn để trống.',
@@ -534,21 +534,21 @@ $lang = array_merge($lang, array(
 	'STARTING_CONVERT'			=> 'Bắt đầu tiến hành chuyển đổi',
 	'CONFIG_CONVERT'			=> 'Đang chuyển đổi cấu hình hệ thống',
 	'DONE'						=> 'Hoàn tất',
-	'PREPROCESS_STEP'			=> 'Đang thực thi quá trình kiểm tra trước các <var>function/query</var>',
+	'PREPROCESS_STEP'			=> 'Đang thực thi quá trình kiểm tra trước các function/query',
 	'FILLING_TABLE'				=> 'Điền vào bảng dữ liệu <strong>%s</strong>',
 	'FILLING_TABLES'			=> 'Bảng dữ liệu điền vào',
-	'DB_ERR_INSERT'				=> 'Có lỗi trong khi tiến hành truy vấn <code>INSERT</code>.',
-	'DB_ERR_LAST'				=> 'Có lỗi trong khi tiến hành <var>query_last</var>.',
-	'DB_ERR_QUERY_FIRST'		=> 'Có lỗi trong khi thực thi <var>query_first</var>.',
-	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Có lỗi trong khi thực thi <var>query_first</var>, %s (“%s”).',
-	'DB_ERR_SELECT'				=> 'Có lỗi trong khi tiến hành truy vấn <code>SELECT</code>.',
+	'DB_ERR_INSERT'				=> 'Error while processing INSERT query.',
+	'DB_ERR_LAST'				=> 'Error while processing query_last.',
+	'DB_ERR_QUERY_FIRST'		=> 'Error while executing query_first.',
+	'DB_ERR_QUERY_FIRST_TABLE'	=> 'Error while executing query_first, %s (“%s”).',
+	'DB_ERR_SELECT'				=> 'Error while running SELECT query.',
 	'STEP_PERCENT_COMPLETED'	=> 'Bước <strong>%d</strong> trong tổng số <strong>%d</strong> bước',
 	'FINAL_STEP'				=> 'Thực thi bước cuối cùng',
 	'SYNC_FORUMS'				=> 'Bắt đầu đồng bộ hóa các chuyên mục',
-	'SYNC_POST_COUNT'			=> 'Đang đồng bộ <var>post_counts</var>',
-	'SYNC_POST_COUNT_ID'		=> 'Đang đồng bộ <var>post_counts</var> từ <var>mục</var> %1$s đến %2$s.',
+	'SYNC_POST_COUNT'			=> 'Đang đồng bộ post_counts',
+	'SYNC_POST_COUNT_ID'		=> 'Synchronising post_counts from entry %1$s to %2$s.',
 	'SYNC_TOPICS'				=> 'Bắt đầu đồng bộ hóa các chủ đề',
-	'SYNC_TOPIC_ID'				=> 'Đang đồng bộ những chủ đề có <var>topic_id</var> từ <strong>%1$s</strong> đến <strong>%2$s</strong>.',
+	'SYNC_TOPIC_ID'				=> 'Synchronising topics from topic_id %1$s to %2$s.',
 	'PROCESS_LAST'					=> 'Tiến hành lệnh thực thi trước',
 	'UPDATE_TOPICS_POSTED'		=> 'Đang tạo thông tin cho các chủ đề đã gửi',
 	'UPDATE_TOPICS_POSTED_ERR'	=> 'Có một lỗi xảy ra trong khi tạo thông tin cho các chủ đề đã gửi. Bạn có thể thử lại một lần nữa bước này trong bảng quản trị sau khi quá trình chuyển đổi hoàn tất.',
@@ -559,7 +559,7 @@ $lang = array_merge($lang, array(
 
 	// Finish conversion
 	'CONVERT_COMPLETE'			=> 'Việc chuyển đổi đã hoàn tất',
-	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công hệ thống của mình sang hệ thống phpBB 3.2. Bạn có thể đăng nhập ngay bây giờ và <a href="../">truy cập vào hệ thống</a> của mình. Hãy chắc chắn rằng những thiết lập hệ thống đã được chuyển đổi sang chính xác trước khi bạn cho hệ thống hoạt động bằng cách xóa thư mục cài đặt đi. Bạn luôn được giúp đỡ từ cộng đồng trực tuyến trong việc sử dụng phpBB với <a href="https://www.phpbb.com/support/docs/en/3.2/ug/">tài liệu hướng dẫn sử dụng</a> và <a href="https://www.phpbb.com/community/viewforum.php?f=466">diễn đàn hỗ trợ</a>.',
+	'CONVERT_COMPLETE_EXPLAIN'	=> 'Bạn đã chuyển đổi thành công diễn đàn sang phpBB 3.3. Bây giờ bạn có thể đăng nhập và <a href="../">truy cập diễn đàn</a>. Hãy bảo đảm các thiết lập đã được chuyển chính xác trước khi kích hoạt diễn đàn bằng cách xóa thư mục install. Trợ giúp sử dụng phpBB có sẵn trong <a href="https://www.phpbb.com/support/docs/en/3.3/ug/">tài liệu trực tuyến</a> và tại <a href="https://www.phpbb.com/community/viewforum.php?f=661">diễn đàn hỗ trợ</a>.',
 
 	'COLLIDING_CLEAN_USERNAME'			=> '<strong>%s</strong> là tên thành viên đã chuẩn hóa của:',
 	'COLLIDING_USER'					=> '» ID thành viên: <strong>%d</strong> tên thành viên: <strong>%s</strong> (%d bài viết)',
@@ -572,18 +572,18 @@ $lang = array_merge($lang, array(
 	'CONV_ERROR_GET_CONFIG'				=> 'Không thể nhận thông tin cấu hình hệ thống.',
 	'CONV_ERROR_COULD_NOT_READ'			=> 'Không thể truy cập/đọc “%s”.',
 	'CONV_ERROR_GROUP_ACCESS'			=> 'Không thể nhận được thông tin xác thực nhóm.',
-	'CONV_ERROR_INCONSISTENT_GROUPS'	=> 'Mâu thuẫn trong bảng dữ liệu <var>_groups</var> đã được phát hiện trong hàm thực thi <code>add_bots()</code>. Bạn cần phải thêm vào tất cả các nhóm đặc biệt nếu muốn tự mình thực hiện.',
-	'CONV_ERROR_INSERT_BOT'				=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu <var>_users</var>.',
-	'CONV_ERROR_INSERT_BOTGROUP'		=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu <var>_bots</var>.',
-	'CONV_ERROR_INSERT_USER_GROUP'		=> 'Không thể chèn thêm người dùng vào bảng dữ liệu <var>_user_group</var>.',
+	'CONV_ERROR_INCONSISTENT_GROUPS'	=> 'Mâu thuẫn trong bảng dữ liệu _groups đã được phát hiện trong hàm thực thi add_bots(). Bạn cần phải thêm vào tất cả các nhóm đặc biệt nếu muốn tự mình thực hiện.',
+	'CONV_ERROR_INSERT_BOT'				=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu _users.',
+	'CONV_ERROR_INSERT_BOTGROUP'		=> 'Không thể chèn thêm máy tìm kiếm vào bảng dữ liệu _bots.',
+	'CONV_ERROR_INSERT_USER_GROUP'		=> 'Không thể chèn thêm người dùng vào bảng dữ liệu _user_group.',
 	'CONV_ERROR_MESSAGE_PARSER'			=> 'Lỗi xử lí nội dung bài viết',
-	'CONV_ERROR_NO_AVATAR_PATH'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'avatar_path\']</code> để sử dụng %s.',
+	'CONV_ERROR_NO_AVATAR_PATH'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định $convertor[\'avatar_path\'] để sử dụng %s.',
 	'CONV_ERROR_NO_FORUM_PATH'			=> 'Đường dẫn đến thư mục cài đặt hệ thống chưa được xác định.',
-	'CONV_ERROR_NO_GALLERY_PATH'		=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'avatar_gallery_path\']</code> để sử dụng %s.',
+	'CONV_ERROR_NO_GALLERY_PATH'		=> 'Lưu ý dành cho những người phát triển: bạn phải xác định $convertor[\'avatar_gallery_path\'] để sử dụng %s.',
 	'CONV_ERROR_NO_GROUP'				=> 'Nhóm “%1$s” không thể tìm thấy trong %2$s.',
-	'CONV_ERROR_NO_RANKS_PATH'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'ranks_path\']</code> để sử dụng %s.',
-	'CONV_ERROR_NO_SMILIES_PATH'		=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'smilies_path\']</code> để sử dụng %s.',
-	'CONV_ERROR_NO_UPLOAD_DIR'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định <code>$convertor[\'upload_path\']</code> để sử dụng %s.',
+	'CONV_ERROR_NO_RANKS_PATH'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định $convertor[\'ranks_path\'] để sử dụng %s.',
+	'CONV_ERROR_NO_SMILIES_PATH'		=> 'Lưu ý dành cho những người phát triển: bạn phải xác định $convertor[\'smilies_path\'] để sử dụng %s.',
+	'CONV_ERROR_NO_UPLOAD_DIR'			=> 'Lưu ý dành cho những người phát triển: bạn phải xác định $convertor[\'upload_path\'] để sử dụng %s.',
 	'CONV_ERROR_PERM_SETTING'			=> 'Không thể chèn thêm/cập nhật thiết lập cấp phép.',
 	'CONV_ERROR_PM_COUNT'				=> 'Không thể chọn thư mục để đếm số lượng tin nhắn.',
 	'CONV_ERROR_REPLACE_CATEGORY'		=> 'Không thể chèn thêm chuyên mục mới để thay thế cho nhóm chuyên mục cũ.',

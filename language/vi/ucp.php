@@ -185,13 +185,11 @@ $lang = array_merge($lang, array(
 
 	'FIELD_REQUIRED'					=> 'Mục thông tin “%s” không được để trống.',
 	'FIELD_TOO_SHORT'					=> array(
-		1	=> 'Mục thông tin “%2$s” quá ngắn, tối thiểu phải có ít nhất <strong>%1$d</strong> ký tự.',
-		2	=> 'Mục thông tin “%2$s” quá ngắn, tối thiểu phải có ít nhất <strong>%1$d</strong> ký tự.',
-	),
+	1 => 'Mục thông tin “%2$s” quá ngắn, tối thiểu phải có ít nhất <strong>%1$d</strong> ký tự.',
+),
 	'FIELD_TOO_LONG'					=> array(
-		1 => 'Trường "%2$s" quá dài, tối đa cho phép %1$d ký tự.',
-		2 => 'Trường "%2$s" quá dài, tối đa cho phép %1$d ký tự.',
-	),
+	1 => 'Trường "%2$s" quá dài, tối đa cho phép %1$d ký tự.',
+),
 	'FIELD_TOO_SMALL'					=> 'Giá trị của mục “%2$s” quá nhỏ, giá trị tối thiểu bắt buộc sử dụng là <strong>%1$d</strong>.',
 	'FIELD_TOO_LARGE'					=> 'Giá trị của mục “%2$s” quá lớn, giá trị tối đa được phép sử dụng là <strong>%1$d</strong>.',
 	'FIELD_INVALID_CHARS_INVALID'		=> 'Mục thông tin “%s” chứa ký tự không hợp lệ.',
@@ -215,18 +213,16 @@ $lang = array_merge($lang, array(
 	'FOES_UPDATED'				=> 'Danh sách những kẻ thù của bạn đã được cập nhật thành công.',
 	'FOLDER_ADDED'				=> 'Thư mục đã được tạo thành công.',
 	'FOLDER_MESSAGE_STATUS'		=> array(
-		1	=> '%2$d / %1$s',
-		2	=> '%2$d / %1$s',
-	),
+	1 => '%2$d / %1$s',
+),
 	'FOLDER_NAME_EMPTY'			=> 'Bạn phải nhập tên cho thư mục.',
 	'FOLDER_NAME_EXIST'			=> 'Thư mục mang tên “%s” đã có rồi.',
 	'FOLDER_OPTIONS'			=> 'Tuỳ chọn thư mục',
 	'FOLDER_RENAMED'			=> 'Thư mục đã được đổi tên thành công.',
 	'FOLDER_REMOVED'			=> 'Thư mục đã được gỡ bỏ thành công.',
 	'FOLDER_STATUS_MSG'			=> array(
-		1	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
-		2	=> 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
-	),
+	1 => 'Dung lượng đầy: <strong>%3$d%%</strong> (%2$d / %1$s)',
+),
 	'FORWARD_PM'				=> 'Chuyển tiếp tin nhắn',
 	'FORCE_PASSWORD_EXPLAIN'	=> 'Trước khi bạn có thể tiếp tục truy cập website, bạn được yêu cầu phải thay đổi mật khẩu hiện tại của mình.',
 	'FRIEND_MESSAGE'			=> 'Tin nhắn từ bạn thân',
@@ -298,9 +294,8 @@ $lang = array_merge($lang, array(
 	'MOVE_DOWN'						=> 'Di chuyển xuống',
 	'MOVE_MARKED_TO_FOLDER'			=> 'Di chuyển tin nhắn đã đánh dấu đến “%s”',
 	'MOVE_PM_ERROR'					=> array(
-		1	=> 'Có lỗi xảy ra khi thực hiện di chuyển tin nhắn tới thư mục mới, chỉ có %2$d trong số %1$s tin nhắn đã được di chuyển.',
-		2	=> 'Có lỗi xảy ra khi thực hiện di chuyển tin nhắn tới thư mục mới, chỉ có %2$d trong số %1$s tin nhắn đã được di chuyển.',
-	),
+	1 => 'Có lỗi xảy ra khi thực hiện di chuyển tin nhắn tới thư mục mới, chỉ có %2$d trong số %1$s tin nhắn đã được di chuyển.',
+),
 	'MOVE_TO_FOLDER'				=> 'Di chuyển đến thư mục',
 	'MOVE_UP'						=> 'Di chuyển lên',
 
@@ -354,9 +349,8 @@ $lang = array_merge($lang, array(
 	'NOT_AGREE'						=> 'Tôi không đồng ý với những điều khoản trên',
 	'NOT_ENOUGH_SPACE_FOLDER'		=> 'Dung lượng thư mục bạn chọn <strong>%s</strong> dường như đã bị đầy. Yêu cầu vừa rồi bị từ chối.',
 	'NOT_MOVED_MESSAGES'			=> array(
-		1	=> 'Bạn có %d tin nhắn riêng hiện đang bị giữ vì thư mục đầy.',
-		2	=> 'Bạn có %d tin nhắn riêng hiện đang bị giữ vì thư mục đầy.',
-	),
+	1 => 'Bạn có %d tin nhắn riêng hiện đang bị giữ vì thư mục đầy.',
+),
 	'NO_ACTION_MODE'				=> 'Không có yêu cầu tin nhắn nào được xác định',
 	'NO_AUTHOR'						=> 'Không xác định được người gửi tin nhắn này',
 	'NO_AVATAR'						=> 'Không có hình đại diện nào được chọn',
@@ -466,9 +460,8 @@ $lang = array_merge($lang, array(
 	'RULE_LIMIT_REACHED'				=> 'Bạn không thể thêm quy định cho tin nhắn riêng nữa. Bạn đã dùng hết số lượng quy định cho phép.',
 	'RULE_NOT_DEFINED'					=> 'Quy định cá nhân không được xác định chính xác.',
 	'RULE_REMOVED_MESSAGES'				=> array(
-		1	=> '%d tin nhắn đã bị xóa do bộ lọc tin nhắn riêng tư.',
-		2	=> '%d tin nhắn cá nhân đã bị xóa do bộ lọc tin nhắn riêng tư.',
-	),
+	1 => '%d tin nhắn đã bị xóa do bộ lọc tin nhắn riêng tư.',
+),
 
 	'SAME_PASSWORD_ERROR'		=> 'Mật khẩu mới bạn vừa nhập trùng với mật khẩu hiện tại của bạn.',
 	'SEARCH_YOUR_POSTS'			=> 'Xem những bài viết của bạn',
@@ -585,9 +578,8 @@ $lang = array_merge($lang, array(
 	'VIEW_PM'					=> 'Xem tin nhắn',
 	'VIEW_PM_INFO'				=> 'Thông tin chi tiết về tin nhắn',
 	'VIEW_PM_MESSAGES'			=> array(
-		1	=> '%d thông điệp',
-		2	=> '%d tin nhắn',
-	),
+	1 => '%d thông điệp',
+),
 	'VIEW_PREVIOUS_HISTORY'		=> 'Tin nhắn trước trong quá trình gửi tin',
 	'VIEW_PREVIOUS_PM'			=> 'Tin nhắn trước',
 	'VIEW_PROFILE'				=> 'Xem hồ sơ',

@@ -67,7 +67,6 @@ $lang = array_merge($lang, array(
 
 	'VIEW_FORUM'			=> 'Xem chuyên mục',
 	'VIEW_FORUM_TOPICS'		=> array(
-		1	=> '%d chủ đề',
-		2	=> '%d chủ đề',
-	),
+	1 => '%d chủ đề',
+),
 ));

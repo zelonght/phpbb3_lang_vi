@@ -116,7 +116,7 @@ $lang = array_merge($lang, array(
 	'INVALID_FIELD_IDENT_LEN'	=> 'Tên mục thông tin cá nhân chỉ có thể dài tối đa là <strong>17</strong> ký tự',
 	'ISO_LANGUAGE'				=> 'Ngôn ngữ [%s]',
 
-	'LANG_SPECIFIC_OPTIONS'		=> 'Tuỳ chọn xác định ngôn ngữ [<b>%s</b>]',
+	'LANG_SPECIFIC_OPTIONS'		=> 'Tùy chọn riêng cho ngôn ngữ [<strong>%s</strong>]',
 
 	'LETTER_NUM_DOTS'			=> 'Bất kì chữ, số và dấu chấm',
 	'LETTER_NUM_ONLY'			=> 'Bất kì chữ và số',

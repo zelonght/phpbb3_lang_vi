@@ -112,17 +112,17 @@ $lang = array_merge($lang, array(
 	'SEARCH_GUEST_INTERVAL'					=> 'Thời gian chờ giữa hai lần tìm kiếm dành cho khách',
 	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Số giây mà khách phải chờ giữa hai lần thực hiện việc tìm kiếm trong hệ thống. Nếu có một ai đó đang thực hiện việc tìm kiếm thì tất cả những người khác phải chờ đợi cho đến khi hết thời gian chờ đợi được thiết lập này.',
 	'SEARCH_INDEX_CREATE_REDIRECT'			=> array(
-		2 => 'Đã lập chỉ mục tất cả bài viết đến ID %2$d, trong đó %1$d bài viết được xử lý ở bước này.',
-	),
+	1 => 'Đã lập chỉ mục tất cả bài viết đến ID %2$d, trong đó %1$d bài viết được xử lý ở bước này.',
+),
 	'SEARCH_INDEX_CREATE_REDIRECT_RATE'		=> array(
-		2 => 'Tốc độ lập chỉ mục hiện tại khoảng %1$.1f bài viết mỗi giây.',
-	),
+	1 => 'Tốc độ lập chỉ mục hiện tại khoảng %1$.1f bài viết mỗi giây.',
+),
 	'SEARCH_INDEX_DELETE_REDIRECT'			=> array(
-		2 => 'Đã xóa khỏi chỉ mục tìm kiếm tất cả bài viết đến ID %2$d, trong đó %1$d bài viết được xử lý ở bước này.',
-	),
+	1 => 'Đã xóa khỏi chỉ mục tìm kiếm tất cả bài viết đến ID %2$d, trong đó %1$d bài viết được xử lý ở bước này.',
+),
 	'SEARCH_INDEX_DELETE_REDIRECT_RATE'		=> array(
-		2 => 'Tốc độ xóa hiện tại khoảng %1$.1f bài viết mỗi giây.',
-	),
+	1 => 'Tốc độ xóa hiện tại khoảng %1$.1f bài viết mỗi giây.',
+),
 	'SEARCH_INDEX_CREATED'					=> 'Đã lập chỉ mục thành công cho tất cả bài viết trong cơ sở dữ liệu.',
 	'SEARCH_INDEX_PROGRESS'					=> 'Hoàn tất: %1$d | Đang chờ: %2$d | Tổng cộng: %3$d',
 	'SEARCH_INDEX_REMOVED'					=> 'Đã xoá thành công chỉ mục tìm kiếm cho phương pháp tìm kiếm này.',

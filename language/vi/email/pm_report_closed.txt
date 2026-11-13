@@ -1,8 +1,9 @@
-Ti�u d?: ��ng b�o c�o - "{PM_SUBJECT}"
+Subject: Báo cáo đã đóng - "{PM_SUBJECT}"
 
-Xin ch�o {USERNAME},
+Chào {USERNAME},
 
-B?n nh?n du?c th�ng b�o n�y v� b�o c�o c?a b?n li�n quan d?n tin nh?n ri�ng "{PM_SUBJECT}" ? trang web "{SITENAME}" v?a du?c x? l� b?i m?t nh� di?u h�nh hay qu?n tr?. B�o cao b�y gi? s? du?c d�ng l?i. N?u b?n c� th?c m?c, xin li�n h? {CLOSER_NAME} b?ng tin nh?n ri�ng.
+Báo cáo bạn đã gửi về tin nhắn riêng "{PM_SUBJECT}" tại "{SITENAME}" đã được điều hành viên hoặc quản trị viên xử lý. Báo cáo hiện đã đóng.
 
+Nếu còn câu hỏi, vui lòng liên hệ {CLOSER_NAME} bằng tin nhắn riêng.
 
 {EMAIL_SIG}

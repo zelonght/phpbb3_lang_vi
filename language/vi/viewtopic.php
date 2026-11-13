@@ -55,9 +55,8 @@ $lang = array_merge($lang, array(
 	'DOWNLOAD_NOTICE'		=> 'Bạn không có quyền cần thiết để xem các tệp đính kèm với bài đăng này.',
 
 	'EDITED_TIMES_TOTAL'	=> array(
-		1	=> 'Sửa lần cuối bởi <strong>%2$s</strong> vào ngày %3$s với %1$d lần sửa.',
-		2	=> 'Sửa lần cuối bởi <strong>%2$s</strong> vào ngày %3$s với %1$d lần sửa.',
-	),
+	1 => 'Sửa lần cuối bởi <strong>%2$s</strong> vào ngày %3$s với %1$d lần sửa.',
+),
 	'EMAIL_TOPIC'			=> 'Gửi Email giới thiệu',
 	'ERROR_NO_ATTACHMENT'	=> 'Tập tin đính kèm bạn vừa chọn không tồn tại.',
 
@@ -74,9 +73,8 @@ $lang = array_merge($lang, array(
 	'MAKE_NORMAL'				=> 'Thay đổi thành “Bài viết bình thường”',
 	'MAKE_STICKY'				=> 'Thay đổi thành “Chú ý”',
 	'MAX_OPTIONS_SELECT'		=> array(
-		1	=> 'Bạn chỉ có thể chọn <strong>%d</strong> đối tượng bình chọn',
-		2	=> 'Bạn có thể chọn đến <strong>%d</strong> đối tượng bình chọn',
-	),
+	1 => 'Bạn chỉ có thể chọn <strong>%d</strong> đối tượng bình chọn',
+),
 	'MISSING_INLINE_ATTACHMENT'	=> 'Tập tin đính kèm <strong>%s</strong> hiện tại không còn trên máy chủ',
 	'MOVE_TOPIC'				=> 'Di chuyển chủ đề',
 
@@ -115,9 +113,8 @@ $lang = array_merge($lang, array(
 	'VIEW_QUOTED_POST'		=> 'Xem bài viết được trích dẫn',
 	'VIEW_RESULTS'			=> 'Xem kết quả bình chọn',
 	'VIEW_TOPIC_POSTS'		=> array(
-		1	=> '%d bài viết',
-		2	=> '%d bài viết',
-	),
+	1 => '%d bài viết',
+),
 	'VIEW_UNREAD_POST'		=> 'Bài viết chưa xem đầu tiên',
 	'VOTE_SUBMITTED'		=> 'Bạn đã tham gia bình chọn xong.',
 	'VOTE_CONVERTED'		=> 'Thay đổi bình chọn không được hỗ trợ cho các bình chọn được chuyển đổi.',

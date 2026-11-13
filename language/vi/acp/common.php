@@ -332,7 +332,7 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_PHP_INFO_EXPLAIN'	=> 'Trang này liệt kê các thông tin về phiên bản PHP hiện tại được cài đặt trên máy chủ của bạn. Trang này cũng đính kèm thông tin chi tiết về các gói thành phần chức năng đã được cài đặt và nạp cùng với PHP, những biến PHP sẵn có và những thiết lập PHP mặc định. Thông tin này có thể hữu ích cho bạn nếu bạn đang giải quyết những rắc rối mà mình gặp phải với hệ thống. Cần lưu ý rằng có một vài công ty cung cấp dịch vụ lưu trữ Web sẽ hạn chế những thông tin về PHP được hiển thị trong đây vì nguyên nhân bảo mật. Một lời khuyên dành cho bạn là đừng bao giờ cung cấp cho người khác biết những thông tin trên trang này ngoại trừ khi bạn đang yêu cầu hỗ trợ từ <a href="http://www.phpbb.com/about/team/">các thành viên trong nhóm chính thức</a> của diễn đàn hỗ trợ phpBB.',
 
-	'NO_PHPINFO_AVAILABLE'	=> 'Thông tin cấu hình PHP trên máy chủ của bạn không thể thu thập được. Hàm <code>phpinfo()</code> đã bị vô hiệu vì nguyên nhân bảo mật.',
+	'NO_PHPINFO_AVAILABLE'	=> 'Không thể xác định thông tin cấu hình PHP. Hàm phpinfo() đã bị vô hiệu hóa vì lý do bảo mật.',
 ));
 
 // Logs
@@ -367,15 +367,15 @@ $lang = array_merge($lang, array(
 
 	// Environment configuration checks, mbstring related
 	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> 'Phương thức overload chưa được cấu hình đúng cách',
-	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> cần được gán bằng 0 hoặc 4. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> 'mbstring.func_overload cần được gán bằng 0 hoặc 4. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
 	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> 'Mã hóa ký tự trong suốt chưa được cấu hình đúng cách',
-	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> cần được gán bằng 0. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> 'mbstring.encoding_translation cần được gán bằng 0. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
 	'ERROR_MBSTRING_HTTP_INPUT'						=> 'Chuyển đổi ký tự nhập cho phương thức HTTP chưa được cấu hình đúng cách',
-	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> 'mbstring.http_input cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
 	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'Chuyển đổi ký tự xuất cho phương thức HTTP chưa được cấu hình đúng cách',
-	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> 'mbstring.http_output cần được gán bằng <samp>pass</samp>. Bạn có thể kiểm tra giá trị hiện hành của nó trong trang <samp>Thông tin PHP</samp>.',
 	'ERROR_DEFAULT_CHARSET'							=> 'Bộ ký tự mặc định được định cấu hình không đúng',
-	'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> '<var>default_charset</var> phải được đặt thành <samp>UTF-8</samp>. Bạn có thể kiểm tra giá trị hiện tại trên <samp>PHP information</samp> page.',
+	'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> 'default_charset phải được đặt thành <samp>UTF-8</samp>. Bạn có thể kiểm tra giá trị hiện tại trên <samp>PHP information</samp> page.',
 
 	'FILES_PER_DAY'		=> 'Số tập tin đính kèm/ngày',
 	'FORUM_STATS'		=> 'Thống kê hệ thống',
@@ -816,9 +816,8 @@ $lang = array_merge($lang, array(
 
 	'LOG_WARNING_DELETED'		=> '<strong>Đã xóa cảnh báo thành viên</strong><br />» %s',
 	'LOG_WARNINGS_DELETED'		=> array(
-		1 => '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %1$s',
-		2 => '<strong>Đã xóa %2$d cảnh cáo người dùng</strong><br />» %1$s', // Example: '<strong>Deleted 2 user warnings</strong><br />» username'
-	),
+	1 => '<strong>Đã xóa cảnh cáo người dùng</strong><br />» %1$s',
+),
 	'LOG_WARNINGS_DELETED_ALL'	=> '<strong>Đã xóa tất cả cảnh báo thành viên</strong><br />» %s',
 
 	'LOG_WORD_ADD'			=> '<strong>Đã thêm từ kiểm duyệt</strong><br />» %s',
