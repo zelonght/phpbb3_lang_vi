@@ -1,0 +1,13 @@
+Subject: Trả lời mới trong "{TOPIC_TITLE}"
+
+Chào {USERNAME},
+
+Chủ đề đã đánh dấu "{TOPIC_TITLE}" có trả lời mới kể từ lần cuối bạn truy cập "{SITENAME}". Hệ thống sẽ không gửi thêm thông báo cho đến khi bạn vào chủ đề.
+
+Để xem bài viết mới nhất kể từ lần truy cập trước, hãy nhấp vào liên kết sau:
+{U_NEWEST_POST}
+
+Nếu không còn muốn nhận cập nhật về trả lời trong các chủ đề đã đánh dấu, hãy đổi thiết lập thông báo tại đây:
+{U_NOTIFICATION_SETTINGS}
+
+{EMAIL_SIG}

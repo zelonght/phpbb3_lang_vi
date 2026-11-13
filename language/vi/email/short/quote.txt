@@ -1,0 +1,13 @@
+Subject: Bạn được trích dẫn trong "{TOPIC_TITLE}"
+
+Chào {USERNAME},
+
+"{AUTHOR_NAME}" đã trích dẫn bạn trong chủ đề "{TOPIC_TITLE}" tại "{SITENAME}".
+
+Để xem bài viết trích dẫn, hãy nhấp vào liên kết sau:
+{U_VIEW_POST}
+
+Nếu không còn muốn nhận cập nhật khi có người trích dẫn bạn, hãy đổi thiết lập thông báo tại đây:
+{U_NOTIFICATION_SETTINGS}
+
+{EMAIL_SIG}

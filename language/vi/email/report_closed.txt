@@ -1,0 +1,13 @@
+Subject: Báo cáo đã đóng - "{POST_SUBJECT}"
+
+Chào {USERNAME},
+
+Báo cáo bạn đã gửi về bài viết "{POST_SUBJECT}" của "{AUTHOR_NAME}" trong chủ đề "{TOPIC_TITLE}" tại "{SITENAME}" đã được điều hành viên hoặc quản trị viên xử lý và sau đó được đóng. Nếu còn câu hỏi, hãy gửi tin nhắn riêng cho {CLOSER_NAME}.
+
+Bạn có thể xem bài viết đã báo cáo tại liên kết sau:
+
+{U_VIEW_POST}
+
+Bạn đã yêu cầu nhận thông báo về sự kiện này. Bạn luôn có thể tắt thông báo khi báo cáo bài viết được đóng bằng cách thay đổi thiết lập tương ứng trong hồ sơ.
+
+{EMAIL_SIG}

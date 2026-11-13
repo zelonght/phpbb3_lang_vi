@@ -1,0 +1,8 @@
+Ti�u d?: ��ng b�o c�o - "{PM_SUBJECT}"
+
+Xin ch�o {USERNAME},
+
+B?n nh?n du?c th�ng b�o n�y v� b�o c�o c?a b?n li�n quan d?n tin nh?n ri�ng "{PM_SUBJECT}" ? trang web "{SITENAME}" v?a du?c x? l� b?i m?t nh� di?u h�nh hay qu?n tr?. B�o cao b�y gi? s? du?c d�ng l?i. N?u b?n c� th?c m?c, xin li�n h? {CLOSER_NAME} b?ng tin nh?n ri�ng.
+
+
+{EMAIL_SIG}

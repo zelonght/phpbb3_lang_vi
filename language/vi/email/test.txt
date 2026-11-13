@@ -1,0 +1,13 @@
+Subject: phpBB đã được cấu hình đúng để gửi email
+
+Chào {USERNAME},
+
+Chúc mừng. Nếu nhận được email này, phpBB đã được cấu hình đúng để gửi email.
+
+<!-- IF MESSAGE -->
+{MESSAGE}
+
+<!-- ENDIF -->
+Nếu cần trợ giúp, hãy truy cập diễn đàn hỗ trợ phpBB - https://www.phpbb.com/community/
+
+{EMAIL_SIG}

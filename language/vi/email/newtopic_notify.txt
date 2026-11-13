@@ -1,0 +1,15 @@
+Subject: Chủ đề mới trong "{FORUM_NAME}"
+List-Unsubscribe: <{U_STOP_WATCHING_FORUM}>
+
+Chào {USERNAME},
+
+Chuyên mục "{FORUM_NAME}" có chủ đề mới "{TOPIC_TITLE}"<!-- IF AUTHOR_NAME != '' --> do {AUTHOR_NAME} tạo<!-- ENDIF --> kể từ lần cuối bạn truy cập "{SITENAME}". Hệ thống sẽ không gửi thêm thông báo cho đến khi bạn vào chuyên mục.
+{U_FORUM}
+
+Để xem chủ đề mới, hãy nhấp vào liên kết sau:
+{U_TOPIC}
+
+Nếu không còn muốn theo dõi chuyên mục này, hãy nhấp vào liên kết sau:
+{U_STOP_WATCHING_FORUM}
+
+{EMAIL_SIG}
